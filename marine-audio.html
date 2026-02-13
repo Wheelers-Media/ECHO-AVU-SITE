@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marine Audio | Echo AVU</title>
+    <meta name="description" content="Marine audio systems built to survive the elements." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
+    <style>
+        /* Can-Am Slideshow Fade Effect */
+        .marine-slideshow-image {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .marine-slideshow-image.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ? HEADER PLACEHOLDER - DO NOT EDIT ? -->
+    <div id="header-placeholder"></div>
+    <!-- HERO SECTION -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-void">
+        <!-- Background Image -->
+        <div
+            class="absolute inset-0 bg-[url('/assets/marine-audio/marine-audio-hero.jpg')] bg-cover bg-center opacity-60">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-void z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-8 uppercase tracking-tight leading-none drop-shadow-2xl">
+                Audio That Cuts<br />Through The Wake. </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
+                High-output marine systems designed to perform over engine noise, wind, and open water. </p> <a
+                href="#build-sheet"
+                class="inline-block bg-white hover:bg-gray-200 text-black font-bold py-4 px-10 rounded transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                Start Your Build </a>
+        </div> <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce"> <svg
+                class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg> </div>
+    </section> <!-- SECTION 2: THE ELEMENTS -->
+    <section class="bg-carbon py-24 px-6 border-y border-edge">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- Card 1: Tower Projection -->
+                <div data-scroll-spotlight
+                    class="group bg-void border border-edge p-8 rounded-xl hover:border-echoRed/50 [&.in-view]:border-echoRed/50 transition-all duration-300 hover:-translate-y-2 [&.in-view]:-translate-y-2">
+                    <div
+                        class="text-echoRed mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+                        <!-- Icon: Wifi/Speaker --> <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-4">Tower Projection</h3>
+                    <p
+                        class="text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+                        Don't just hear it in the boat. Project clear, distortion-free sound to the rider 70 feet back.
+                    </p>
+                </div> <!-- Card 2: RGB Lighting Control -->
+                <div data-scroll-spotlight
+                    class="group bg-void border border-edge p-8 rounded-xl hover:border-echoRed/50 [&.in-view]:border-echoRed/50 transition-all duration-300 hover:-translate-y-2 [&.in-view]:-translate-y-2">
+                    <div
+                        class="text-echoRed mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+                        <!-- Icon: Sun/Light --> <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-4">RGB Lighting Control</h3>
+                    <p
+                        class="text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+                        Set the mood. Integrated LED lighting control for speakers, cup holders, and underwater
+                        transoms. </p>
+                </div> <!-- Card 3: Powersports Ready -->
+                <div data-scroll-spotlight
+                    class="group bg-void border border-edge p-8 rounded-xl hover:border-white/50 [&.in-view]:border-white/50 transition-all duration-300 hover:-translate-y-2 [&.in-view]:-translate-y-2">
+                    <div
+                        class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+                        <!-- Icon: Shield Check (Rugged/Durable) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-4">Powersports Ready</h3>
+                    <p
+                        class="text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+                        Mud-proof, hose-down systems for Can-Am, Polaris, and side-by-sides. Built to take a beating.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- SECTION 3: THE MARINE GRADE PROMISE -->
+    <section class="bg-void py-0 border-b border-edge">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row"> <!-- Text Side -->
+            <div class="w-full md:w-1/2 py-24 px-6 md:pr-16 flex flex-col justify-center"> <span
+                    class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold">The Echo
+                    Standard</span>
+                <h2 class="font-heading font-extrabold text-3xl md:text-5xl text-white mb-8">Engineered for the
+                    Elements.</h2>
+                <div class="space-y-6 text-gray-400 leading-relaxed">
+                    <p> You can't put car audio in a boat. It won't last one season. We install exclusively marine-rated
+                        gear tested against salt fog, intense UV rays, and hose-down pressure. </p>
+                </div>
+                <ul class="mt-10 space-y-4">
+                    <li class="flex items-center gap-4 text-white font-medium">
+                        <div class="w-8 h-8 rounded-full bg-edge flex items-center justify-center text-echoRed"> <svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg> </div> IPX67 Waterproof Ratings
+                    </li>
+                    <li class="flex items-center gap-4 text-white font-medium">
+                        <div class="w-8 h-8 rounded-full bg-edge flex items-center justify-center text-echoRed"> <svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg> </div> UV-Treated Cones
+                    </li>
+                    <li class="flex items-center gap-4 text-white font-medium">
+                        <div class="w-8 h-8 rounded-full bg-edge flex items-center justify-center text-echoRed"> <svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg> </div> Stainless Steel Hardware
+                    </li>
+                </ul>
+            </div> <!-- Image Side -->
+            <div
+                class="w-full md:w-1/2 bg-edge min-h-[400px] md:min-h-full flex items-center justify-center relative overflow-hidden">
+                <img src="/assets/marine-audio/marine-audio-image1.jpg" alt="Marine Audio Installation"
+                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-tr from-echoRed/20 to-transparent"></div>
+            </div>
+        </div>
+    </section> <!-- SECTION 4: BRAND AUTHORITY -->
+    <section class="bg-carbon py-24 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-10">Powered by the Best</p>
+            <div
+                class="flex flex-wrap md:flex-nowrap items-center justify-center gap-6 md:gap-8 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <!-- JL Audio --> <img src="/assets/brands/JLAudio.png" alt="JL Audio Marine"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125"> <!-- Wet Sounds --> <img
+                    src="/assets/brands/Wet-Sounds-Marine-1.png" alt="Wet Sounds"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125"> <!-- Fusion --> <img
+                    src="/assets/brands/FUSION-Car-Audio-Logo-Vector.svg-.png" alt="Fusion"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125"> <!-- Kicker --> <img
+                    src="/assets/brands/Kicker-Logo-Vector.png" alt="Kicker Marine"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125"> <!-- Arc Audio --> <img
+                    src="/assets/brands/Arc audio.png" alt="Arc Audio"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125"> <!-- Memphis --> <img
+                    src="/assets/brands/Memphis-Logo.png" alt="Memphis"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+            </div>
+        </div>
+    </section> <!-- SECTION 5: PROJECT GALLERY -->
+    <section class="bg-void py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading font-bold text-3xl md:text-5xl text-white mb-16 text-center">Summer Upgrades.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <!-- Project 1 - Bratt Jett with Slideshow -->
+                <div data-scroll-spotlight
+                    class="group relative aspect-[4/3] bg-carbon border border-edge rounded-xl overflow-hidden cursor-pointer">
+                    <!-- Image Slideshow Container -->
+                    <div class="absolute inset-0 brattjett-slideshow"> <img
+                            src="/assets/marine-audio/2024-bratt-jett.jpg" alt="2024 Bratt Jett Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover marine-slideshow-image active"
+                            style="object-position: center;"> <img src="/assets/marine-audio/2024-bratt-jett (2).jpg"
+                            alt="2024 Bratt Jett Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover marine-slideshow-image"
+                            style="object-position: center;"> </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 flex flex-col justify-end z-10">
+                        <h3
+                            class="text-white font-heading font-bold text-2xl mb-2 translate-y-2 group-hover:translate-y-0 group-[.in-view]:translate-y-0 transition-transform duration-300">
+                            2024 Bratt Jett</h3>
+                        <p
+                            class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity duration-300 delay-100">
+                            Dual JL M6 6.5" marine speaker sets with 8.8" subs, powered by XDM600/6 6-channel marine amp
+                            and Kicker bow enclosure.</p>
+                    </div>
+                </div> <!-- Project 2 - Can-Am with Slideshow -->
+                <div data-scroll-spotlight
+                    class="group relative aspect-[4/3] bg-carbon border border-edge rounded-xl overflow-hidden cursor-pointer">
+                    <!-- Image Slideshow Container -->
+                    <div class="absolute inset-0 canam-slideshow"> <img src="/assets/marine-audio/can-am-x3.jpg"
+                            alt="Can-Am Maverick X3 Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover marine-slideshow-image active"
+                            style="object-position: center;"> <img src="/assets/marine-audio/can-am-x3-2.jpg"
+                            alt="Can-Am Maverick X3 Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover marine-slideshow-image"
+                            style="object-position: center;"> </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 flex flex-col justify-end z-10">
+                        <h3
+                            class="text-white font-heading font-bold text-2xl mb-2 translate-y-2 group-hover:translate-y-0 group-[.in-view]:translate-y-0 transition-transform duration-300">
+                            2023 Can-Am Maverick X3</h3>
+                        <p
+                            class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity duration-300 delay-100">
+                            JL Audio M6 marine speakers with custom-engineered 10" TW3 subwoofer enclosure - powered to
+                            perfection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- SECTION 6: THE MARINE BUILD SHEET -->
+    <section id="build-sheet" class="bg-carbon border-t border-edge py-24 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start"> <!-- LEFT COLUMN: The Promise -->
+            <div class="w-full lg:w-1/2 pt-4"> <span
+                    class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">The Build
+                    Sheet</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white mb-6">Get Ready for the Season.
+                </h2>
+                <p class="font-body text-gray-400 text-lg mb-10 leading-relaxed font-light"> Schedule your installation
+                    before the summer rush. Our marine slots fill up fast - secure your spot today. </p>
+                <div class="p-6 bg-edge rounded-lg border-l-4 border-echoRed">
+                    <p class="text-white italic">"The team at Echo transformed my wake boat. The sound is incredible and
+                        the lights turn heads at every cove."</p>
+                    <p class="text-gray-500 text-sm mt-4 font-bold">- Jason T., Lake Saskatoon</p>
+                </div>
+            </div> <!-- RIGHT COLUMN: The Form -->
+            <div class="w-full lg:w-1/2 bg-void p-8 md:p-10 rounded-xl border border-edge shadow-2xl">
+                <form class="space-y-6"> <!-- Vehicle Info Row -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Boat /
+                            Vehicle Info</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="relative"> <select
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    <option>Wake Boat</option>
+                                    <option>Pontoon</option>
+                                    <option>Jet Boat</option>
+                                    <option>ATV / UTV</option>
+                                    <option>Other</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </div> <input type="text" placeholder="Make & Model (e.g. MasterCraft X24)"
+                                class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full">
+                        </div>
+                    </div> <!-- System Goals -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">System
+                            Goals</label>
+                        <div class="grid grid-cols-2 gap-3"> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Marine Audio System
+                                    (Boat)</span>
+                            </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Wake Tower Speakers</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Powersports / Side-by-Side
+                                    Audio</span> </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">RGB Lighting Kit</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Marine Subwoofers</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Dual Battery Setup</span>
+                            </label>
+                        </div>
+                    </div> <!-- Contact Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2"> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                    </div> <!-- Goals/Notes -->
+                    <div> <label
+                            class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Notes</label>
+                        <textarea rows="3" placeholder="Need it done by May long weekend..."
+                            class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                    </div> <!-- Submit Button --> <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4">
+                        Request Marine Quote </button>
+    </section> <!-- STANDARD INVENTORY TEASER -->
+    <section class="bg-void py-20 border-t border-edge text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading font-bold text-3xl text-white mb-4">Browse Current Inventory.</h2>
+            <p class="font-body text-gray-400 mb-8">View our live selection of products and pricing.</p> <button
+                onclick="alert('Online purchasing coming soon. Please visit our showroom for current stock and pricing.')"
+                class="bg-edge text-gray-400 font-bold py-4 px-12 rounded-lg border border-gray-700 cursor-not-allowed hover:bg-edge/80 transition-all">
+                Shop Now ?? </button>
+            <p class="font-body text-xs text-gray-600 mt-6 uppercase tracking-widest">Online purchasing coming soon.
+                Visit us in-store today.</p>
+        </div>
+    </section> <!-- ? FOOTER PLACEHOLDER - DO NOT EDIT ? -->
+    <div id="footer-placeholder"></div>
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-40 bg-void transform translate-x-full transition-transform duration-500 ease-out flex flex-col h-[100dvh]">
+        <!-- HEADER (Inside Overlay) -->
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-void shrink-0"> <span
+                class="text-gray-500 text-xs font-body tracking-widest uppercase">Audio. Video. Unlimited.</span>
+            <!-- Close Button connects to same toggle logic --> <button id="mobile-menu-close"
+                class="text-white p-2 focus:outline-none"> <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg> </button> </div> <!-- CONTENT (Scrollable) -->
+        <div class="overflow-y-auto flex-1 p-6 space-y-8 pb-32"> <!-- ACCORDION 1: DEPARTMENTS -->
+            <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                <summary
+                    class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                    Departments <svg
+                        class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg> </summary>
+                <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/car-audio.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Car Audio & Starters</a> <a
+                        href="/marine-audio.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Marine & Powersports</a> <a
+                        href="/home-audio.html" class="block text-gray-400 hover:text-white transition-colors py-1">Home
+                        Audio & Hi-Fi</a> <a href="/tv-video.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">TV & Cinema</a> <a
+                        href="/brands.html" class="block text-gray-400 hover:text-white transition-colors py-1">Our
+                        Brands</a> </div>
+            </details> <!-- ACCORDION 2: SERVICES -->
+            <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                <summary
+                    class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                    Services <svg
+                        class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg> </summary>
+                <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/services-residential.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Residential Integration</a>
+                    <a href="/services-office.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Office & Boardroom</a> <a
+                        href="/services-retail.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Retail & Hospitality</a> <a
+                        href="/services-car-audio.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Vehicle Installations</a>
+                </div>
+            </details> <!-- ACCORDION 3: SUPPORT -->
+            <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                <summary
+                    class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                    Support <svg
+                        class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg> </summary>
+                <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/financing.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Financing Application</a> <a
+                        href="/protection-plan.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Guaranteed Protection</a> <a
+                        href="/return-policy.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Return Policy</a> <a
+                        href="/privacy-statement.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Privacy Statement</a> </div>
+            </details> <!-- SECTION 4: VISIT US -->
+            <div class="space-y-6 pt-2">
+                <div class="space-y-3"> <a href="/about.html"
+                        class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">About
+                        Echo AVU</a>
+                    <a href="/dream-home.html"
+                        class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">Rotary
+                        Dream Home</a> <a href="/contact.html"
+                        class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">Contact
+                        Support</a>
+                </div>
+                <div class="space-y-4 pt-4 border-t border-white/5">
+                    <div>
+                        <p class="text-gray-400 text-sm">11101 100 St</p>
+                        <p class="text-gray-400 text-sm">Grande Prairie, AB T8V 2N2</p> <a
+                            href="https://maps.google.com/?q=11101+100+St,+Grande+Prairie,+AB+T8V+2N2" target="_blank"
+                            class="inline-block mt-2 text-echoRed font-bold text-sm tracking-wide uppercase hover:text-white transition-colors">
+                            Get Directions &rarr; </a>
+                    </div> <a href="tel:7805381333"
+                        class="block text-3xl font-heading font-bold text-white hover:text-echoRed transition-colors">
+                        (780) 538-1333 </a>
+                </div>
+            </div>
+            <!-- MAIN JS (Global logic + Scroll Effects) -->
+            <script type="module" src="/main.js"></script>
+            <!-- Slideshow Script -->
+            <script>
+                // Slideshow functionality for marine-audio.html
+                function initMarineSlideshows() {
+                    console.log('🎬 Initializing marine slideshows...');
+
+                    // Bratt Jett slideshow
+                    initSlideshow('.brattjett-slideshow', '.marine-slideshow-image', 3000);
+                    // Can-Am slideshow
+                    initSlideshow('.canam-slideshow', '.marine-slideshow-image', 3000);
+                }
+
+                function initSlideshow(containerSelector, imageSelector, interval = 3000) {
+                    const container = document.querySelector(containerSelector);
+                    if (!container) {
+                        console.warn(`⚠️ Slideshow container not found: ${containerSelector}`);
+                        return;
+                    }
+
+                    const images = container.querySelectorAll(imageSelector);
+                    console.log(`✅ Found ${images.length} images in ${containerSelector}`);
+
+                    if (images.length <= 1) {
+                        console.warn(`⚠️ Not enough images for slideshow in ${containerSelector}`);
+                        return;
+                    }
+
+                    let currentIndex = 0;
+
+                    function showNextImage() {
+                        // Remove active class from current image
+                        images[currentIndex].classList.remove('active');
+
+                        // Move to next image
+                        currentIndex = (currentIndex + 1) % images.length;
+
+                        // Add active class to new current image
+                        images[currentIndex].classList.add('active');
+
+                        console.log(`📸 ${containerSelector} showing image ${currentIndex + 1}/${images.length}`);
+                    }
+
+                    // Start the slideshow
+                    console.log(`🚀 Starting slideshow for ${containerSelector} (${interval}ms interval)`);
+                    setInterval(showNextImage, interval);
+                }
+
+                // Initialize when DOM is ready
+                if (document.readyState === 'loading') {
+                    console.log('⏳ Waiting for DOM to load...');
+                    document.addEventListener('DOMContentLoaded', initMarineSlideshows);
+                } else {
+                    console.log('✅ DOM already loaded, initializing immediately');
+                    initMarineSlideshows();
+                }
+            </script>
+            <!-- ? GLOBAL COMPONENT LOADER - REQUIRED ? -->
+            <script src="global-loader.js"></script>
+
+</body>
+
+</html>

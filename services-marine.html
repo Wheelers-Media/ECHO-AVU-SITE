@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marine & Powersports Integration | Echo AVU</title>
+    <meta name="description"
+        content="Professional marine and powersports audio installation. Purpose-built systems that withstand the elements." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: '#000000',
+                        carbon: '#0A0A0A',
+                        edge: '#1F1F1F',
+                        echoRed: '#D60000',
+                        echoBlue: '#2563EB',
+                        textMain: '#FFFFFF',
+                        textBody: '#CCCCCC',
+                    },
+                    fontFamily: {
+                        heading: ['Manrope', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Accordion Styles */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+        <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+<!-- HERO SECTION -->
+    <section class="relative h-[60vh] flex items-center justify-center bg-void border-b border-edge overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-[url('/assets/Marine/marine-service-hero.jpg')] bg-cover bg-center bg-bottom opacity-20"
+            style="object-position: center bottom;">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-void z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-6 uppercase tracking-tight leading-none">
+                MARINE & POWERSPORTS<br />INTEGRATION.
+            </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
+                Conquer the elements. High-performance audio that cuts through wind, water, and engine noise.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 1: MARINE AUDIO SYSTEMS (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Marine Audio.</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        The marine environment is harsh. UV rays, saltwater, and humidity destroy standard car audio
+                        gear in months. We install purpose-built marine systems designed to last.
+                    </p>
+                </div>
+                <img src="assets/Marine/marine-audio-install.jpg" alt="Marine audio installation"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        We can help you determine the right system for your hull.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Will This Drain My Battery?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        We design systems with dual-battery isolation switches. This allows you to play music while
+                        anchored without worrying about your engine starting battery dying.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        What Is The Difference Between Car and Marine Audio?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Marine gear is conformal coated to protect circuit boards from corrosion and uses UV-resistant
+                        materials that won't crack or fade in the sun.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Tower Speakers vs. Cabin Speakers
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Tower speakers project sound 50+ feet behind the boat for wakeboarders, while cabin speakers
+                        fill the cockpit. A good system balances both.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: POWERSPORTS & SIDE-BY-SIDES (bg-void) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Powersports Integration.</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        From Polaris RZRs to Can-Am X3s. We install roof soundbars, under-seat subwoofers, and
+                        kick-panel speakers that can withstand mud, snow, and pressure washing.
+                    </p>
+                </div>
+                <img src="assets/Marine/sxs-install.jpg" alt="Side-by-side audio installation"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div data-scroll-spotlight class="bg-carbon border border-edge p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        Get a quote for your machine.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Can I Pressure Wash My Interior?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes. We install IPX6 and IP67 rated equipment designed to handle direct water spray, mud, and
+                        rigorous cleaning.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Roof Mount vs. Dash Mount?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Roof systems stay cleaner and project sound better at speed, while dash/kick-panel systems
+                        provide better mid-bass response. We often combine both.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Do You Work On Sleds/Snowmobiles?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes. We have compact, high-output systems designed for cold-weather reliability.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: LIGHTING & CUSTOM FABRICATION (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Lighting & Custom Fab.</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Stand out on the water or the trail. We specialize in RGB LED integration and custom fabrication
+                        for boats that don't have factory speaker locations.
+                    </p>
+                </div>
+                <img src="assets/Marine/marine-lighting.jpg" alt="Marine RGB lighting"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        Light up the night.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        How Do I Control The Lights?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        We install dedicated RGB controllers that link to your smartphone or a dash-mounted dial,
+                        letting you sync lights to the music or choose any color.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Do You Install Underwater Lights?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes. High-output transom lights are one of our most popular upgrades for wake boats.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Custom Fab Panels
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        If your boat doesn't have a spot for a sub or 8-inch speakers, we fabricate custom fiberglass or
+                        HDPE panels that look factory-installed.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE ESTIMATE FORM -->
+    <section id="estimate-form" class="bg-void py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Get
+                    Started</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white">Begin Your Estimate.</h2>
+            </div>
+            <div class="bg-carbon border border-edge rounded-xl p-8 md:p-12 shadow-2xl" data-scroll-spotlight>
+                <form class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <!-- Phone -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <!-- Budget Range -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Budget
+                                Range</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    <option>Under $2,500</option>
+                                    <option>$2,500 - $7,500</option>
+                                    <option>$7,500 - $15,000</option>
+                                    <option>$15,000 - $30,000</option>
+                                    <option>$30,000+</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Type -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">I'm
+                            Interested In</label>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Marine
+                                    Audio</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">SxS /
+                                    Powersports</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Lighting</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Dual Battery
+                                    Setup</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Fabrication</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Tuning</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Project
+                            Details</label>
+                        <textarea rows="4" placeholder="Tell us about your boat or machine..."
+                            class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Request Estimate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    
+</nav>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+        const mobileServicesMenu = document.getElementById('mobile-services-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuOverlay.classList.toggle('translate-x-full');
+        });
+
+        mobileServicesToggle.addEventListener('click', () => {
+            mobileServicesMenu.classList.toggle('hidden');
+            mobileServicesMenu.classList.toggle('flex');
+            mobileServicesToggle.querySelector('svg').classList.toggle('rotate-180');
+        });
+    </script>
+
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+        <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+    <script type="module" src="/main.js"></script>
+    <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+    <script src="global-loader.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Connected Cockpit | Echo AVU</title>
+    <meta name="description"
+        content="Reference-level car audio, remote starts, and dashboard integration in Grande Prairie." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet"> <!-- Use Global Brand Kit Config -->
+    <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
+    <style>
+        /* F-250 Slideshow Fade Effect */
+        .slideshow-image {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slideshow-image.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+    <!-- SECTION 1: THE HERO -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-void">
+        <!-- Dark Gradient Overlay --> <!-- Background Image -->
+        <div class="absolute inset-0 bg-[url('/assets/car-audio/car-audio-hero.jpg')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-void z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl text-white mb-8 uppercase tracking-tight leading-none drop-shadow-2xl">
+                The Connected<br /><span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-500">Cockpit.</span>
+            </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
+                Reference-level audio and seamless dashboard integration for Grande Prairie's discerning drivers.
+            </p> <a href="#build-sheet"
+                class="inline-block bg-white hover:bg-gray-200 text-black font-bold py-4 px-10 rounded transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                Quote Your Vehicle </a>
+        </div> <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce"> <svg
+                class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg> </div>
+    </section> <!-- SECTION 2: THE PERFORMANCE TRIAD -->
+    <section id="packages" class="bg-carbon py-24 px-6 border-b border-edge relative z-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- Card 1: Comfort & Climate -->
+                <div data-scroll-spotlight
+                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-echoRed/50 [&.in-view]:border-echoRed/50 transition-all duration-300 hover:-translate-y-2 [&.in-view]:-translate-y-2">
+                    <div
+                        class="text-echoRed mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+                        <!-- Thermometer Icon --> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" />
+                            <path d="M3.51 9a9 9 0 1 1 14.13.09" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-4">Acoustic Precision</h3>
+                    <p
+                        class="text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+                        Engineered sound staging and digital signal processing for concert-hall clarity in your vehicle.
+                    </p>
+                </div> <!-- Card 2: High-Fidelity Audio -->
+                <div data-scroll-spotlight
+                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-echoRed/50 [&.in-view]:border-echoRed/50 transition-all duration-300 hover:-translate-y-2 [&.in-view]:-translate-y-2">
+                    <div
+                        class="text-echoRed mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+                        <!-- Speaker Wave Icon --> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 5L6 9H2v6h4l5 4V5Z" />
+                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-4">High-Fidelity Audio</h3>
+                    <p
+                        class="text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+                        Studio-grade sound in your vehicle. Custom fabrication, DSP tuning, and stealth subwoofer
+                        enclosures. </p>
+                </div> <!-- Card 3: Safety & Connectivity -->
+                <div data-scroll-spotlight
+                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/50 [&.in-view]:border-white/50 transition-all duration-300 hover:-translate-y-2 [&.in-view]:-translate-y-2">
+                    <div
+                        class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+                        <!-- Shield/Tech Icon --> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                            <path d="M12 8a2 2 0 0 1 0 4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-4">Safety & Connectivity</h3>
+                    <p
+                        class="text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+                        Upgrade your dash with Apple CarPlay®, Android Auto®, and backup cameras without losing factory
+                        settings. </p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- SECTION 3: THE ECHO INSTALL STANDARD -->
+    <section class="bg-void py-0 border-b border-edge">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row"> <!-- Text Content -->
+            <div class="w-full md:w-1/2 py-24 px-6 md:pr-16 flex flex-col justify-center"> <span
+                    class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold">The Echo
+                    Standard</span>
+                <h2 class="font-heading font-extrabold text-3xl md:text-5xl text-white mb-8">Factory-Safe Integration.
+                </h2>
+                <div class="space-y-6 text-gray-400 leading-relaxed">
+                    <p> The #1 concern we hear is: <span class="text-white italic">"Will this void my warranty?"</span>
+                        The answer is no. </p>
+                    <p> We use T-Harness integration and soldered connections to ensure your vehicle's computer systems
+                        remain untouched and fully protected. We treat your vehicle like it's our own. </p>
+                </div> <!-- Bullet Points -->
+                <ul class="mt-10 space-y-4">
+                    <li class="flex items-center gap-4 text-white font-medium">
+                        <div class="w-8 h-8 rounded-full bg-edge flex items-center justify-center text-green-500"> <svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg> </div> Certified Technicians
+                    </li>
+                    <li class="flex items-center gap-4 text-white font-medium">
+                        <div class="w-8 h-8 rounded-full bg-edge flex items-center justify-center text-green-500"> <svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg> </div> Soldered & Heat-Shrunk Connections
+                    </li>
+                    <li class="flex items-center gap-4 text-white font-medium">
+                        <div class="w-8 h-8 rounded-full bg-edge flex items-center justify-center text-green-500"> <svg
+                                class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg> </div> Lifetime Labor Warranty
+                    </li>
+                </ul>
+            </div> <!-- Image Side -->
+            <div
+                class="w-full md:w-1/2 bg-edge min-h-[400px] md:min-h-full flex items-center justify-center relative overflow-hidden">
+                <img src="/assets/car-audio/factory-safe-integration.jpg" alt="Factory-Safe Car Audio Integration"
+                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-bl from-echoRed/20 to-transparent"></div>
+            </div>
+        </div>
+    </section> <!-- SECTION 4: BRAND AUTHORITY -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-10">Powered by the Best</p>
+            <div
+                class="flex flex-wrap md:flex-nowrap items-center justify-center gap-6 md:gap-8 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <img src="/assets/brands/JLAudio.png" alt="JL Audio"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/alpine.png" alt="Alpine"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/kenwood.png" alt="Kenwood"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/pioneer.png" alt="Pioneer"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Kicker-Logo-Vector.png" alt="Kicker"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Helix_Logo.png" alt="Helix"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Blam.png" alt="Blam"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Arc audio.png" alt="Arc Audio"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Boss.png" alt="Boss"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Dynamat.png" alt="Dynamat"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Ground zero.png" alt="Ground Zero"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="\assets\brands\Memphis-Logo.png" alt="Memphis"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/MTI.png" alt="MTI"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/pac audio.png" alt="PAC Audio"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Thinkware.png" alt="Thinkware"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Uniden.png" alt="Uniden"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Wavetech.png" alt="Wavtech"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/escort.png" alt="Escort"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+                <img src="/assets/brands/Radenso_Logo.png" alt="Radenso"
+                    class="h-8 md:h-10 w-auto object-contain hover:brightness-125">
+            </div>
+        </div>
+    </section> <!-- SECTION 5: PROJECT SPOTLIGHT -->
+    <section class="bg-void py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading font-bold text-3xl md:text-5xl text-white mb-16 text-center">Recent Transformations.
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <!-- Project 1 - F-250 with Slideshow -->
+                <div data-scroll-spotlight
+                    class="group relative aspect-[4/3] bg-carbon border border-edge rounded-xl overflow-hidden cursor-pointer">
+                    <!-- Image Slideshow Container -->
+                    <div class="absolute inset-0 f250-slideshow"> <img src="/assets/car-audio/f-250-custom.jpg"
+                            alt="1974 Ford F-250 Custom Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover slideshow-image active"
+                            style="object-position: center;"> <img src="/assets/car-audio/f-250-custom2.jpg"
+                            alt="1974 Ford F-250 Custom Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover slideshow-image"
+                            style="object-position: center;"> <img src="/assets/car-audio/f-250-custom3.jpg"
+                            alt="1974 Ford F-250 Custom Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover slideshow-image"
+                            style="object-position: center;"> <img src="/assets/car-audio/f-250-custom4.jpg"
+                            alt="1974 Ford F-250 Custom Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover slideshow-image"
+                            style="object-position: center;"> </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 flex flex-col justify-end z-10">
+                        <h3
+                            class="text-white font-heading font-bold text-2xl mb-2 translate-y-2 group-hover:translate-y-0 group-[.in-view]:translate-y-0 transition-transform duration-300">
+                            1974 Ford F-250 Custom</h3>
+                        <p
+                            class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity duration-300 delay-100">
+                            Period-correct Autosound radio, JL C2 speakers, and Memphis 8" powered sub. Full restoration
+                            with precision speaker fabrication.</p>
+                    </div>
+                </div> <!-- Project 2 - F-150 with Slideshow -->
+                <div data-scroll-spotlight
+                    class="group relative aspect-[4/3] bg-carbon border border-edge rounded-xl overflow-hidden cursor-pointer">
+                    <!-- Image Slideshow Container -->
+                    <div class="absolute inset-0 f150-slideshow"> <img src="/assets/car-audio/f-150.jpg"
+                            alt="2018 Ford F-150 Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover slideshow-image active"
+                            style="object-position: center;"> <img src="/assets/car-audio/f150-2.jpg"
+                            alt="2018 Ford F-150 Audio Build"
+                            class="absolute inset-0 w-full h-full object-cover slideshow-image"
+                            style="object-position: center;"> </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-8 flex flex-col justify-end z-10">
+                        <h3
+                            class="text-white font-heading font-bold text-2xl mb-2 translate-y-2 group-hover:translate-y-0 group-[.in-view]:translate-y-0 transition-transform duration-300">
+                            2018 Ford F-150</h3>
+                        <p
+                            class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity duration-300 delay-100">
+                            Vehicle-specific Qluxe enclosure housing dual 10" Helix IKS10 shallow subwoofers for
+                            precision low-end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- SECTION 6: THE BUILD SHEET -->
+    <section id="build-sheet" class="bg-carbon border-t border-edge py-24 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start"> <!-- LEFT COLUMN: The Promise -->
+            <div class="w-full lg:w-1/2 pt-4"> <span
+                    class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Start Your
+                    Build</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white mb-6">Let's spec your vehicle.
+                </h2>
+                <p class="font-body text-gray-400 text-lg mb-10 leading-relaxed font-light"> Tell us about your vehicle.
+                    Our technicians will review your specs and design a package that guarantees factory-safe
+                    integration. </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-white font-medium"> <svg class="w-5 h-5 text-echoRed"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg> Verified Compatibility Check </li>
+                    <li class="flex items-center gap-3 text-white font-medium"> <svg class="w-5 h-5 text-echoRed"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg> T-Harness Integration Plan </li>
+                    <li class="flex items-center gap-3 text-white font-medium"> <svg class="w-5 h-5 text-echoRed"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg> Accurate Quote (No Surprise Fees) </li>
+                </ul>
+            </div> <!-- RIGHT COLUMN: The Form -->
+            <div class="w-full lg:w-1/2 bg-void p-8 md:p-10 rounded-xl border border-edge shadow-2xl">
+                <form class="space-y-6"> <!-- Vehicle Info Row -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Vehicle
+                            Information</label>
+                        <div class="grid grid-cols-3 gap-4"> <input type="text" placeholder="Year"
+                                class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full appearance-none">
+                            <input type="text" placeholder="Make"
+                                class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full appearance-none">
+                            <input type="text" placeholder="Model"
+                                class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full appearance-none">
+                        </div>
+                    </div> <!-- System Interest -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">System
+                            Interest</label>
+                        <div class="grid grid-cols-2 gap-3"> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Component Speakers</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Subwoofer Bass Package</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Custom Fabrication
+                                    (A-Pillars/Trunk)</span>
+                            </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">DSP Tuning</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Sound Deadening</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">CarPlay / Android Auto
+                                    Deck</span>
+                            </label>
+                        </div>
+                    </div> <!-- Contact Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                    </div> <!-- Goals/Notes -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Build Goals
+                            / Notes</label> <textarea rows="3" placeholder="I'm looking for..."
+                            class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                    </div> <!-- Submit Button --> <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4">
+                        Submit Build Request </button>
+                    <p class="text-xs text-center text-gray-600 mt-4 italic"> No commitment required. We'll reply within
+                        24 hours. </p>
+                </form>
+            </div>
+        </div>
+    </section> <!-- STANDARD INVENTORY TEASER -->
+    <section class="bg-void py-20 border-t border-edge text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading font-bold text-3xl text-white mb-4">Browse Current Inventory.</h2>
+            <p class="font-body text-gray-400 mb-8">View our live selection of products and pricing.</p> <button
+                onclick="alert('Online purchasing coming soon. Please visit our showroom for current stock and pricing.')"
+                class="bg-edge text-gray-400 font-bold py-4 px-12 rounded-lg border border-gray-700 cursor-not-allowed hover:bg-edge/80 transition-all">
+                Shop Now ?? </button>
+            <p class="font-body text-xs text-gray-600 mt-6 uppercase tracking-widest">Online purchasing coming soon.
+                Visit us in-store today.</p>
+        </div>
+    </section> <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+    <script>        // Car Audio Slideshows Script        document.addEventListener('DOMContentLoaded', function () {            // F-250 Slideshow (4 images)            const f250Images = document.querySelectorAll('.f250-slideshow .slideshow-image');            let f250Index = 0;            function showNextF250() {                if (f250Images.length > 0) {                    f250Images[f250Index].classList.remove('active');                    f250Index = (f250Index + 1) % f250Images.length;                    f250Images[f250Index].classList.add('active');                }            }            // F-150 Slideshow (2 images)            const f150Images = document.querySelectorAll('.f150-slideshow .slideshow-image');            let f150Index = 0;            function showNextF150() {                if (f150Images.length > 0) {                    f150Images[f150Index].classList.remove('active');                    f150Index = (f150Index + 1) % f150Images.length;                    f150Images[f150Index].classList.add('active');                }            }            // Start both slideshows            if (f250Images.length > 0) {                setInterval(showNextF250, 2000);            }            if (f150Images.length > 0) {                setInterval(showNextF150, 2000);            }        });    </script>
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-40 bg-void transform translate-x-full transition-transform duration-500 ease-out flex flex-col h-[100dvh]">
+        <!-- HEADER (Inside Overlay) -->
+        <div class="flex items-center justify-between p-6 border-b border-white/10 bg-void shrink-0"> <span
+                class="text-gray-500 text-xs font-body tracking-widest uppercase">Audio. Video. Unlimited.</span>
+            <!-- Close Button connects to same toggle logic --> <button id="mobile-menu-close"
+                class="text-white p-2 focus:outline-none"> <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg> </button> </div> <!-- CONTENT (Scrollable) -->
+        <div class="overflow-y-auto flex-1 p-6 space-y-8 pb-32"> <!-- ACCORDION 1: DEPARTMENTS -->
+            <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                <summary
+                    class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                    Departments <svg
+                        class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg> </summary>
+                <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/car-audio.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Car Audio & Starters</a>
+                    <a href="/car-starters.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Remote Starters</a> <a
+                        href="/marine-audio.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Marine & Powersports</a> <a
+                        href="/home-audio.html" class="block text-gray-400 hover:text-white transition-colors py-1">Home
+                        Audio & Hi-Fi</a> <a href="/tv-video.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">TV & Cinema</a>
+                    <a href="/surveillance.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Surveillance</a> <a
+                        href="/brands.html" class="block text-gray-400 hover:text-white transition-colors py-1">Our
+                        Brands</a>
+                </div>
+            </details> <!-- ACCORDION 2: SERVICES -->
+            <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                <summary
+                    class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                    Services <svg
+                        class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg> </summary>
+                <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/services-residential.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Residential Integration</a>
+                    <a href="/services-office.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Office & Boardroom</a> <a
+                        href="/services-retail.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Retail & Hospitality</a> <a
+                        href="/services-car-audio.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Vehicle Installations</a>
+                </div>
+            </details> <!-- ACCORDION 3: SUPPORT -->
+            <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                <summary
+                    class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                    Support <svg
+                        class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg> </summary>
+                <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/financing.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Financing Application</a> <a
+                        href="/protection-plan.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Guaranteed Protection</a> <a
+                        href="/return-policy.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Return Policy</a> <a
+                        href="/privacy-statement.html"
+                        class="block text-gray-400 hover:text-white transition-colors py-1">Privacy Statement</a> </div>
+            </details> <!-- SECTION 4: VISIT US -->
+            <div class="space-y-6 pt-2">
+                <div class="space-y-3"> <a href="/about.html"
+                        class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">About
+                        Echo AVU</a>
+                    <a href="/dream-home.html"
+                        class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">Rotary
+                        Dream Home</a> <a href="/contact.html"
+                        class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">Contact
+                        Support</a>
+                </div>
+                <div class="space-y-4 pt-4 border-t border-white/5">
+                    <div>
+                        <p class="text-gray-400 text-sm">11101 100 St</p>
+                        <p class="text-gray-400 text-sm">Grande Prairie, AB T8V 2N2</p> <a
+                            href="https://maps.google.com/?q=11101+100+St,+Grande+Prairie,+AB+T8V+2N2" target="_blank"
+                            class="inline-block mt-2 text-echoRed font-bold text-sm tracking-wide uppercase hover:text-white transition-colors">
+                            Get Directions &rarr; </a>
+                    </div> <a href="tel:7805381333"
+                        class="block text-3xl font-heading font-bold text-white hover:text-echoRed transition-colors">
+                        (780) 538-1333 </a>
+                </div>
+            </div>
+            <!-- MAIN JS (Global logic + Scroll Effects) -->
+            <script type="module" src="/main.js"></script>
+            <!-- Slideshow Script -->
+            <script>
+                // Slideshow functionality for car-audio.html
+                function initCarAudioSlideshows() {
+                    console.log('🎬 Initializing car audio slideshows...');
+
+                    // F-250 slideshow
+                    initSlideshow('.f250-slideshow', '.slideshow-image', 3000);
+                    // F-150 slideshow
+                    initSlideshow('.f150-slideshow', '.slideshow-image', 3000);
+                }
+
+                function initSlideshow(containerSelector, imageSelector, interval = 3000) {
+                    const container = document.querySelector(containerSelector);
+                    if (!container) {
+                        console.warn(`⚠️ Slideshow container not found: ${containerSelector}`);
+                        return;
+                    }
+
+                    const images = container.querySelectorAll(imageSelector);
+                    console.log(`✅ Found ${images.length} images in ${containerSelector}`);
+
+                    if (images.length <= 1) {
+                        console.warn(`⚠️ Not enough images for slideshow in ${containerSelector}`);
+                        return;
+                    }
+
+                    let currentIndex = 0;
+
+                    function showNextImage() {
+                        // Remove active class from current image
+                        images[currentIndex].classList.remove('active');
+
+                        // Move to next image
+                        currentIndex = (currentIndex + 1) % images.length;
+
+                        // Add active class to new current image
+                        images[currentIndex].classList.add('active');
+
+                        console.log(`📸 ${containerSelector} showing image ${currentIndex + 1}/${images.length}`);
+                    }
+
+                    // Start the slideshow
+                    console.log(`🚀 Starting slideshow for ${containerSelector} (${interval}ms interval)`);
+                    setInterval(showNextImage, interval);
+                }
+
+                // Initialize when DOM is ready
+                if (document.readyState === 'loading') {
+                    console.log('⏳ Waiting for DOM to load...');
+                    document.addEventListener('DOMContentLoaded', initCarAudioSlideshows);
+                } else {
+                    console.log('✅ DOM already loaded, initializing immediately');
+                    initCarAudioSlideshows();
+                }
+            </script>
+            <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+            <script src="global-loader.js"></script>
+
+</body>
+
+</html>

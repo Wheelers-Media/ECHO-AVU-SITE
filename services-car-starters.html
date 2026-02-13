@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Car Starters | Installation | Echo AVU</title>
+    <meta name="description"
+        content="Professional remote car starter installation. Warranty-safe factory integration, long-range remotes, and smartphone control." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: '#000000',
+                        carbon: '#0A0A0A',
+                        edge: '#1F1F1F',
+                        echoRed: '#D60000',
+                        echoBlue: '#2563EB',
+                        textMain: '#FFFFFF',
+                        textBody: '#CCCCCC',
+                    },
+                    fontFamily: {
+                        heading: ['Manrope', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Accordion Styles */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[60vh] flex items-center justify-center overflow-hidden bg-void">
+        <!-- Hero Background Image -->
+        <img src="/assets/remote start/remote-start-hero.jpg" alt="Remote Car Starter"
+            class="absolute inset-0 w-full h-full object-cover">
+        <!-- Simple black overlay for text readability -->
+        <div class="absolute inset-0 bg-black/90 z-10"></div>
+
+        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-6 uppercase tracking-tight leading-none">
+                Remote Car<br />Starters.
+            </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
+                Defeat the cold. Professional installation that keeps your factory warranty intact.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 1: WARRANTY & SAFETY (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column: Pitch -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">The #1
+                        Concern</span>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Warranty & Safety</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        We use T-Harness factory integration and soldered connections, not quick taps that can
+                        corrode or loosen over time. This means we're connecting to your vehicle's existing wiring
+                        harness at specific junction points, not cutting into factory wires.
+                    </p>
+                    <p class="text-white font-bold text-lg mb-4">
+                        This method is approved by vehicle manufacturers and will NOT void your warranty.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        The Magnuson-Moss Warranty Act protects you. A dealer cannot void your warranty simply because
+                        you added an aftermarket remote starter, unless they can prove that specific component caused
+                        the failure.
+                    </p>
+                </div>
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        All installations include a lifetime warranty on workmanship. We stand behind every connection.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: FAQs -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Will this void my factory warranty?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        No. Thanks to the Magnuson-Moss Warranty Act (consumer protection law in Canada and the USA),
+                        your dealership cannot void your warranty unless they can prove the remote starter caused the
+                        failure. We use factory-approved integration methods (T-harness connections) specifically to
+                        preserve your coverage.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        How long does installation take?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Most installations take 3-5 hours depending on the vehicle. Complex vehicles (diesels, manuals,
+                        or push-to-start systems) may take longer due to additional safety sensors and module
+                        programming. We'll give you an accurate timeframe during your consultation.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Is it safe for my vehicle?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Absolutely. Modern remote starters have multiple safety features: brake pressure sensors
+                        (manual transmissions), hood pin switches, tach-based anti-grind protection, and parking brake
+                        detection. The system will not start if any safety condition is violated.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: LONG RANGE & SMARTPHONE CONTROL (bg-void) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column: Pitch -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Stay
+                        Connected</span>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Long Range & Smartphone Control</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        2-Way Remotes give you confirmation feedback. When you press "start," the remote vibrates
+                        or beeps to confirm the vehicle started successfully. This is critical when you can't see your
+                        car from your office window.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        DroneMobile takes it further. Start your vehicle from anywhere using your smartphone.
+                        Unlimited range (as long as you have cell service). Get push notifications when the car starts,
+                        check the vehicle's status, or even unlock doors remotely.
+                    </p>
+                </div>
+                <img src="\assets\remote-start-service\dronemobile-app.webp" alt="Smartphone remote start app"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div data-scroll-spotlight class="bg-carbon border border-edge p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        Choose the remote system that fits your lifestyle, from basic 1-way to unlimited smartphone
+                        control.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: FAQs -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        What is the range on a remote starter?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        1-Way systems: Up to 1,500 feet (line of sight). <br>
+                        2-Way systems: Up to 3 miles (5 km) depending on the model and terrain. <br>
+                        DroneMobile (smartphone): Unlimited range, anywhere you have cell service.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Is there a monthly fee for the phone app?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes. DroneMobile (smartphone control) requires a subscription: typically $5-10 CAD/month or
+                        $50-100/year depending on the plan. This covers the cellular data connection between your phone
+                        and the vehicle. Standard remote controls (1-way/2-way) have NO monthly fees.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Can I control my starter from the factory key fob?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Some systems allow "OEM integration" where you can press Lock-Lock-Lock (3x) on your factory
+                        fob to start the vehicle. This is vehicle-dependent and requires a special module. Ask us about
+                        compatibility during your consultation.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: COMPLEX VEHICLES (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column: Pitch -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">We
+                        Specialize</span>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Complex Vehicles</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Diesels: Diesel engines need extra warm-up time and have glow plug cycles. We install
+                        diesel-specific modules that account for these requirements and won't strain your electrical
+                        system.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Manual Transmissions: We install brake pressure sensors and neutral safety switches to
+                        ensure the car cannot start unless it's in neutral with the parking brake engaged. This is a
+                        multi-step process, but we've done thousands of them safely.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Push-to-Start Vehicles: These require a bypass module that emulates the presence of your
+                        factory key fob inside the cabin. The module is encrypted and vehicle-specific for security.
+                    </p>
+                </div>
+                <img src="\assets\remote-start-service\diesel-truck-winter.webp" alt="Diesel truck in winter"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        No vehicle is too difficult. From lifted diesels to European luxury cars with encrypted
+                        systems, we handle it all.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: FAQs -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Can you do manual transmissions?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes! We install a "reservation mode" system with brake pressure sensors. Before you leave the
+                        vehicle, you put it in neutral, engage the parking brake, and press a button sequence. The
+                        system then "reserves" the ability to start remotely. If any door opens or the brake is
+                        pressed, the reservation cancels for safety.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Does it work with my Push-to-Start button?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes. We use a bypass module (like Fortin, iDatalink, or Compustar) that emulates your factory
+                        key fob's signal inside the vehicle. The module is vehicle-specific and encrypted for security.
+                        You still keep your factory key fob with you. It never stays in the car.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        What about European or luxury vehicles?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        We install remote starters on BMW, Mercedes, Audi, Volkswagen, and other European makes
+                        regularly. These vehicles often require specialized bypass modules and canbus integration, but
+                        we have the tools and training to do it right. Book a consultation to discuss your specific
+                        make/model.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE ESTIMATE FORM -->
+    <section id="estimate-form" class="bg-void py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Get
+                    Started</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white">Begin Your Estimate.</h2>
+            </div>
+
+            <div class="bg-carbon border border-edge rounded-xl p-8 md:p-12 shadow-2xl" data-scroll-spotlight>
+                <form class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <!-- Phone -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <!-- Vehicle Year/Make/Model -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Vehicle
+                                (Year/Make/Model)</label>
+                            <input type="text" placeholder="e.g. 2023 Ford F-150"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- System Type -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">I'm
+                            Interested In</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">1-Way
+                                    Starter</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">2-Way
+                                    Starter</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">DroneMobile /
+                                    App</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Alarm
+                                    Combo</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Additional
+                            Details</label>
+                        <textarea rows="4"
+                            placeholder="Let us know about your vehicle (manual transmission? diesel? push-to-start?) or any special requests..."
+                            class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Request Estimate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+    <script type="module" src="/main.js"></script>
+    <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+    <script src="global-loader.js"></script>
+</body>
+
+</html>

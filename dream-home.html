@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotary Dream Home Partnership | Echo AVU</title>
+    <meta name="description"
+        content="For nearly 20 years, Echo AVU has served as the exclusive technology partner for the Rotary Dream Home Lottery in Grande Prairie." />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: '#000000',
+                        carbon: '#0A0A0A',
+                        edge: '#1F1F1F',
+                        echoRed: '#D60000',
+                        echoBlue: '#2563EB',
+                        dreamGreen: '#00ab67',
+                        dreamGreenLight: '#74c69d',
+                        dreamGreenPale: '#b9e0ca',
+                        rotaryGold: '#F4C542',
+                        textMain: '#FFFFFF',
+                        textBody: '#CCCCCC',
+                    },
+                    fontFamily: {
+                        heading: ['Manrope', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+    <!-- SECTION 1: HERO (The Legacy) -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-void">
+        <!-- Background Image with Overlay -->
+        <div
+            class="absolute inset-0 bg-[url('/assets/dream-home/1330_2026-DHL_UHC-Brynn-LHG-10-25-2024_IMAGE-6-Photo-scaled.jpg')] bg-cover bg-center">
+        </div>
+        <div class="absolute inset-0 bg-black/80 z-10"></div>
+
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
+            <!-- Rotary Badge -->
+            <div
+                class="inline-block mb-8 px-6 py-3 bg-dreamGreen/20 backdrop-blur-sm border border-dreamGreen/40 rounded-full">
+                <p class="text-dreamGreen font-bold text-sm uppercase tracking-widest">Proud Partner: Rotary Club of
+                    Grande Prairie</p>
+            </div>
+
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl text-white mb-8 uppercase tracking-tight leading-none drop-shadow-2xl">
+                Building Dreams <br><span class="text-dreamGreen drop-shadow-lg">Since 2006.</span>
+            </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
+                For nearly 20 years, Echo AVU has served as the Bronze Sponsor and exclusive technology partner for the
+                Rotary Dream Home Lottery.
+            </p>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- SECTION 2: THE PHILOSOPHY (The "Living Showroom") -->
+    <section class="bg-carbon py-24 px-6 border-y border-edge">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <!-- Text Side -->
+                <div class="w-full md:w-1/2 py-12">
+                    <span class="text-dreamGreen font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Our
+                        Philosophy</span>
+                    <h2 class="font-heading font-extrabold text-3xl md:text-5xl text-white mb-8">More Than Just a Show
+                        Home.</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        The Dream Home is our <strong class="text-white">"Living Showroom."</strong> It allows us to
+                        demonstrate how technology integrates into architectural design.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        From the early days of dedicated "Man Cave" theaters to today's invisible whole-home automation
+                        and golf simulators, the Dream Home proves that technology isn't just seen. <strong
+                            class="text-white">It's experienced.</strong>
+                    </p>
+                </div>
+
+                <!-- Image Side -->
+                <div class="w-full md:w-1/2 bg-edge min-h-[400px] rounded-2xl overflow-hidden relative">
+                    <img src="\assets\tv-video\dream home.jpg" alt="Living Showroom"
+                        class="w-full h-full object-cover opacity-90">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-void/40 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE EVOLUTION OF TECH (Timeline/Grid) -->
+    <section class="bg-void py-24 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-sm font-bold text-dreamGreen tracking-[0.2em] uppercase mb-4 text-center">20 Years of
+                Partnership</h2>
+            <p class="text-gray-400 text-center mb-16 text-3xl md:text-4xl font-heading font-bold text-white">Decades of
+                Innovation.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: The Cinema Era -->
+                <article data-scroll-spotlight
+                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-dreamGreen/50 [&.in-view]:border-dreamGreen/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-dreamGreen mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-3">The Cinema Era</h3>
+                    <p class="text-sm text-dreamGreen font-bold mb-4">2006-2015</p>
+                    <p class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        Bringing the movie theater home with dedicated projection rooms and 7.1 surround sound.
+                    </p>
+                </article>
+
+                <!-- Card 2: The Connected Home -->
+                <article data-scroll-spotlight
+                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-dreamGreenLight/50 [&.in-view]:border-dreamGreenLight/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-dreamGreenLight mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-3">The Connected Home</h3>
+                    <p class="text-sm text-dreamGreen font-bold mb-4">2016-2020</p>
+                    <p class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        Moving technology out of the basement. Multi-room audio, outdoor entertainment decks, and the
+                        rise of the "Smart Home".
+                    </p>
+                </article>
+
+                <!-- Card 3: The Invisible Era -->
+                <article data-scroll-spotlight
+                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/50 [&.in-view]:border-white/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-white mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl text-white mb-3">The Invisible Era</h3>
+                    <p class="text-sm text-dreamGreen font-bold mb-4">Today</p>
+                    <p class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        Technology that disappears. Hidden architectural speakers, automated shading, Golf Simulators,
+                        and voice-controlled lighting scenes.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: COMMUNITY IMPACT (The "Why") -->
+    <section class="bg-carbon py-24 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-extrabold text-3xl md:text-5xl text-white mb-6">Proceeds That Power Our
+                    Community.</h2>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+                    Your ticket purchase supports vital infrastructure in the Peace Region. We are proud to help fund:
+                </p>
+            </div>
+
+            <!-- Impact Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Impact 1: Healthcare -->
+                <div
+                    class="bg-void border border-edge p-8 rounded-xl text-center group hover:border-dreamGreen/50 transition-all duration-300">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-dreamGreen/10 rounded-full mb-6 group-hover:bg-dreamGreen/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dreamGreen" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">Healthcare</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The Ken Sargent House (Housing for hospital patients & families).
+                    </p>
+                </div>
+
+                <!-- Impact 2: Youth -->
+                <div
+                    class="bg-void border border-edge p-8 rounded-xl text-center group hover:border-dreamGreenLight/50 transition-all duration-300">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-dreamGreenLight/10 rounded-full mb-6 group-hover:bg-dreamGreenLight/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dreamGreenLight" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">Youth</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Camp Tamarack, D Company Armouries, & The Boys Choir.
+                    </p>
+                </div>
+
+                <!-- Impact 3: Safety -->
+                <div
+                    class="bg-void border border-edge p-8 rounded-xl text-center group hover:border-dreamGreenPale/50 transition-all duration-300">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-dreamGreenPale/10 rounded-full mb-6 group-hover:bg-dreamGreenPale/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-dreamGreenPale" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">Safety</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Daytime Shelter for the Homeless & Salvation Army Food Bank.
+                    </p>
+                </div>
+
+                <!-- Impact 4: Education -->
+                <div
+                    class="bg-void border border-edge p-8 rounded-xl text-center group hover:border-white/50 transition-all duration-300">
+                    <div
+                        class="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-6 group-hover:bg-white/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">Education</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Playground equipment for Ecole St. Gerard & Mother Teresa School.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+    </div>
+    </div>
+
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+    <script type="module" src="/main.js"></script>
+    <script>
+        // Mobile Menu Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('mobile-menu-toggle');
+            const closeBtn = document.getElementById('mobile-menu-close');
+            const overlay = document.getElementById('mobile-menu-overlay');
+            const body = document.body;
+
+            function toggleMenu() {
+                const isClosed = overlay.classList.contains('translate-x-full');
+                if (isClosed) {
+                    overlay.classList.remove('translate-x-full');
+                    if (toggleBtn) toggleBtn.classList.add('menu-open');
+                    body.style.overflow = 'hidden';
+                } else {
+                    overlay.classList.add('translate-x-full');
+                    if (toggleBtn) toggleBtn.classList.remove('menu-open');
+                    body.style.overflow = '';
+                }
+            }
+
+            if (toggleBtn) toggleBtn.addEventListener('click', toggleMenu);
+            if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+        });
+    </script>
+    <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+    <script src="global-loader.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Residential Integration | Echo AVU</title>
+    <meta name="description"
+        content="Transform your home entertainment experience. Expert installation for every scale." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
+    <style>
+        /* Custom Accordion Styles */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+    <!-- HERO SECTION -->
+    <section class="relative h-[60vh] flex items-center justify-center bg-void border-b border-edge overflow-hidden">
+        <!-- Background Image -->
+        <div
+            class="absolute inset-0 bg-[url('/assets/Residential%20Services/residential-services-hero.jpg')] bg-cover bg-[center_25%] opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-void z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-6 uppercase tracking-tight leading-none">
+                Residential<br />Integration. </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
+                Transform your home entertainment experience. Expert installation for every scale. </p>
+        </div>
+    </section> <!-- SECTION 1: SMALL SCALE PROJECTS (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Small Scale Projects</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Whether you're looking to enhance your sound with
+                        a new soundbar, elevate your gaming experience with high-quality computer speakers, or immerse
+                        yourself in the warm tones of vinyl with a turntable setup, we've got you covered. Our team
+                        ensures equipment is optimized for unparalleled audio quality and a seamless user experience.
+                    </p>
+                </div> <img src="assets/Residential Services/small-scale-projects.jpg"
+                    alt="Turntable and soundbar setup"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> We can help you determine what system will work for you and
+                        provide a budget range to help assist your planning. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Can
+                        you help me choose the right equipment? <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Absolutely! We understand that selecting
+                        the right audio-video equipment can be overwhelming. Our team of experts is here to guide you,
+                        taking into account your specific needs and budget. We'll recommend the best equipment to
+                        enhance your experience while staying within your desired price range. </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Do you
+                        offer ongoing support? <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Absolutely! We're committed to providing
+                        exceptional customer service even after the installation is complete. Whether you have questions
+                        or encounter issues, just give us a call, and we'll provide the support you need. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 2: HOME THEATRE (bg-void) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Home Theatre</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Take your family movie nights to the next level. A
+                        home theatre can take many forms, from a professionally mounted TV & soundbar that hides all
+                        wires, to a full multichannel surround sound system with an automated projector screen including
+                        in-wall and in-ceiling speakers. </p>
+                </div> <img src="assets/Residential Services/home-theatre.jpg" alt="Home cinema with projector screen"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div data-scroll-spotlight class="bg-carbon border border-edge p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> After decades of home theatre installations, our trained &
+                        certified installers have seen it all. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Should
+                        I Use A TV Or Projector? <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Both have pros and cons. What is the
+                        size of the room? How much ambient light is there? A dedicated theatre room that can be darkened
+                        favors a projector, whereas a living room with ambient light leans more towards a TV. </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> How
+                        Many Speakers Do I Need? <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Generally, the larger the room, the more
+                        speakers you can accommodate. However, quality takes precedence over quantity. Another factor is
+                        source compatibility (Netflix supports 5.1/Atmos, but apps via game consoles might not). </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> What
+                        Is Dolby Atmos? <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Dolby Atmos adds a height channel to
+                        create a 3D audio experience. Instead of hearing a helicopter go around you, you hear it go
+                        directly over your head via in-ceiling or upfiring speakers. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 3: HOME AUTOMATION (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Home Automation</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Smart home automation gives you peace of mind that
+                        your home is under control. Set your lighting, music, temperature and video to greet you with
+                        the perfect welcome. With one button your security system arms, lights go on, and temperature
+                        adjusts. </p>
+                </div> <img src="assets/Residential Services/home-automation.jpg"
+                    alt="Tablet controlling lights and shades"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> We can help you determine what type of automation system
+                        will work for you. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> What
+                        Are The Benefits Of A Smart Home? <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Keep an eye on things - from anywhere.
+                        Whether equipment or lights are left on, or unusual activity is detected, you'll always be in
+                        the know. It provides seamless control of your environment for safety, convenience, and energy
+                        efficiency. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 4: DISTRIBUTED AUDIO (bg-void) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Distributed Audio</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> A distributed audio system allows you to listen to
+                        sound from a central source throughout the house. This typically consists of installing speakers
+                        on the walls, ceiling, or underneath flooring; then routing signals through an amplifier to
+                        control volume levels in each room. </p>
+                </div> <img src="assets/Residential Services/distributed-audio.jpg"
+                    alt="In-ceiling speaker and wall controller"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div data-scroll-spotlight class="bg-carbon border border-edge p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> After decades of distributed audio installations, we can
+                        help you plan your budget. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Multi
+                        Channel Vs Multi Zone Audio <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> A multi-zone system gives you
+                        independent control over groups of speakers. For example, setting the volume in your living room
+                        at a different level than in your backyard requires a multi-zone system. </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Controlling Your System <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> We program your system so it's easy to
+                        control. Many find it easiest through a smartphone app. We also install wall switches to make
+                        changing audio sources a breeze - no more fumbling with multiple remotes! </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> How
+                        Many Speakers Do I Need? <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Ultimately this depends on ceiling
+                        height, whether you want audio to be the primary focus or background music, and your room
+                        layout/decor. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 5: DISTRIBUTED VIDEO (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Distributed Video</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Another benefit of distributed video is it allows
+                        for all the equipment to be stored in a closet, or somewhere out of sight. This will keep your
+                        home decor clean and free from the extra clutter of electronics. </p>
+                </div> <img src="assets/Residential Services/distributed-video-1.jpg"
+                    alt="TV mounted flush to wall with no wires"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> We can help you determine what type of video system will
+                        work for you. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> How do
+                        I control it? <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> For residential clients, many people
+                        find it easiest to control through a smartphone app or single unified remote control. We can
+                        also install wall switches to make changing video sources a breeze. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 6: HOME NETWORKING (bg-void) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Home Networking</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Ensuring your home has a strong and robust network
+                        is the single most important thing that we do. The network is the lifeblood that controls your
+                        distributed video, audio, security, and lighting automation. </p>
+                </div> <img src="assets/Residential Services/home-networking.jpg"
+                    alt="Enterprise grade wifi access point"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div data-scroll-spotlight class="bg-carbon border border-edge p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> After improving countless home networks, we can help you
+                        plan your connectivity budget. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> How
+                        Many Access Points Do I Need? <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Consider the size, layout, and
+                        construction (concrete floors? metal studs?). Also, the distance from the router to the furthest
+                        point. All these factors determine the number of WiFi access points needed. </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Does
+                        My ISP Matter? <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> As long as you are getting fast enough
+                        upload/download speeds, the choice is yours. We are familiar with all modems/routers and can
+                        work with any ISP. </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Are
+                        There Too Many Competing Networks? <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Interference is possible. We utilize
+                        hardware and software to generate a 'heat map' of the WiFi coverage in your home to ensure the
+                        least amount of interference. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 7: HOME SECURITY (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Home Security</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Keep your home safe and secure at all times. Check
+                        your door locks and cameras from across the street or across the globe. Receive alerts when
+                        someone authorized enters or exits your house. </p>
+                </div> <img src="assets/Residential Services/home-security.jpg" alt="Security camera view on phone"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> We can help you determine what type of security system will
+                        work for you. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> How
+                        Many Cameras Do I Need? <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Ultimately this depends on property
+                        size. Common areas include: Main entrances, secondary entrances/exits, garage, and outdoor
+                        areas. </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 8: THE ESTIMATE FORM -->
+    <section id="estimate-form" class="bg-void py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16"> <span
+                    class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Get
+                    Started</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white">Begin Your Estimate.</h2>
+            </div>
+            <div class="bg-carbon border border-edge rounded-xl p-8 md:p-12 shadow-2xl" data-scroll-spotlight>
+                <form class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> <!-- Name -->
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div> <!-- Email -->
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div> <!-- Phone -->
+                        <div> <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div> <!-- Budget Range -->
+                        <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Budget
+                                Range</label>
+                            <div class="relative"> <select
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    <option>Under $5,000</option>
+                                    <option>$5,000 - $15,000</option>
+                                    <option>$15,000 - $40,000</option>
+                                    <option>$40,000 - $100,000</option>
+                                    <option>$100,000+</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg> </div>
+                            </div>
+                        </div>
+                    </div> <!-- Project Type -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">I'm
+                            Interested In</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4"> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Small Scale</span>
+                            </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Home
+                                    Theatre</span> </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Automation</span>
+                            </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Distributed
+                                    Audio</span> </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Distributed
+                                    Video</span> </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Home
+                                    Networking</span> </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Security</span>
+                            </label> <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Other</span>
+                            </label> </div>
+                    </div> <!-- Message -->
+                    <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Project
+                            Details</label> <textarea rows="4" placeholder="Tell us about the project..."
+                            class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                    </div> <!-- Submit --> <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Request Estimate </button>
+                </form>
+            </div>
+        </div>
+    </section> <!-- FOOTER --> <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+    <script type="module" src="/main.js"></script> <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+    <script src="global-loader.js"></script>
+</body>
+
+</html>

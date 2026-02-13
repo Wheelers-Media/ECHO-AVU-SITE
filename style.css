@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@layer base {
+  body {
+    background-color: #000000;
+    color: #CCCCCC;
+  }
+}
+
+/* Slideshow transitions */
+.slideshow-image,
+.marine-slideshow-image {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+.slideshow-image.active,
+.marine-slideshow-image.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}

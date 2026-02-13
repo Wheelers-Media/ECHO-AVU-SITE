@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surveillance | Echo AVU</title>
+    <meta name="description"
+        content="Residential and commercial surveillance systems. High-definition cameras, remote access, and 24/7 recording." />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: '#000000',
+                        carbon: '#0A0A0A',
+                        edge: '#1F1F1F',
+                        echoRed: '#D60000',
+                        echoBlue: '#2563EB',
+                        textMain: '#FFFFFF',
+                        textBody: '#CCCCCC',
+                    },
+                    fontFamily: {
+                        heading: ['Manrope', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+    <!-- SECTION 1: HERO (The Watchtower) -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-void">
+        <!-- Background Image -->
+        <!-- Trying to find a good hero image. 'Residential Services/home-security.jpg' seems best fit -->
+        <div
+            class="absolute inset-0 bg-[url('/assets/Residential%20Services/home-security.jpg')] bg-cover bg-center opacity-50">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-void z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-8 uppercase tracking-tight leading-none drop-shadow-2xl">
+                Always Home.<br>Even When You're Not.
+            </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
+                High-definition surveillance systems that put peace of mind in the palm of your hand.
+            </p>
+            <a href="/contact.html"
+                class="inline-block bg-white hover:bg-gray-200 text-black font-bold py-4 px-10 rounded transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                Secure Your Space
+            </a>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- SECTION 2: TRUSTED PARTNERS (Brand Grid) -->
+    <section class="bg-carbon py-24 px-6 border-y border-edge">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-sm font-bold text-echoRed tracking-[0.2em] uppercase mb-12 text-center">Trusted Partners
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Luma Surveillance -->
+                <article data-scroll-spotlight
+                    class="group bg-void border border-edge p-8 rounded-xl hover:border-white/50 [&.in-view]:border-white/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-16 mb-6 flex items-center">
+                        <img src="\assets\brands\Luma-All-White-Logo.png" alt="Luma Surveillance"
+                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        Professional-grade IP cameras with AI detection and crystal-clear night vision. No monthly fees.
+                    </p>
+                </article>
+
+                <!-- Card 2: Ring -->
+                <article data-scroll-spotlight
+                    class="group bg-void border border-edge p-8 rounded-xl hover:border-echoBlue/50 [&.in-view]:border-echoBlue/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-16 mb-6 flex items-center">
+                        <img src="/assets/brands/Ring.png" alt="Ring"
+                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        The world's most popular doorbell and perimeter security. Smart, simple, and connected.
+                    </p>
+                </article>
+
+                <!-- Card 3: Purpose A/V -->
+                <article data-scroll-spotlight
+                    class="group bg-void border border-edge p-8 rounded-xl hover:border-echoRed/50 [&.in-view]:border-echoRed/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-16 mb-6 flex items-center">
+                        <img src="\assets\brands\Purpose AV.png" alt="Purpose A/V"
+                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                        Commercial-grade mounting and display solutions for your security feed.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: KEY FEATURES (Split Screen) -->
+    <section class="bg-void py-0 border-b border-edge">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+            <!-- Text Side -->
+            <div class="w-full md:w-1/2 py-24 px-6 md:pr-16 flex flex-col justify-center order-2 md:order-1">
+                <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold">Intelligent
+                    Security</span>
+                <h2 class="font-heading font-extrabold text-3xl md:text-5xl text-white mb-8">Smart Detection.</h2>
+                <div class="space-y-6 text-gray-400 leading-relaxed">
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-echoRed shrink-0 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span><strong class="text-white">Vehicle & Human Detection:</strong> Advanced AI filters out
+                                false alarms from swaying trees or small animals, only alerting you to what
+                                matters.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-echoRed shrink-0 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            <span><strong class="text-white">24/7 Recording:</strong> Never miss a moment with
+                                continuous recording options, ensuring you have the full picture, always.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-echoRed shrink-0 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                            <span><strong class="text-white">Remote App Access:</strong> View live feeds, playback
+                                footage, and receive instant alerts from anywhere in the world, right on your
+                                smartphone.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Image Side -->
+            <div
+                class="w-full md:w-1/2 bg-edge min-h-[400px] md:min-h-full flex items-center justify-center relative overflow-hidden order-1 md:order-2">
+                <!-- Using cctv-camera.jpg for this section -->
+                <img src="/assets/retail-restaurant-installations/cctv-camera.jpg" alt="Smart Security Camera"
+                    class="w-full h-full object-cover opacity-80">
+                <div class="absolute inset-0 bg-gradient-to-tr from-void/50 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTATION SECTION -->
+    <section id="consultation" class="bg-carbon border-t border-edge py-24 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
+            <!-- LEFT COLUMN: The Promise -->
+            <div class="w-full lg:w-1/2 pt-4">
+                <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Secure Your
+                    Property</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white mb-6">Peace of Mind, 24/7.</h2>
+                <p class="font-body text-gray-400 text-lg mb-10 leading-relaxed font-light">
+                    Our Grande Prairie team will assess your property, recommend camera placements, and design a system
+                    that covers every critical angle.
+                </p>
+                <div class="p-6 bg-edge rounded-lg border-l-4 border-echoRed">
+                    <p class="text-white italic">"The app notifications are instant. I caught someone trying my door
+                        handles and had the footage to Grande Prairie RCMP within minutes."</p>
+                    <p class="text-gray-500 text-sm mt-4 font-bold">- David L., Grande Prairie</p>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN: The Form -->
+            <div class="w-full lg:w-1/2 bg-void p-8 md:p-10 rounded-xl border border-edge shadow-2xl">
+                <form class="space-y-6">
+                    <!-- Property Type -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Property
+                            Type</label>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                <option>Residential Home</option>
+                                <option>Commercial Business</option>
+                                <option>Multi-Unit Property</option>
+                                <option>Acreage / Rural</option>
+                            </select>
+                            <div
+                                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Coverage Needed -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Coverage
+                            Needed</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Residential Cameras</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Commercial Security</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Doorbell Camera</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">NVR / 24-7 Recording</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-sm text-gray-300 group-hover:text-white">Access Control</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+                    </div>
+                    <!-- Preferred Time -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Preferred
+                            Consultation Time</label>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                <option>Weekdays after 5pm</option>
+                                <option>Weekdays 9am - 5pm</option>
+                                <option>Saturday Morning</option>
+                                <option>Saturday Afternoon</option>
+                            </select>
+                            <div
+                                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4">
+                        Schedule Site Assessment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </section> <!-- STANDARD INVENTORY TEASER -->
+    <section class="bg-void py-20 border-t border-edge text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading font-bold text-3xl text-white mb-4">Browse Current Inventory.</h2>
+            <p class="font-body text-gray-400 mb-8">View our live selection of products and pricing.</p> <button
+                onclick="alert('Online purchasing coming soon. Please visit our showroom for current stock and pricing.')"
+                class="bg-edge text-gray-400 font-bold py-4 px-12 rounded-lg border border-gray-700 cursor-not-allowed hover:bg-edge/80 transition-all">
+                Shop Now ?? </button>
+            <p class="font-body text-xs text-gray-600 mt-6 uppercase tracking-widest">Online purchasing coming soon.
+                Visit us in-store today.</p>
+        </div>
+    </section> <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+    <script type="module" src="/main.js"></script>
+    <script>
+        // Mobile Menu Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('mobile-menu-toggle');
+            const closeBtn = document.getElementById('mobile-menu-close');
+            const overlay = document.getElementById('mobile-menu-overlay');
+            const body = document.body;
+
+            function toggleMenu() {
+                const isClosed = overlay.classList.contains('translate-x-full');
+                if (isClosed) {
+                    overlay.classList.remove('translate-x-full');
+                    if (toggleBtn) toggleBtn.classList.add('menu-open');
+                    body.style.overflow = 'hidden';
+                } else {
+                    overlay.classList.add('translate-x-full');
+                    if (toggleBtn) toggleBtn.classList.remove('menu-open');
+                    body.style.overflow = '';
+                }
+            }
+
+            if (toggleBtn) toggleBtn.addEventListener('click', toggleMenu);
+            if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+        });
+    </script>
+    <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+    <script src="global-loader.js"></script>
+
+</body>
+
+</html>

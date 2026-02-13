@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echo AVU | Bespoke Smart Home Integration & Automation</title>
+  <meta name="description"
+    content="Orchestrating light, sound, and comfort for Grande Prairie's finest estates. Echo AVU transforms homes with invisible technology and bespoke automation." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>    tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"> <!-- Favicon (Placeholder) -->
+  <link rel="icon" type="image/png" href="/Echo-Avu-White.png" />
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white"
+  style="background-color: #000000;">
+  <div id="app">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div> <!-- NAVBAR --> <!-- HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-void">
+      <!-- Video Background -->
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+        <source src="/assets/hero-video.webm" type="video/webm">
+        <source src="/assets/hero-video.mp4" type="video/mp4">
+      </video>
+
+      <!-- Dark Overlay for better button visibility -->
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      <!-- CTA Button positioned low to avoid subtitle overlap -->
+      <div class="relative z-1 text-center px-6 mt-40 lg:mt-[450px]">
+        <a href="/services.html"
+          class="inline-block bg-white hover:bg-gray-200 text-black font-bold py-4 px-10 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+          View Our Services
+        </a>
+      </div>
+    </section> <!-- SECTION 1: CORE SERVICES (BLACK) -->
+    <section class="bg-void py-24 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto"> <!-- Section Header -->
+        <div class="mb-16">
+          <h2 class="font-heading font-bold text-4xl text-white mb-4">Curated Technologies.</h2>
+          <p class="text-gray-400 text-lg max-w-2xl font-light">We bridge the gap between complex hardware and simple
+            living.</p>
+        </div> <!-- Grid (6-Card) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> <!-- CARD 1: Automotive Performance -->
+          <div data-scroll-spotlight
+            class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/30 [&.in-view]:border-white/30 transition-all duration-300 hover:-translate-y-1 [&.in-view]:-translate-y-1">
+            <div
+              class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+              <!-- Icon: Speedometer/Car --> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-gauge">
+                <path d="m12 14 4-4" />
+                <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3"> <a href="/car-audio.html"
+                class="hover:text-echoRed transition-colors">Automotive Performance</a> </h3>
+            <p
+              class="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+              Reference-level audio and remote start systems, seamlessly integrated into your vehicle's dashboard. </p>
+          </div> <!-- CARD 2: Marine & Powersports -->
+          <div data-scroll-spotlight
+            class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/30 [&.in-view]:border-white/30 transition-all duration-300 hover:-translate-y-1 [&.in-view]:-translate-y-1">
+            <div
+              class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+              <!-- Icon: Boat/Waves --> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-anchor">
+                <circle cx="12" cy="5" r="3" />
+                <line x1="12" x2="12" y1="22" y2="8" />
+                <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3"> <a href="/marine-audio.html"
+                class="hover:text-echoRed transition-colors">Marine & Powersports</a> </h3>
+            <p
+              class="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+              High-output, weather-resistant entertainment systems designed for the open water and trails. </p>
+          </div> <!-- CARD 3: Bespoke Cinema -->
+          <div data-scroll-spotlight
+            class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/30 [&.in-view]:border-white/30 transition-all duration-300 hover:-translate-y-1 [&.in-view]:-translate-y-1">
+            <div
+              class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+              <!-- Icon: Film --> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-film">
+                <rect width="18" height="18" x="3" y="3" rx="2" />
+                <path d="M7 3v18" />
+                <path d="M3 7.5h4" />
+                <path d="M3 12h18" />
+                <path d="M3 16.5h4" />
+                <path d="M17 3v18" />
+                <path d="M17 7.5h4" />
+                <path d="M17 16.5h4" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3"> <a href="/tv-video.html"
+                class="hover:text-echoRed transition-colors">Bespoke Cinema</a> </h3>
+            <p
+              class="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+              Private screening rooms designed for acoustic perfection and 8K visual clarity. </p>
+          </div> <!-- CARD 4: Smart Automation -->
+          <div data-scroll-spotlight
+            class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/30 [&.in-view]:border-white/30 transition-all duration-300 hover:-translate-y-1 [&.in-view]:-translate-y-1">
+            <div
+              class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+              <!-- Icon: CPU --> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-cpu">
+                <rect width="16" height="16" x="4" y="4" rx="2" />
+                <rect width="6" height="6" x="9" y="9" rx="1" />
+                <path d="M15 2v2" />
+                <path d="M15 20v2" />
+                <path d="M2 15h2" />
+                <path d="M2 9h2" />
+                <path d="M20 15h2" />
+                <path d="M20 9h2" />
+                <path d="M9 2v2" />
+                <path d="M9 20v2" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3"> <a href="/services-residential.html"
+                class="hover:text-echoRed transition-colors">Smart Automation</a> </h3>
+            <p
+              class="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+              Intelligent lighting, shading, and climate control that adapts to your daily rhythm. </p>
+          </div> <!-- CARD 5: Commercial Integration -->
+          <div data-scroll-spotlight
+            class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/30 [&.in-view]:border-white/30 transition-all duration-300 hover:-translate-y-1 [&.in-view]:-translate-y-1">
+            <div
+              class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+              <!-- Icon: Building --> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-briefcase">
+                <rect width="20" height="14" x="2" y="6" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3"> <a href="/services-office.html"
+                class="hover:text-echoRed transition-colors">Commercial Integration</a> </h3>
+            <p
+              class="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+              Reliable audio-video distribution and digital signage for retail and corporate spaces. </p>
+          </div> <!-- CARD 6: Security & Surveillance -->
+          <div data-scroll-spotlight
+            class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/30 [&.in-view]:border-white/30 transition-all duration-300 hover:-translate-y-1 [&.in-view]:-translate-y-1">
+            <div
+              class="text-white mb-6 opacity-80 group-hover:opacity-100 group-[.in-view]:opacity-100 transition-opacity">
+              <!-- Icon: Shield --> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-shield-check">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white mb-3"> <a href="/surveillance.html"
+                class="hover:text-echoRed transition-colors">Security & Surveillance</a> </h3>
+            <p
+              class="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 group-[.in-view]:text-gray-300 transition-colors">
+              Enterprise-grade protection for your home, vehicle, and business assets. </p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- SECTION 2: THE ECHO STANDARD (GRAY) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-white text-center mb-16">The Echo Standard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> <!-- 1. Unbeatable Prices -->
+          <div class="text-center group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 bg-edge rounded-full mb-6 group-hover:bg-white group-hover:text-black transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-white group-hover:text-black transition-colors">
+                <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" />
+                <path d="M7 7h.01" />
+              </svg>
+            </div>
+            <h4 class="text-white font-bold mb-2">Unbeatable Prices</h4>
+            <p class="text-gray-400 text-sm leading-relaxed px-4"> Covered by our 30-day price guarantee. If the price
+              drops, we refund the difference. </p>
+          </div> <!-- 2. Price Matching -->
+          <div class="text-center group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 bg-edge rounded-full mb-6 group-hover:bg-white group-hover:text-black transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-white group-hover:text-black transition-colors">
+                <path d="M10 17h4V5H2v12h3" />
+                <path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5" />
+                <path d="M14 17h1" />
+                <circle cx="7.5" cy="17.5" r="2.5" />
+                <circle cx="17.5" cy="17.5" r="2.5" />
+              </svg>
+            </div>
+            <h4 class="text-white font-bold mb-2">Price Matching</h4>
+            <p class="text-gray-400 text-sm leading-relaxed px-4"> We guarantee competitive pricing. Find it cheaper?
+              We'll match it. </p>
+          </div> <!-- 3. Expert Advice -->
+          <div class="text-center group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 bg-edge rounded-full mb-6 group-hover:bg-white group-hover:text-black transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-white group-hover:text-black transition-colors">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h4 class="text-white font-bold mb-2">Expert Advice</h4>
+            <p class="text-gray-400 text-sm leading-relaxed px-4"> Decades of experience. We help you find the perfect
+              solution, not just a product. </p>
+          </div> <!-- 4. Locally Owned & Operated -->
+          <div class="text-center group">
+            <div
+              class="inline-flex items-center justify-center w-12 h-12 bg-edge rounded-full mb-6 group-hover:bg-white transition-colors duration-300">
+              <img src="/assets/White_maple_leaf_symbol.png" alt="Proudly Canadian"
+                class="w-6 h-6 object-contain group-hover:brightness-0 transition-all duration-300">
+            </div>
+            <h4 class="text-white font-bold mb-2">Locally Owned & Operated</h4>
+            <p class="text-gray-400 text-sm leading-relaxed px-4"> Family business since 1983. Supporting your community
+              for over 43 years. </p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- SECTION 3: CLIENT EXPERIENCES (BLACK) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-heading font-bold text-3xl md:text-4xl text-white text-center mb-16">Client Experiences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> <!-- Review 1 -->
+          <div
+            class="bg-edge p-6 rounded-lg border border-transparent hover:border-white/20 transition-all duration-300">
+            <div class="flex text-yellow-500 mb-4 gap-1 text-sm">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic"> "I have dealt with several of the big name car
+              audio dealers... The team at Echo Audio are by far the best." </p>
+            <div class="flex justify-between items-end"> <span class="text-white font-bold text-sm">Steve
+                Dmytriw</span>
+              <span class="text-xs text-gray-600">Via Google Reviews</span>
+            </div>
+          </div> <!-- Review 2 -->
+          <div
+            class="bg-edge p-6 rounded-lg border border-transparent hover:border-white/20 transition-all duration-300">
+            <div class="flex text-yellow-500 mb-4 gap-1 text-sm">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic"> "Corbin is the man! When the dream car I
+              worked my entire life for became reality, this was the only modification I wanted." </p>
+            <div class="flex justify-between items-end"> <span class="text-white font-bold text-sm">Alexander
+                Curry</span> <span class="text-xs text-gray-600">Via Google Reviews</span> </div>
+          </div> <!-- Review 3 -->
+          <div
+            class="bg-edge p-6 rounded-lg border border-transparent hover:border-white/20 transition-all duration-300">
+            <div class="flex text-yellow-500 mb-4 gap-1 text-sm">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic"> "Jeff was very knowledgeable! He helped us out
+              of a bind today and checked in after the fact." </p>
+            <div class="flex justify-between items-end"> <span class="text-white font-bold text-sm">Jordon
+                Maddigan</span> <span class="text-xs text-gray-600">Via Google Reviews</span> </div>
+          </div> <!-- Review 4 -->
+          <div
+            class="bg-edge p-6 rounded-lg border border-transparent hover:border-white/20 transition-all duration-300">
+            <div class="flex text-yellow-500 mb-4 gap-1 text-sm">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic"> "Dave and Jeff have been my go-to for over 20
+              years. Incredibly knowledgeable." </p>
+            <div class="flex justify-between items-end"> <span class="text-white font-bold text-sm">Wilfredo
+                Calero</span> <span class="text-xs text-gray-600">Via Google Reviews</span> </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- SECTION 4: TRUSTED PARTNERS (GRAY) -->
+    <section class="bg-carbon py-12 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"> <span
+          class="text-xs font-mono text-gray-500 uppercase tracking-widest text-nowrap">Authorized Integrators
+          For</span> <!-- Logo Grid: Top 5 Brands -->
+        <div class="flex flex-wrap justify-center md:justify-end gap-8 md:gap-16 w-full items-center">
+          <!-- Slot 1: Samsung (TV/Video) -->
+          <img src="/assets/brands/samsung.png" alt="Samsung Authorized Dealer"
+            class="h-12 md:h-16 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 transition-all duration-300">
+          <!-- Slot 2: JL Audio (Car Audio) -->
+          <img src="/assets/brands/JLAudio.png" alt="JL Audio Signature Dealer"
+            class="h-9 md:h-12 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 transition-all duration-300">
+          <!-- Slot 3: Compustar (Remote Start) -->
+          <img src="/assets/brands/compustar.png" alt="Compustar Pro Dealer"
+            class="h-9 md:h-12 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 transition-all duration-300">
+          <!-- Slot 4: Memphis Audio (Marine) -->
+          <img src="/assets/brands/Memphis-Logo.png" alt="Memphis Audio Marine"
+            class="h-9 md:h-12 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 transition-all duration-300">
+          <!-- Slot 5: Klipsch (Home Audio) -->
+          <img src="/assets/brands/klipsch.png" alt="Klipsch Heritage Dealer"
+            class="h-10 md:h-12 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 transition-all duration-300">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: ROTARY DREAM HOME (DREAM HOME BRANDED) -->
+    <section class="py-20 px-6 border-b border-edge relative overflow-hidden"
+      style="background: linear-gradient(135deg, #00ab67 0%, #74c69d 100%);">
+      <!-- Subtle Pattern Overlay -->
+      <div class="absolute inset-0 opacity-5"
+        style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 30px 30px;">
+      </div>
+
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+        <!-- Dream Home Logo -->
+        <div class="mb-8 flex justify-center">
+          <img src="/assets/dream-home-logo.png" alt="Rotary Dream Home Lottery"
+            class="h-20 md:h-24 w-auto drop-shadow-lg">
+        </div>
+
+        <!-- Badge -->
+        <div
+          class="inline-block mb-6 px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full shadow-lg">
+          <span class="text-white font-bold text-sm uppercase tracking-widest">Community Partnership</span>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="font-heading font-bold text-3xl md:text-5xl text-white mb-6 drop-shadow-md">
+          Proud Supporter of the Rotary Dream Home Lottery
+        </h2>
+
+        <!-- Description -->
+        <p class="text-white/95 text-lg leading-relaxed mb-8 max-w-2xl mx-auto drop-shadow">
+          For over 20 years, Echo AVU has been honored to provide premium audio and video technology for the Rotary
+          Dream Home Lottery, helping raise millions for our community.
+        </p>
+
+        <!-- CTA Button -->
+        <a href="/dream-home.html"
+          class="inline-block bg-white hover:bg-gray-100 text-[#00ab67] font-bold py-4 px-10 rounded-full transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 shadow-xl">
+          Learn More
+        </a>
+      </div>
+    </section> <!-- SECTION 6: BEYOND THE BOX / PROCESS (GRAY) -->
+    <section class="bg-carbon py-24 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto text-center"> <!-- Header -->
+        <div class="mb-20">
+          <h3 class="font-heading font-bold text-3xl md:text-5xl text-white mb-4">Beyond the Box.</h3>
+          <p class="text-gray-400 text-lg font-light tracking-wide max-w-2xl mx-auto">We don't just sell electronics.
+            We
+            curate lifestyles.</p>
+        </div> <!-- 3-Step Process -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12"> <!-- Step 1 -->
+          <div data-scroll-spotlight class="group relative">
+            <div
+              class="absolute top-0 left-0 w-full h-px bg-edge group-hover:bg-echoRed group-[.in-view]:bg-echoRed transition-colors duration-500">
+            </div>
+            <div class="pt-8"> <span class="block text-echoRed font-mono text-sm mb-4">01</span>
+              <h4 class="text-white font-heading font-bold text-xl mb-4">Design-First Approach</h4>
+              <p class="text-gray-400 text-sm leading-relaxed"> Every project begins with a blueprint. We collaborate
+                with architects and designers to ensure technology blends seamlessly into the home. </p>
+            </div>
+          </div> <!-- Step 2 -->
+          <div data-scroll-spotlight class="group relative">
+            <div
+              class="absolute top-0 left-0 w-full h-px bg-edge group-hover:bg-echoRed group-[.in-view]:bg-echoRed transition-colors duration-500">
+            </div>
+            <div class="pt-8"> <span class="block text-echoRed font-mono text-sm mb-4">02</span>
+              <h4 class="text-white font-heading font-bold text-xl mb-4">Precision Calibration</h4>
+              <p class="text-gray-400 text-sm leading-relaxed"> Installing the gear is only step one. We tune audio
+                and
+                video to the specific acoustics and lighting of your room. </p>
+            </div>
+          </div> <!-- Step 3 -->
+          <div data-scroll-spotlight class="group relative">
+            <div
+              class="absolute top-0 left-0 w-full h-px bg-edge group-hover:bg-echoRed group-[.in-view]:bg-echoRed transition-colors duration-500">
+            </div>
+            <div class="pt-8"> <span class="block text-echoRed font-mono text-sm mb-4">03</span>
+              <h4 class="text-white font-heading font-bold text-xl mb-4">Certified Technicians</h4>
+              <p class="text-gray-400 text-sm leading-relaxed"> Factory-trained specialists. We provide expert
+                remote monitoring and updates to ensure flawless operation. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- SECTION 7: MEET THE EXPERTS CTA (BLACK) -->
+    <section class="bg-void py-24 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6">Meet the Experts.</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-lg font-light leading-relaxed"> Our team is our greatest
+          asset. See the faces behind the craftsmanship. </p> <a href="/team.html"
+          class="inline-block bg-echoRed hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 uppercase tracking-widest text-sm hover:scale-105 shadow-lg shadow-red-900/20">
+          Meet The Team </a>
+      </div>
+    </section> <!-- SECTION 8: CONTACT FORM (GRAY) -->
+    <section class="bg-carbon py-24 px-6 border-b border-edge">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"> <!-- Text Side -->
+        <div>
+          <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white mb-6 leading-tight">Ready to
+            Transform<br>Your Space? </h2>
+          <p class="text-gray-400 text-lg mb-8 font-light max-w-md">Schedule a private consultation at our Grande
+            Prairie showroom. We'll discuss your vision, review potential challenges, and map out a bespoke solution.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 text-white">
+              <div class="w-12 h-12 bg-edge rounded-full flex items-center justify-center text-echoRed"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-map-pin">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg> </div>
+              <div>
+                <p class="font-bold">Grande Prairie, AB</p>
+                <p class="text-xs text-gray-500">Serving the Peace Region</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 text-white">
+              <div class="w-12 h-12 bg-edge rounded-full flex items-center justify-center text-echoRed"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-phone">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg> </div>
+              <div>
+                <p class="font-bold">780.532.1234</p>
+                <p class="text-xs text-gray-500">Mon-Fri, 9am - 5pm</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Form Side -->
+        <div data-scroll-spotlight
+          class="bg-void border border-edge p-8 rounded-xl shadow-2xl relative overflow-hidden"> <!-- Subtle Glow -->
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-echoRed/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
+          </div>
+          <form class="space-y-4 relative z-10">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">First
+                  Name</label> <input type="text"
+                  class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
+                  placeholder="John"> </div>
+              <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">Last
+                  Name</label> <input type="text"
+                  class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
+                  placeholder="Doe"> </div>
+            </div>
+            <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">Email
+                Address</label> <input type="email"
+                class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
+                placeholder="john@example.com"> </div>
+            <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">Project
+                Interest</label>
+              <div class="relative"> <select
+                  class="w-full bg-edge border border-transparent rounded-lg p-4 text-white appearance-none focus:border-white focus:outline-none focus:ring-0 transition-colors cursor-pointer">
+                  <option>Home Theater / Cinema</option>
+                  <option>Whole-Home Automation</option>
+                  <option>Security & Surveillance</option>
+                  <option>Commercial / Retail</option>
+                  <option>Other / Unsure</option>
+                </select> <!-- Custom Arrow -->
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400"> <svg
+                    class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg> </div>
+              </div>
+            </div>
+            <div class="space-y-2"> <label
+                class="text-xs uppercase tracking-wider text-gray-500 font-bold">Message</label> <textarea rows="3"
+                class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
+                placeholder="Tell us about your project..."></textarea> </div> <button type="submit"
+              class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded-lg mt-2 uppercase tracking-wide text-sm transition-transform active:scale-95 shadow-lg">
+              Request Consultation </button>
+          </form>
+        </div>
+      </div>
+    </section> <!-- FOOTER --> <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+
+    <!-- MAIN JS (Global logic + Scroll Effects) -->
+    <script type="module" src="/main.js"></script>
+    <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+    <script src="global-loader.js"></script>
+</body>
+
+</html>

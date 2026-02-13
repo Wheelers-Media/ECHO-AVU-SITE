@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automotive Services | Echo AVU</title>
+    <meta name="description"
+        content="Custom fabrication, fleet management, and remote starters. The technical side of performance." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
+    <style>
+        /* Custom Accordion Styles */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+    <!-- HERO SECTION -->
+    <section class="relative h-[60vh] flex items-center justify-center bg-void border-b border-edge overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-[url('/assets/car-audio/car-audio-hero.jpg')] bg-cover bg-center opacity-20">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-void z-10"></div>
+        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-6 uppercase tracking-tight leading-none">
+                Automotive<br />Services. </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
+                Custom fabrication, fleet management, and remote starters. The technical side of performance. </p>
+        </div>
+    </section> <!-- SECTION 1: CUSTOM CAR AUDIO / FABRICATION (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Custom Car Audio / Fabrication</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> Custom car audio fabrication refers to the process
+                        of designing and creating unique audio systems and installations tailored to the specific
+                        requirements and preferences of the vehicle owner. It involves the customization of speaker
+                        enclosures, amplifier racks, wiring configurations, and other components to optimize sound
+                        quality, aesthetics, and integration within the vehicle's interior. This highly specialized
+                        process often involves skilled craftsmanship, precise measurements, and careful consideration of
+                        acoustic principles to achieve exceptional audio performance and a customized look. </p>
+                </div> <img src="assets/car-audio/complete-system-upgrades.jpg" alt="Custom Car Audio Fabrication"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> We can help you determine what type of system will work for
+                        you and provide a budget range to help assist your planning. </p> <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Head
+                        Units <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Head units, also known as car stereos or
+                        car audio receivers, are the central control units for car audio systems. They are installed in
+                        the dashboard of a vehicle and serve as the primary interface for audio playback, radio tuning,
+                        and connectivity options. Head units typically feature a display screen, buttons or touchscreen
+                        controls, and various input/output connections. Overall, head units play a crucial role in
+                        controlling and enhancing the audio experience in a car, providing entertainment, connectivity,
+                        and convenience for drivers and passengers. <img src="assets/car-audio/head-units.jpg"
+                            alt="Head Units" class="mt-4 w-full h-auto rounded-lg border border-white/10"> </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Subwoofers <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Subwoofers are specialized loudspeakers
+                        designed to reproduce low-frequency audio frequencies, particularly bass sounds. They are
+                        dedicated to reproducing the lower end of the audio spectrum, typically from around 20 Hz to 200
+                        Hz or higher.By adding a subwoofer to an audio system, users can enjoy a fuller and more
+                        balanced sound reproduction, with the subwoofer handling the low-frequency content and relieving
+                        the other speakers from the demanding bass duties. <div class="grid grid-cols-2 gap-4 mt-4">
+                            <img src="assets/car-audio/subwoofers1.jpg" alt="Subwoofer"
+                                class="w-full h-auto rounded-lg border border-white/10"> <img
+                                src="assets/car-audio/subwoofers2.jpg" alt="Subwoofer"
+                                class="w-full h-auto rounded-lg border border-white/10">
+                        </div>
+                    </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Complete System Upgrades <svg class="w-5 h-5 text-echoRed transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Complete system upgrades for car audio
+                        systems involve replacing and upgrading multiple components to achieve a higher level of audio
+                        performance and overall sound quality. A complete system upgrade aims to create a more immersive
+                        and high-fidelity audio experience in the car, with improved clarity, accuracy, and bass
+                        response. It involves a comprehensive overhaul of the audio components, resulting in a more
+                        balanced and powerful sound system tailored to the listener's preferences. <img
+                            src="assets/car-audio/complete-system-upgrades.jpg" alt="Complete System Upgrades"
+                            class="mt-4 w-full h-auto rounded-lg border border-white/10"> </div>
+                </details>
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> Custom
+                        Fabrication <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Custom fabrication for car audio refers
+                        to the process of designing and building custom-made components and installations specifically
+                        for a car audio system. It involves creating unique and tailored solutions to meet the specific
+                        needs, preferences, and aesthetics of the vehicle owner. Custom fabrication requires skilled
+                        craftsmanship, knowledge of acoustic principles, and attention to detail. It allows for the
+                        creation of one-of-a-kind audio installations that not only enhance the sound quality but also
+                        seamlessly integrate into the vehicle's interior while reflecting the owner's personal style and
+                        preferences. <img src="assets/car-audio/custom-car-audio-fabrication.jpg"
+                            alt="Custom Fabrication" class="mt-4 w-full h-auto rounded-lg border border-white/10">
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section> <!-- SECTION 2: COMMERCIAL & FLEET VEHICLES (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"> <!-- Left Column -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Commercial & Fleet Vehicles</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed"> We specialize in mobile installation services for
+                        commercial and fleet vehicles, offering efficient and reliable audio solutions that cater to the
+                        specific needs of businesses, enhancing productivity and convenience on the go. </p>
+                </div> <img src="assets/car-audio/commercial-fleet-vehicles.jpg" alt="Commercial Fleet Vehicles"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6"> Contact us about outfitting your fleet. </p> <a
+                        href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Begin Estimate </a>
+                </div>
+            </div> <!-- Right Column (Accordions) -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg"> What
+                        Installation Services Do You Provide? <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light"> Our installation services for commercial
+                        and fleet systems encompass a comprehensive range of essential components. We specialize in
+                        installing vehicle tracking systems that enable businesses to monitor and manage their fleet's
+                        movements efficiently. Additionally, our expertise extends to the installation of 2-way radios,
+                        facilitating seamless communication between team members while on the road. We also offer
+                        lighting installation services, ensuring optimal visibility and safety for commercial vehicles.
+                        For enhanced cellular connectivity, we install cellphone booster kits that amplify signals and
+                        improve reception, especially in remote areas. Finally, our installation services include dash
+                        cams, providing businesses with valuable footage for insurance claims and driver accountability.
+                        With our reliable and professional installations, we strive to enhance the functionality and
+                        security of commercial and fleet systems. <div class="grid grid-cols-2 gap-4 mt-4"> <img
+                                src="assets/car-audio/IMG_2809-300x225.jpg" alt="Fleet Installation"
+                                class="w-full h-auto rounded-lg border border-white/10"> <img
+                                src="assets/car-audio/IMG_2808-276x300.jpg" alt="Fleet Installation"
+                                class="w-full h-auto rounded-lg border border-white/10"> </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <section id="estimate-form" class="bg-void py-24 px-6 border-t border-edge">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16"> <span
+                        class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Get
+                        Started</span>
+                    <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white">Begin Vehicle Estimate.</h2>
+                </div>
+                <div class="bg-carbon border border-edge rounded-xl p-8 md:p-12 shadow-2xl" data-scroll-spotlight>
+                    <form class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> <!-- Name -->
+                            <div> <label
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                                <input type="text"
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                            </div> <!-- Email -->
+                            <div> <label
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                                <input type="email"
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                            </div> <!-- Phone -->
+                            <div> <label
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                                <input type="tel"
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                            </div> <!-- Vehicle Year/Make/Model -->
+                            <div> <label
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Vehicle
+                                    (Year/Make/Model)</label> <input type="text" placeholder="e.g. 2022 Ford F-150"
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                            </div> <!-- Budget Range -->
+                            <div class="md:col-span-2"> <label
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Budget
+                                    Range</label>
+                                <div class="relative"> <select
+                                        class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                        <option>Under $1,000</option>
+                                        <option>$1,000 - $2,500</option>
+                                        <option>$2,500 - $5,000</option>
+                                        <option>$5,000 - $10,000</option>
+                                        <option>$10,000+</option>
+                                    </select>
+                                    <div
+                                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Service Interest -->
+                        <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">I'm
+                                Interested In</label>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4"> <label
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                    <input type="checkbox"
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                    <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Component
+                                        Speakers</span> </label> <label
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                    <input type="checkbox"
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                    <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Subwoofer Bass
+                                        Package</span> </label> <label
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                    <input type="checkbox"
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                    <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Custom
+                                        Fabrication
+                                        (A-Pillars/Trunk)</span> </label> <label
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                    <input type="checkbox"
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                    <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">DSP
+                                        Tuning</span>
+                                </label> <label
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                    <input type="checkbox"
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                    <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Sound
+                                        Deadening</span> </label> <label
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                    <input type="checkbox"
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                    <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">CarPlay /
+                                        Android
+                                        Auto Deck</span> </label> </div>
+                        </div> <!-- Message -->
+                        <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Project
+                                Details</label> <textarea rows="4"
+                                placeholder="Tell us about the vehicle and what you're looking for..."
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                        </div> <!-- Submit --> <button type="submit"
+                            class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                            Request Estimate </button>
+                    </form>
+                </div>
+            </div>
+        </section> <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+        <div id="footer-placeholder"></div>
+        <div id="mobile-menu-overlay"
+            class="fixed inset-0 z-40 bg-void transform translate-x-full transition-transform duration-500 ease-out flex flex-col h-[100dvh]">
+            <!-- HEADER (Inside Overlay) -->
+            <div class="flex items-center justify-between p-6 border-b border-white/10 bg-void shrink-0"> <span
+                    class="text-gray-500 text-xs font-body tracking-widest uppercase">Audio. Video. Unlimited.</span>
+                <!-- Close Button connects to same toggle logic --> <button id="mobile-menu-close"
+                    class="text-white p-2 focus:outline-none"> <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg> </button> </div> <!-- CONTENT (Scrollable) -->
+            <div class="overflow-y-auto flex-1 p-6 space-y-8 pb-32"> <!-- ACCORDION 1: DEPARTMENTS -->
+                <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                        Departments <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/car-audio.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Car Audio & Starters</a>
+                        <a href="/marine-audio.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Marine & Powersports</a>
+                        <a href="/home-audio.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Home
+                            Audio & Hi-Fi</a> <a href="/tv-video.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">TV & Cinema</a> <a
+                            href="/brands.html" class="block text-gray-400 hover:text-white transition-colors py-1">Our
+                            Brands</a> </div>
+                </details> <!-- ACCORDION 2: SERVICES -->
+                <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                        Services <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/services-residential.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Residential
+                            Integration</a>
+                        <a href="/services-office.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Office & Boardroom</a>
+                        <a href="/services-retail.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Retail & Hospitality</a>
+                        <a href="/services-car-audio.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Vehicle
+                            Installations</a>
+                    </div>
+                </details> <!-- ACCORDION 3: SUPPORT -->
+                <details data-scroll-spotlight class="group/accordion border-b border-white/10 pb-4">
+                    <summary
+                        class="flex justify-between items-center font-heading font-bold text-xl text-white cursor-pointer list-none select-none">
+                        Support <svg
+                            class="w-5 h-5 text-echoRed transition-transform duration-300 group-open/accordion:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg> </summary>
+                    <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1"> <a href="/financing.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Financing
+                            Application</a> <a href="/protection-plan.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Guaranteed
+                            Protection</a> <a href="/return-policy.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Return Policy</a> <a
+                            href="/privacy-statement.html"
+                            class="block text-gray-400 hover:text-white transition-colors py-1">Privacy Statement</a>
+                    </div>
+                </details> <!-- SECTION 4: VISIT US -->
+                <div class="space-y-6 pt-2">
+                    <div class="space-y-3"> <a href="/about.html"
+                            class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">About
+                            Echo AVU</a>
+                        <a href="/dream-home.html"
+                            class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">Rotary
+                            Dream Home</a> <a href="/contact.html"
+                            class="block text-xl font-heading font-bold text-white hover:text-echoRed transition-colors">Contact
+                            Support</a>
+                    </div>
+                    <div class="space-y-4 pt-4 border-t border-white/5">
+                        <div>
+                            <p class="text-gray-400 text-sm">11101 100 St</p>
+                            <p class="text-gray-400 text-sm">Grande Prairie, AB T8V 2N2</p> <a
+                                href="https://maps.google.com/?q=11101+100+St,+Grande+Prairie,+AB+T8V+2N2"
+                                target="_blank"
+                                class="inline-block mt-2 text-echoRed font-bold text-sm tracking-wide uppercase hover:text-white transition-colors">
+                                Get Directions &rarr; </a>
+                        </div> <a href="tel:7805381333"
+                            class="block text-3xl font-heading font-bold text-white hover:text-echoRed transition-colors">
+                            (780) 538-1333 </a>
+                    </div>
+                </div>
+                <!-- MAIN JS (Global logic + Scroll Effects) -->
+                <script type="module" src="/main.js"></script> <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
+                <script src="global-loader.js"></script>
+</body>
+
+</html>

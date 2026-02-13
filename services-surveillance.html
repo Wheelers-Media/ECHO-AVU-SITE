@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surveillance & Security | Echo AVU</title>
+    <meta name="description"
+        content="Protect what matters most. Commercial and residential monitoring solutions from Echo AVU." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
+    <style>
+        /* Custom Accordion Styles */
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        details[open]>div {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
+    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="header-placeholder"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-void">
+        <!-- Hero Background Image -->
+        <img src="/assets/Residential Services/download.jpg" alt="Surveillance & Security"
+            class="absolute inset-0 w-full h-full object-cover">
+        <!-- Simple black overlay for text readability -->
+        <div class="absolute inset-0 bg-black/90 z-10"></div>
+
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
+            <h1
+                class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-6 uppercase tracking-tight leading-none">
+                SURVEILLANCE &<br />SECURITY.
+            </h1>
+            <p
+                class="font-body text-xl md:text-2xl text-gray-300 font-light tracking-wide max-w-2xl mx-auto leading-relaxed">
+                Protect what matters most. Commercial and residential monitoring solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 1: RESIDENTIAL PEACE OF MIND (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column: Pitch -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Residential Peace of Mind</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Keep an eye on your home from anywhere. We install discreet, high-definition cameras from
+                        trusted brands like Luma and Ring that alert you to motion and let you view live feeds on your
+                        phone. Whether you're at work or on vacation, you'll have complete visibility and control over
+                        your property.
+                    </p>
+                </div>
+                <img src="\assets\Residential Services\home-security.jpg" alt="Residential Security Cameras"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        Ready to protect your home? Get a custom quote for your property.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: FAQs -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Is there a monthly fee?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        No, for most local storage systems. Our Luma systems store footage directly to an NVR (Network
+                        Video Recorder) in your home with no cloud fees. Ring cameras do offer optional cloud storage
+                        plans for extended recording, but basic motion alerts and live viewing are free.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Can I see in the dark?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes, night vision is standard. All of our cameras feature infrared LEDs that provide clear
+                        black-and-white footage in complete darkness, typically up to 30-100 feet depending on the
+                        model. Some premium models also offer color night vision using ambient light.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        How hard is installation?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        We handle the entire installation. Our technicians run wiring through walls, mount cameras
+                        discreetly, configure your network, and set up mobile access. You'll be fully operational with
+                        a quick tutorial on how to use the system before we leave.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: COMMERCIAL & RETAIL SECURITY (bg-void) -->
+    <section class="bg-void py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column: Pitch -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Commercial & Retail Security</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Protect your inventory and staff with professional-grade surveillance. Our commercial NVR
+                        systems provide 24/7 continuous recording, license plate recognition, and liability protection.
+                        Monitor multiple locations from a single dashboard, review incidents instantly, and maintain a
+                        complete visual record of your business operations.
+                    </p>
+                </div>
+                <img src="\assets\office-boardroom-installations\cctv-camera.jpg" alt="Commercial Security System"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div data-scroll-spotlight class="bg-carbon border border-edge p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        Let's discuss a security solution tailored to your business needs.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Request Consultation
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: FAQs -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        How long is footage stored?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Typically 2-4 weeks, depending on your hard drive capacity and camera count. We'll design the
+                        system to meet your industry's requirements (some insurance policies or regulations mandate
+                        specific retention periods). Storage can be expanded as needed.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Can I view multiple locations?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes, via the mobile app or web portal. If you have multiple stores, warehouses, or offices, you
+                        can view all cameras across all locations in a single interface. You can also grant different
+                        access levels to managers and staff.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-carbon border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        What about license plate recognition?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Available on select camera models. LPR (License Plate Recognition) cameras can capture and log
+                        vehicle plates entering/exiting your property, ideal for parking lot security, delivery
+                        tracking, or access control verification.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ACCESS CONTROL & SMART ENTRY (bg-carbon) -->
+    <section class="bg-carbon py-20 px-6 border-b border-edge">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Column: Pitch -->
+            <div class="space-y-8" data-scroll-spotlight>
+                <div>
+                    <h2 class="font-heading font-bold text-3xl text-white mb-4">Access Control & Smart Entry</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Control who enters your building with precision. We install keycard systems, smart locks, and
+                        intercom integration for offices, apartment complexes, and warehouses. Grant or revoke access
+                        remotely, track entry logs, and integrate with your existing security cameras for a complete
+                        security ecosystem.
+                    </p>
+                </div>
+                <img src="assets\Residential Services\Guide-pour-Mettre-en-Place-un-Systeme-Domotique.jpg"
+                    alt="Access Control System"
+                    class="w-full h-64 object-cover rounded-xl border border-white/10 shadow-2xl">
+                <div class="bg-edge border border-white/5 p-8 rounded-xl shadow-lg">
+                    <p class="text-white font-medium mb-6">
+                        Explore smart access solutions for your facility.
+                    </p>
+                    <a href="#estimate-form"
+                        class="inline-block w-full text-center bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: FAQs -->
+            <div class="space-y-4">
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Can I unlock the door remotely?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Absolutely. Smart lock systems allow you to unlock doors from anywhere using a mobile app,
+                        perfect for letting in contractors, deliveries, or early employees. You can also set up
+                        temporary access codes that expire automatically.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        Do you install mag-locks?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Yes, electromagnetic locks are ideal for high-security applications. We install mag-locks with
+                        fail-safe or fail-secure configurations depending on fire code requirements. These integrate
+                        seamlessly with keycard readers, intercoms, and fire alarm systems.
+                    </div>
+                </details>
+
+                <details data-scroll-spotlight class="group bg-void border border-edge rounded-lg p-6 cursor-pointer">
+                    <summary class="flex justify-between items-center font-heading font-bold text-white text-lg">
+                        How does intercom integration work?
+                        <svg class="w-5 h-5 text-echoRed transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-gray-400 leading-relaxed font-light">
+                        Visitors press a button at the entry point, and the call goes to a central station or directly
+                        to staff smartphones. You can see who's at the door (via camera integration), speak with them,
+                        and remotely unlock the door—all without leaving your desk.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE ESTIMATE FORM -->
+    <section id="estimate-form" class="bg-void py-24 px-6 border-t border-edge">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Get
+                    Started</span>
+                <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white">Security Consultation.</h2>
+            </div>
+
+            <div class="bg-carbon border border-edge rounded-xl p-8 md:p-12 shadow-2xl" data-scroll-spotlight>
+                <form class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
+                            <input type="tel"
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                        </div>
+
+                        <!-- Property Type -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Property
+                                Type</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    <option>Residential Home</option>
+                                    <option>Small Business / Office</option>
+                                    <option>Retail Store</option>
+                                    <option>Warehouse / Industrial</option>
+                                    <option>Multi-Unit / Apartment</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Budget Range -->
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Budget
+                                Range</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    <option>Under $2,000</option>
+                                    <option>$2,000 - $5,000</option>
+                                    <option>$5,000 - $10,000</option>
+                                    <option>$10,000 - $25,000</option>
+                                    <option>$25,000+</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coverage Needed -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">Coverage
+                            Needed</label>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Residential
+                                    Cameras</span>
+                            </label>
+
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Commercial
+                                    Security</span>
+                            </label>
+
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Doorbell
+                                    Camera</span>
+                            </label>
+
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">NVR / 24-7
+                                    Recording</span>
+                            </label>
+
+                            <label
+                                class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
+                                <input type="checkbox"
+                                    class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                <span class="text-xs md:text-sm text-gray-300 group-hover:text-white">Access
+                                    Control</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Project
+                            Details</label>
+                        <textarea rows="4" placeholder="Tell us about your property and security concerns..."
+                            class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm">
+                        Request Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ⭐ GLOBAL LOADER SCRIPT - DO NOT EDIT ⭐ -->
+    <script src="global-loader.js"></script>
+    <script src="scroll-effects.js"></script>
+</body>
+
+</html>
