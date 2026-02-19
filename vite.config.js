@@ -12,7 +12,6 @@ export default defineConfig({
                 'car-starters': resolve(__dirname, 'car-starters.html'),
                 contact: resolve(__dirname, 'contact.html'),
                 'dream-home': resolve(__dirname, 'dream-home.html'),
-                'example-template': resolve(__dirname, 'EXAMPLE-TEMPLATE.html'),
                 financing: resolve(__dirname, 'financing.html'),
                 'home-audio': resolve(__dirname, 'home-audio.html'),
                 'marine-audio': resolve(__dirname, 'marine-audio.html'),

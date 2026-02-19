@@ -1,58 +1,72 @@
 /**
  * Scroll Effects (Vanilla JS)
- * Replicating the Framer Motion "WhileInView" logic for mobile devices.
- * 
- * Logic:
- * - Observer monitors elements with [data-scroll-spotlight]
- * - When element enters the "Hot Zone" (Middle 60% of viewport), add class 'in-view'
- * - CSS/Tailwind selects this class to apply specific styles (grayscale-0, scale, etc.)
- * - Auto-disables on desktop viewports (≥1024px) and re-enables when resizing back to mobile
  */
 
-let observer = null;
-let isObserverActive = false;
+if (window._echoScrollListener) {
+    window.removeEventListener('scroll', window._echoScrollListener);
+}
+
+let isMobile = false;
+let scrollTargets = [];
+
+function onScroll() {
+    if (!isMobile) return;
+
+    // The screen's exact horizontal center crosshair
+    const centerY = window.innerHeight / 2;
+    // 22% band (11% above the center line, 11% below)
+    const threshold = window.innerHeight * 0.11;
+
+    scrollTargets.forEach(target => {
+        const rect = target.getBoundingClientRect();
+
+        // Optimization: skip elements entirely off-screen
+        if (rect.bottom < 0 || rect.top > window.innerHeight) {
+            target.classList.remove('in-view');
+            return;
+        }
+
+        // Calculate the physical center of the target element
+        const targetCenterY = rect.top + rect.height / 2;
+        const distance = Math.abs(centerY - targetCenterY);
+
+        // Does the center of the element fall into our crossing threshold?
+        if (distance <= threshold) {
+            target.classList.add('in-view');
+        } else {
+            target.classList.remove('in-view');
+        }
+    });
+}
+
+// Preserve reference for HMR cleanup
+window._echoScrollListener = onScroll;
 
 function initializeScrollEffects() {
-    // Check if we're on mobile/tablet (viewport < 1024px)
-    const isMobile = window.matchMedia('(max-width: 1023px)').matches;
+    isMobile = window.matchMedia('(max-width: 1023px)').matches;
+    scrollTargets = Array.from(document.querySelectorAll('[data-scroll-spotlight]'));
 
-    if (isMobile && !isObserverActive) {
-        // Mobile: Enable scroll effects
-        const observerOptions = {
-            root: null,
-            rootMargin: '-20% 0px -20% 0px', // Matches wider "Hot Zone" (Middle 60%)
-            threshold: 0
-        };
+    window.removeEventListener('scroll', window._echoScrollListener);
 
-        observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('in-view');
-                } else {
-                    entry.target.classList.remove('in-view');
-                }
-            });
-        }, observerOptions);
-
-        // Target specific elements
-        const targets = document.querySelectorAll('[data-scroll-spotlight]');
-        targets.forEach(target => observer.observe(target));
-        isObserverActive = true;
-
-    } else if (!isMobile && isObserverActive) {
-        // Desktop: Disable scroll effects and clean up
-        if (observer) {
-            observer.disconnect();
-            observer = null;
-        }
-        // Remove all .in-view classes on desktop
-        document.querySelectorAll('.in-view').forEach(el => el.classList.remove('in-view'));
-        isObserverActive = false;
+    if (isMobile) {
+        window.addEventListener('scroll', window._echoScrollListener, { passive: true });
+        window._echoScrollListener(); // Fire once immediately
+    } else {
+        // Desktop: Clean up any leftover effects
+        scrollTargets.forEach(el => el.classList.remove('in-view'));
     }
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', initializeScrollEffects);
+// Initialize on page load or immediate if already loaded (for Vite HMR)
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeScrollEffects);
+} else {
+    initializeScrollEffects();
+}
 
 // Re-initialize when viewport size changes
-window.addEventListener('resize', initializeScrollEffects);
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(initializeScrollEffects, 100);
+});

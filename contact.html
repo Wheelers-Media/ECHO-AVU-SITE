@@ -1,420 +1,407 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit Showroom | Echo AVU | Grande Prairie</title>
+    <title>Contact Us | Echo AVU | Grande Prairie</title>
     <meta name="description"
-        content="Visit the Echo AVU showroom in Grande Prairie. Experience premium audio, custom theater design, and smart home integration." />
+        content="Get in touch with Echo AVU in Grande Prairie. Send us a message, call us, or visit our showroom. Expert audio, video, and smart home integration." />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
-    <!-- Google Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        void: '#000000',
+                        carbon: '#0A0A0A',
+                        edge: '#1F1F1F',
+                        echoRed: '#D60000',
+                        textMain: '#FFFFFF',
+                        textBody: '#CCCCCC',
+                    },
+                    fontFamily: {
+                        heading: ['Manrope', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" href="/Echo-Avu-White.png" />
+    <style>
+        /* Form field focus styles */
+        .echo-input {
+            width: 100%;
+            background: #000000;
+            border: 1px solid #1F1F1F;
+            border-radius: 6px;
+            padding: 12px 16px;
+            color: #ffffff;
+            font-family: Inter, sans-serif;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .echo-input::placeholder {
+            color: #4B5563;
+        }
+
+        .echo-input:focus {
+            border-color: #D60000;
+            box-shadow: 0 0 0 1px #D60000;
+        }
+
+        /* Info card hover */
+        .info-card {
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .info-card:hover,
+        .info-card.in-view {
+            border-color: #D60000;
+            background: #0f0f0f;
+        }
+
+        /* Submit button pulse */
+        .btn-submit {
+            transition: all 0.2s;
+            box-shadow: 0 0 30px rgba(214, 0, 0, 0.25);
+        }
+
+        .btn-submit:hover,
+        .btn-submit.in-view {
+            background: #b80000;
+            transform: translateY(-1px);
+            box-shadow: 0 0 40px rgba(214, 0, 0, 0.4);
+        }
+
+        .btn-submit:active {
+            transform: scale(0.98);
+        }
+    </style>
 </head>
 
 <body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white">
-    <!-- ⭐ HEADER PLACEHOLDER - DO NOT EDIT ⭐ -->
+
+    <!-- HEADER -->
     <div id="header-placeholder"></div>
 
-    <!-- SECTION 1: VISIT THE SHOWROOM HERO -->
-    <section class="bg-void py-20 px-6 border-b border-edge mt-20">
+    <!-- ═══════════════════════════════════════
+       HERO : compact, no scroll waste
+  ════════════════════════════════════════ -->
+    <section class="pt-36 pb-16 px-6 border-b border-edge bg-void">
         <div class="max-w-7xl mx-auto">
-            <!-- Showroom Header -->
-            <div class="text-center mb-10">
-                <span
-                    class="inline-block px-4 py-1.5 bg-echoRed text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-6">Showroom</span>
-                <h1 class="font-heading font-extrabold text-4xl md:text-6xl text-white mb-6 leading-tight">
-                    Visit the <span class="text-echoRed italic">Showroom.</span>
-                </h1>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+                <div>
+                    <span
+                        class="inline-block px-3 py-1 bg-echoRed text-white text-[10px] font-bold uppercase tracking-[0.3em] mb-5">Contact</span>
+                    <h1 class="font-heading font-extrabold text-5xl md:text-7xl text-white leading-none tracking-tight">
+                        LET'S<br><span class="text-echoRed italic">CONNECT.</span>
+                    </h1>
+                </div>
+                <p class="text-gray-400 text-base md:text-lg max-w-md md:text-right leading-relaxed">
                     Experience premium audio, custom theater design, and smart home integration in person at our Grande
-                    Prairie location.
+                    Prairie showroom, or drop us a line below.
                 </p>
             </div>
 
             <!-- Live Status Badge -->
-            <div class="flex justify-center mb-16">
-                <div class="inline-flex items-center gap-3 px-6 py-3 bg-carbon border border-edge rounded-full">
-                    <div id="status-dot" class="w-2 h-2 rounded-full bg-echoRed"></div>
-                    <span id="status-text" class="text-xs text-white/70">Live Showroom Status: Checking...</span>
-                </div>
-            </div>
-    </section>
-
-    <!-- SECTION 2: MAP -->
-    <section class="relative h-[60vh] min-h-[400px] w-full overflow-hidden border-b border-edge">
-        <!-- Map Container (JavaScript API) -->
-        <div id="map" class="absolute inset-0 w-full h-full"></div>
-    </section>
-
-    <script>
-        // Initialize custom-styled Google Map with Echo AVU branding
-        function initMap() {
-            // Echo AVU location - Updated coordinates
-            const echoAVU = { lat: 55.18048118486584, lng: -118.79416483970809 };
-
-            // Custom map styles - 100% Greyscale Theme
-            const styledMapType = [
-                {
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#1a1a1a" }]
-                },
-                {
-                    "elementType": "labels.text.fill",
-                    "stylers": [{ "color": "#D60000" }]
-                },
-                {
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{ "color": "#000" }, { "weight": 2 }]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#4a4a4a" }]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#5a5a5a" }]
-                },
-                {
-                    "featureType": "road.local",
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#3a3a3a" }]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#0a0a0a" }]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#2a2a2a" }]
-                },
-                {
-                    "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [{ "color": "#1a1a1a" }]
-                }
-            ];
-
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 16,
-                center: echoAVU,
-                styles: styledMapType,
-                disableDefaultUI: false,
-                zoomControl: true,
-                mapTypeControl: false,
-                streetViewControl: false,
-                fullscreenControl: true
-            });
-
-            // Custom red marker for Echo AVU location
-            const marker = new google.maps.Marker({
-                position: echoAVU,
-                map: map,
-                title: "Echo Audio Video Unlimited",
-                icon: {
-                    path: google.maps.SymbolPath.CIRCLE,
-                    scale: 14,
-                    fillColor: "#D60000",
-                    fillOpacity: 1,
-                    strokeColor: "#FFFFFF",
-                    strokeWeight: 3
-                }
-            });
-
-            // Info window
-            const infoWindow = new google.maps.InfoWindow({
-                content: '<div style="color: #000; font-family: Inter, sans-serif; padding: 8px;"><strong style="font-size: 16px;">Echo Audio Video Unlimited</strong><br/>11101 - 100 St<br/>Grande Prairie, AB T8V 2N2</div>'
-            });
-
-            marker.addListener("click", () => {
-                infoWindow.open(map, marker);
-            });
-        }
-
-        // Load map when page loads
-        window.initMap = initMap;
-    </script>
-
-    <!-- Google Maps JavaScript API -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDloOhFIuY096-eUa_aNi87nq46lN4093o&callback=initMap">
-        </script>
-
-    <!-- SECTION 3: CONTACT INFO GRID -->
-    <section class="bg-void py-20 px-6 border-b border-edge">
-        <div class="max-w-7xl mx-auto">
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Location & Hours -->
-                <div class="space-y-8">
-                    <div class="flex gap-4">
-                        <div
-                            class="w-12 h-12 bg-carbon border border-edge flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-white font-bold uppercase tracking-widest text-xs opacity-50 mb-2">Location
-                            </h3>
-                            <p class="text-white text-lg leading-relaxed">
-                                11101 - 100 St,<br />Grande Prairie, AB T8V 2N2
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div
-                            class="w-12 h-12 bg-carbon border border-edge flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-white font-bold uppercase tracking-widest text-xs opacity-50 mb-3">Hours
-                            </h3>
-                            <div class="grid grid-cols-2 gap-y-2 text-sm">
-                                <span class="text-gray-400">Mon - Fri</span>
-                                <span class="text-white font-bold">8:30am - 6:00pm</span>
-                                <span class="text-gray-400">Sat</span>
-                                <span class="text-white font-bold">8:30am - 5:00pm</span>
-                                <span class="text-gray-400">Sun</span>
-                                <span class="text-echoRed font-bold uppercase">Closed</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Details -->
-                <div class="space-y-8">
-                    <div class="flex gap-4">
-                        <div
-                            class="w-12 h-12 bg-carbon border border-edge flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-white font-bold uppercase tracking-widest text-xs opacity-50 mb-2">Phone
-                            </h3>
-                            <a href="tel:7805381333"
-                                class="block text-white text-xl font-bold hover:text-echoRed transition-colors">
-                                (780) 538-1333
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div
-                            class="w-12 h-12 bg-carbon border border-edge flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-white font-bold uppercase tracking-widest text-xs opacity-50 mb-2">Email
-                            </h3>
-                            <a href="mailto:david_little@avu.ca"
-                                class="block text-white hover:text-echoRed transition-colors underline underline-offset-4">
-                                david_little@avu.ca
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Social Links -->
-                <div>
-                    <h3 class="text-white font-bold uppercase tracking-widest text-xs opacity-50 mb-6">Follow Us</h3>
-                    <div class="flex gap-4">
-                        <a href="https://www.facebook.com/EchoAVUGP" target="_blank" rel="noopener noreferrer"
-                            class="w-12 h-12 rounded-full bg-carbon border border-edge flex items-center justify-center text-gray-400 hover:text-white hover:bg-echoRed hover:border-echoRed transition-all duration-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/echoaudiovideounlimited/" target="_blank"
-                            rel="noopener noreferrer"
-                            class="w-12 h-12 rounded-full bg-carbon border border-edge flex items-center justify-center text-gray-400 hover:text-white hover:bg-echoRed hover:border-echoRed transition-all duration-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c.796 0 1.441.645 1.441 1.44s-.645 1.44-1.441 1.44c-.795 0-1.439-.645-1.439-1.44s.644-1.44 1.439-1.44z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="mt-10 flex items-center gap-3">
+                <div id="status-dot" class="w-2 h-2 rounded-full bg-echoRed flex-shrink-0"></div>
+                <span id="status-text" class="text-xs text-white/60 font-medium tracking-wider uppercase">Checking
+                    showroom status…</span>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3: STANDARD CONTACT FORM -->
-    <section id="contact-form" class="bg-carbon py-24 px-6 border-b border-edge">
+    <!-- ═══════════════════════════════════════
+       MAIN : 2-COLUMN SPLIT LAYOUT
+  ════════════════════════════════════════ -->
+    <section class="py-20 px-6 bg-void">
         <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- LEFT: Contact Form -->
-                <div>
-                    <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 font-bold block">Get In
-                        Touch</span>
-                    <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white mb-6">Send Us a Message.</h2>
-                    <p class="text-gray-400 text-lg mb-10">
-                        Have a question about our products or services? Fill out the form and we'll get back to you
-                        within 24 hours.
-                    </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16">
 
-                    <form class="space-y-6">
-                        <!-- Name -->
-                        <div>
-                            <label
-                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
-                            <input type="text" required
-                                class="w-full bg-void border border-edge rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                placeholder="Your name">
-                        </div>
+                <!-- ╔══════════════════════════════╗
+             ║  LEFT COLUMN : ACTION       ║
+             ╚══════════════════════════════╝ -->
+                <div class="flex flex-col gap-8">
 
-                        <!-- Email & Phone -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- FORM -->
+                    <div class="bg-carbon border border-edge rounded-xl p-8">
+                        <h2 class="font-heading font-bold text-2xl text-white mb-1">Send Us a Message</h2>
+                        <p class="text-gray-500 text-sm mb-8">We read every inquiry personally and respond within 24
+                            hours.</p>
+
+                        <form id="contact-form" class="space-y-5" novalidate>
+                            <!-- Name -->
                             <div>
-                                <label
-                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
-                                <input type="email" required
-                                    class="w-full bg-void border border-edge rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                    placeholder="your@email.com">
+                                <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
+                                    for="contact-name">Full Name</label>
+                                <input id="contact-name" type="text" required placeholder="Your full name"
+                                    class="echo-input">
                             </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
-                                <input type="tel"
-                                    class="w-full bg-void border border-edge rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                    placeholder="(780) 555-1234">
-                            </div>
-                        </div>
 
-                        <!-- Service Interest -->
-                        <div>
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Service
-                                Interest</label>
-                            <div class="relative">
-                                <select
-                                    class="w-full bg-void border border-edge rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
-                                    <option>General Inquiry</option>
-                                    <option>Home Audio</option>
-                                    <option>Home Theater</option>
-                                    <option>Car Audio</option>
-                                    <option>Remote Car Starters</option>
-                                    <option>Marine Audio</option>
-                                    <option>Surveillance & Security</option>
-                                    <option>Commercial Installation</option>
-                                </select>
+                            <!-- Email + Phone -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label
+                                        class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
+                                        for="contact-email">Email Address</label>
+                                    <input id="contact-email" type="email" required placeholder="your@email.com"
+                                        class="echo-input">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
+                                        for="contact-phone">Phone Number</label>
+                                    <input id="contact-phone" type="tel" placeholder="(780) 555-1234"
+                                        class="echo-input">
+                                </div>
+                            </div>
+
+                            <!-- Service Interest -->
+                            <div>
+                                <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
+                                    for="contact-service">Service Interest</label>
+                                <div class="relative">
+                                    <select id="contact-service" class="echo-input pr-10 cursor-pointer">
+                                        <option value="">Select a service…</option>
+                                        <option>General Inquiry</option>
+                                        <option>Car Audio &amp; Installation</option>
+                                        <option>Remote Car Starters</option>
+                                        <option>Marine &amp; Powersports Audio</option>
+                                        <option>Home Audio &amp; Hi-Fi</option>
+                                        <option>Home Theater &amp; TV</option>
+                                        <option>Surveillance &amp; Security</option>
+                                        <option>Residential Integration</option>
+                                        <option>Office &amp; Commercial</option>
+                                    </select>
+                                    <div
+                                        class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-500">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
+                                    for="contact-message">Your Message</label>
+                                <textarea id="contact-message" rows="5" required
+                                    placeholder="Tell us about your project, space, or question…"
+                                    class="echo-input resize-none"></textarea>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" id="submit-btn"
+                                data-scroll-spotlight class="btn-submit w-full bg-echoRed text-white font-heading font-bold py-4 rounded-lg uppercase tracking-wider text-sm">
+                                Send Message →
+                            </button>
+
+                            <!-- Success message (hidden by default) -->
+                            <div id="form-success"
+                                class="hidden text-center py-4 px-6 bg-green-900/30 border border-green-700 rounded-lg text-green-400 text-sm font-medium">
+                                ✓ Message sent! We'll be in touch within 24 hours.
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- TRUST BOX: WHAT HAPPENS NEXT -->
+                    <div class="bg-carbon border border-edge rounded-xl p-8">
+                        <h3 class="font-heading font-bold text-lg text-white mb-6 uppercase tracking-wide">What Happens
+                            Next?</h3>
+                        <ul class="space-y-5">
+                            <li class="flex gap-4 items-start">
                                 <div
-                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7" />
-                                    </svg>
+                                    class="w-8 h-8 rounded-full bg-echoRed/10 border border-echoRed flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-echoRed font-bold text-sm">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm mb-1">We Review Your Message</h4>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Our team reads every inquiry
+                                        personally, usually within a few hours.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-echoRed/10 border border-echoRed flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-echoRed font-bold text-sm">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm mb-1">We Reach Out</h4>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Expect a call or email to discuss
+                                        your needs and schedule a showroom visit or consultation.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-echoRed/10 border border-echoRed flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <span class="text-echoRed font-bold text-sm">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm mb-1">Let's Build Something</h4>
+                                    <p class="text-gray-500 text-sm leading-relaxed">We design a custom solution
+                                        tailored to your space, lifestyle, and investment level.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div><!-- /LEFT COLUMN -->
+
+                <!-- ╔══════════════════════════════╗
+             ║  RIGHT COLUMN : INFO + MAP  ║
+             ╚══════════════════════════════╝ -->
+                <div class="flex flex-col gap-6">
+
+                    <!-- CONTACT DETAILS 2x2 GRID -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                        <!-- Location -->
+                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold text-gray-600 uppercase tracking-widest mb-2">Location
+                                </p>
+                                <p class="text-white text-sm font-medium leading-relaxed">11101 – 100 St<br>Grande
+                                    Prairie, AB<br>T8V 2N2</p>
+                                <a href="https://maps.google.com/?q=11101+100+St,+Grande+Prairie,+AB+T8V+2N2"
+                                    target="_blank"
+                                    class="inline-block mt-3 text-echoRed text-xs font-bold uppercase tracking-wider lg:hover:text-white transition-colors [&.in-view]:text-white"
+                                    data-scroll-spotlight>
+                                    Get Directions →
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold text-gray-600 uppercase tracking-widest mb-2">Phone</p>
+                                <a href="tel:7805381333"
+                                    class="text-white text-lg font-bold lg:hover:text-echoRed transition-colors leading-none block [&.in-view]:text-echoRed"
+                                    data-scroll-spotlight>(780)
+                                    538-1333</a>
+                                <p class="text-gray-600 text-xs mt-2">Call or text anytime during business hours</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold text-gray-600 uppercase tracking-widest mb-2">Email</p>
+                                <a href="mailto:david_little@avu.ca"
+                                    class="text-white text-sm font-medium lg:hover:text-echoRed transition-colors underline underline-offset-4 break-all [&.in-view]:text-echoRed"
+                                    data-scroll-spotlight>
+                                    david_little@avu.ca
+                                </a>
+                                <p class="text-gray-600 text-xs mt-2">Responses within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                            <div
+                                class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-[10px] font-bold text-gray-600 uppercase tracking-widest mb-3">Hours</p>
+                                <div class="space-y-1.5 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-500">Mon – Fri</span>
+                                        <span class="text-white font-medium">8:30am – 6:00pm</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-500">Saturday</span>
+                                        <span class="text-white font-medium">8:30am – 5:00pm</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-500">Sunday</span>
+                                        <span
+                                            class="text-echoRed font-bold uppercase text-xs tracking-wider">Closed</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Message -->
-                        <div>
-                            <label
-                                class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Message</label>
-                            <textarea rows="6" required
-                                class="w-full bg-void border border-edge rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"
-                                placeholder="Tell us about your project..."></textarea>
-                        </div>
+                    </div><!-- /2x2 grid -->
 
-                        <!-- Submit Button -->
-                        <button type="submit"
-                            class="w-full bg-echoRed hover:bg-red-700 text-white font-bold py-4 rounded transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_30px_rgba(214,0,0,0.3)]">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+                    <!-- BRANDED MAP : Google Maps JS API -->
+                    <div id="echo-map" class="rounded-xl overflow-hidden border border-edge flex-1"
+                        style="min-height:360px;"></div>
 
-                <!-- RIGHT: Info & Expectations -->
-                <div class="lg:pl-8">
-                    <div class="sticky top-24 space-y-8">
-                        <div class="bg-void border border-edge rounded-xl p-8">
-                            <h3 class="font-heading font-bold text-2xl text-white mb-4">What Happens Next?</h3>
-                            <ul class="space-y-4">
-                                <li class="flex gap-4">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-echoRed/10 border border-echoRed flex items-center justify-center flex-shrink-0">
-                                        <span class="text-echoRed font-bold text-sm">1</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-white font-bold mb-1">We Review Your Message</h4>
-                                        <p class="text-gray-400 text-sm">Our team reads every inquiry personally within
-                                            24 hours.</p>
-                                    </div>
-                                </li>
-                                <li class="flex gap-4">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-echoRed/10 border border-echoRed flex items-center justify-center flex-shrink-0">
-                                        <span class="text-echoRed font-bold text-sm">2</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-white font-bold mb-1">We Reach Out</h4>
-                                        <p class="text-gray-400 text-sm">Expect a call or email to discuss your needs
-                                            and schedule a consultation.</p>
-                                    </div>
-                                </li>
-                                <li class="flex gap-4">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-echoRed/10 border border-echoRed flex items-center justify-center flex-shrink-0">
-                                        <span class="text-echoRed font-bold text-sm">3</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-white font-bold mb-1">Let's Build Something</h4>
-                                        <p class="text-gray-400 text-sm">We'll create a custom solution tailored to your
-                                            space and budget.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-edge/50 border-l-4 border-echoRed p-6 rounded">
-                            <p class="text-white italic">
-                                "Prefer to talk? Call us at <a href="tel:7805381333"
-                                    class="text-echoRed font-bold hover:underline">(780) 538-1333</a> during business
-                                hours."
-                            </p>
-                        </div>
+                    <!-- Call CTA strip -->
+                    <div class="bg-edge/40 border-l-4 border-echoRed rounded-lg p-5">
+                        <p class="text-white text-sm leading-relaxed">
+                            Prefer to speak directly?
+                            <a href="tel:7805381333"
+                                class="text-echoRed font-bold lg:hover:text-white transition-colors ml-1 [&.in-view]:text-white"
+                                data-scroll-spotlight>(780)
+                                538-1333</a>
+                            , our team is ready during showroom hours.
+                        </p>
                     </div>
-                </div>
+
+                </div><!-- /RIGHT COLUMN -->
+
             </div>
         </div>
     </section>
 
-    <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
+    <!-- FOOTER -->
     <div id="footer-placeholder"></div>
 
     <script>
-        // Live Showroom Status Logic
+        // Live showroom status
         document.addEventListener('DOMContentLoaded', function () {
             function updateShowroomStatus() {
                 const now = new Date();
-                const options = { timeZone: 'America/Edmonton', hour12: false, weekday: 'short', hour: 'numeric', minute: 'numeric' };
-                const formatter = new Intl.DateTimeFormat('en-US', options);
-
+                const formatter = new Intl.DateTimeFormat('en-US', {
+                    timeZone: 'America/Edmonton',
+                    hour12: false,
+                    weekday: 'short',
+                    hour: 'numeric',
+                    minute: 'numeric'
+                });
                 const parts = formatter.formatToParts(now);
-                const getPart = (type) => parts.find(p => p.type === type)?.value;
+                const getPart = type => parts.find(p => p.type === type)?.value;
 
                 const day = getPart('weekday');
                 const hour = parseInt(getPart('hour'), 10);
@@ -422,38 +409,165 @@
                 const currentTime = hour + (minute / 60);
 
                 let isOpen = false;
-
                 if (['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(day)) {
                     if (currentTime >= 8.5 && currentTime < 18) isOpen = true;
                 } else if (day === 'Sat') {
                     if (currentTime >= 8.5 && currentTime < 17) isOpen = true;
                 }
 
-                const statusText = document.getElementById('status-text');
-                const statusDot = document.getElementById('status-dot');
+                const dot = document.getElementById('status-dot');
+                const text = document.getElementById('status-text');
+                if (!dot || !text) return;
 
                 if (isOpen) {
-                    statusText.textContent = "Live Showroom Status: Open Now";
-                    statusText.classList.remove('text-white/70');
-                    statusText.classList.add('text-white', 'font-bold');
-                    statusDot.classList.remove('bg-echoRed');
-                    statusDot.classList.add('bg-green-500', 'animate-pulse');
+                    dot.className = 'w-2 h-2 rounded-full bg-green-500 animate-pulse flex-shrink-0';
+                    text.textContent = 'Showroom Open Now';
+                    text.className = 'text-xs text-green-400 font-bold tracking-wider uppercase';
                 } else {
-                    statusText.textContent = "Live Showroom Status: Closed";
-                    statusText.classList.remove('text-white', 'font-bold');
-                    statusText.classList.add('text-white/70');
-                    statusDot.classList.remove('bg-green-500', 'animate-pulse');
-                    statusDot.classList.add('bg-echoRed');
+                    dot.className = 'w-2 h-2 rounded-full bg-echoRed flex-shrink-0';
+                    text.textContent = 'Showroom Currently Closed';
+                    text.className = 'text-xs text-white/50 tracking-wider uppercase';
                 }
             }
-
             updateShowroomStatus();
             setInterval(updateShowroomStatus, 60000);
+
+            // Form submit handler
+            const form = document.getElementById('contact-form');
+            const successMsg = document.getElementById('form-success');
+            const submitBtn = document.getElementById('submit-btn');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending…';
+                    // Simulate submission : wire to backend/Formspree as needed
+                    setTimeout(() => {
+                        form.reset();
+                        submitBtn.style.display = 'none';
+                        successMsg.classList.remove('hidden');
+                    }, 1200);
+                });
+            }
         });
     </script>
 
-    <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
-    <script src="global-loader.js"></script>
+    <!-- Google Maps JS API -->
+    <script>
+        function initEchoMap() {
+            const location = { lat: 55.18048118486584, lng: -118.79416483970809 };
+
+            const mapStyles = [
+                { elementType: 'geometry', stylers: [{ color: '#111111' }] },
+                { elementType: 'labels.text.stroke', stylers: [{ color: '#000000' }] },
+                { elementType: 'labels.text.fill', stylers: [{ color: '#D60000' }] },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry', stylers: [{ color: '#1e1e1e' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry.stroke', stylers: [{ color: '#000000' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry', stylers: [{ color: '#2a2a2a' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke', stylers: [{ color: '#111111' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill', stylers: [{ color: '#D60000' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry', stylers: [{ color: '#080808' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill', stylers: [{ color: '#3a3a3a' }]
+                },
+                {
+                    featureType: 'landscape',
+                    elementType: 'geometry', stylers: [{ color: '#0a0a0a' }]
+                },
+                {
+                    featureType: 'poi',
+                    stylers: [{ visibility: 'off' }]
+                },
+                {
+                    featureType: 'transit',
+                    stylers: [{ visibility: 'off' }]
+                },
+                {
+                    featureType: 'administrative',
+                    elementType: 'geometry.stroke', stylers: [{ color: '#1F1F1F' }]
+                },
+                {
+                    featureType: 'administrative.land_parcel',
+                    elementType: 'labels.text.fill', stylers: [{ color: '#555555' }]
+                }
+            ];
+
+            const map = new google.maps.Map(document.getElementById('echo-map'), {
+                zoom: 16,
+                center: location,
+                styles: mapStyles,
+                disableDefaultUI: true,
+                zoomControl: true,
+                fullscreenControl: true,
+                gestureHandling: 'cooperative'
+            });
+
+            // Red branded marker
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Echo Audio Video Unlimited',
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 12,
+                    fillColor: '#D60000',
+                    fillOpacity: 1,
+                    strokeColor: '#ffffff',
+                    strokeWeight: 2.5
+                }
+            });
+
+            // Info window on click
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                  <div style="font-family:Inter,sans-serif;overflow:hidden;border-radius:4px;min-width:200px;">
+                    <!-- White body with black logo -->
+                    <div style="padding:4px 16px 12px;background:#ffffff;">
+                      <img src="/Echo Avu-black.png" alt="Echo AVU" style="height:40px;width:auto;object-fit:contain;margin-bottom:10px;display:block;">
+                      <p style="margin:0 0 2px;font-weight:700;font-size:13px;color:#111;">Echo Audio Video Unlimited</p>
+                      <p style="margin:0;font-size:12px;color:#555;line-height:1.6;">11101 – 100 St<br>Grande Prairie, AB T8V 2N2</p>
+                      <a href="https://maps.google.com/?q=11101+100+St,+Grande+Prairie,+AB+T8V+2N2"
+                         target="_blank"
+                         style="display:inline-block;margin-top:8px;color:#D60000;font-weight:700;font-size:11px;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;">
+                        Open in Maps →
+                      </a>
+                    </div>
+                  </div>`
+            });
+
+            marker.addListener('click', () => infoWindow.open(map, marker));
+
+            // Auto-open on load
+            infoWindow.open(map, marker);
+        }
+
+        window.initEchoMap = initEchoMap;
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDloOhFIuY096-eUa_aNi87nq46lN4093o&callback=initEchoMap"></script>
+
+    <!-- GLOBAL LOADER -->
+    <script src="/main.js" type="module"></script>
+    <script src="/echo-loader.js"></script>
 
 </body>
 

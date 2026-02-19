@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Remote Car Starters | Echo AVU</title>
-    <meta name="description"
-        content="Long-range remote car starters with smartphone control. Compustar, iDatastart, and NuStart systems installed by certified professionals in Grande Prairie." />
+    <meta
+        content="Long-range remote car starters with smartphone control. Compustar, iDatastart, and NuStart systems installed by certified professionals in Grande Prairie."
+        name="description" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@600;700;800&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+        rel="stylesheet" />
     <script>
         tailwind.config = {
             theme: {
@@ -44,11 +46,10 @@
     <!-- SECTION 1: HERO (Winter is Coming) -->
     <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-void">
         <!-- Hero Background Image -->
-        <img src="/assets/remote start/remote-start-hero.jpg" alt="Remote Car Starter"
-            class="absolute inset-0 w-full h-full object-cover">
+        <img alt="Remote Car Starter" class="absolute inset-0 w-full h-full object-cover opacity-50"
+            src="/assets/remote start/remote-start-hero.jpg" />
         <!-- Simple black overlay for text readability -->
-        <div class="absolute inset-0 bg-black/90 z-10"></div>
-
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-void z-10"></div>
         <div class="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
             <h1
                 class="font-heading font-extrabold text-5xl md:text-7xl lg:text-8xl text-white mb-8 uppercase tracking-tight leading-none drop-shadow-2xl">
@@ -59,21 +60,19 @@
                 class="font-body text-xl md:text-2xl text-gray-300 mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed">
                 Start your vehicle from your kitchen, your office, or halfway around the world.
             </p>
-            <a href="#consultation"
-                class="inline-block bg-echoRed hover:bg-red-700 text-white font-bold py-4 px-10 rounded transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_30px_rgba(214,0,0,0.3)]">
+            <a class="inline-block bg-echoRed lg:hover:bg-red-700 text-white font-bold py-4 px-10 rounded transition-all transform lg:hover:-translate-y-1 active:scale-95 uppercase tracking-wide text-sm shadow-[0_0_30px_rgba(214,0,0,0.3)] [&.in-view]:bg-red-700 [&.in-view]:-translate-y-1"
+                href="#consultation" data-scroll-spotlight>
                 Book Your Installation
             </a>
         </div>
-
         <!-- Scroll Down Indicator -->
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                    d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                </path>
             </svg>
         </div>
     </section>
-
     <!-- SECTION 2: THE WARRANTY PROMISE (Critical Trust Section) -->
     <section class="bg-carbon py-20 px-6 border-y border-edge">
         <div class="max-w-4xl mx-auto">
@@ -82,7 +81,6 @@
                 <div
                     class="absolute top-0 right-0 w-96 h-96 bg-echoRed/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
                 </div>
-
                 <div class="relative z-10">
                     <span class="text-echoRed font-mono text-xs uppercase tracking-widest mb-4 block font-bold">The #1
                         Concern</span>
@@ -102,25 +100,26 @@
             </div>
         </div>
     </section>
-
     <!-- SECTION 3: BRAND LEADERS (4-Column Grid) -->
     <section class="bg-void py-24 px-6 border-b border-edge">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-sm font-bold text-echoRed tracking-[0.2em] uppercase mb-4 text-center">Industry Leaders</h2>
             <p class="text-gray-400 text-center mb-16 text-lg">We exclusively install North America's most trusted
                 remote start brands.</p>
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Brand 1: Compustar -->
-                <article data-scroll-spotlight
-                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-echoRed/50 [&.in-view]:border-echoRed/50 transition-all duration-300 hover:-translate-y-2">
+                <article
+                    class="group bg-carbon border border-edge p-8 rounded-xl lg:hover:border-echoRed/50 [&amp;.in-view]:border-echoRed/50 transition-all duration-300 lg:hover:-translate-y-2 [&.in-view]:border-echoRed/50 [&.in-view]:-translate-y-2"
+                    data-scroll-spotlight="">
                     <div class="h-20 mb-6 flex items-center justify-center">
-                        <img src="/assets/brands/compustar.png" alt="Compustar"
-                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                        <a href="https://www.compustar.com" rel="noopener noreferrer" target="_blank"><img
+                                alt="Compustar"
+                                class="h-full object-contain opacity-80 lg:hover:brightness-125 lg:group-hover:opacity-100 transition-opacity [&.in-view]:brightness-125 group-[.in-view]:opacity-100"
+                                src="/assets/brands/compustar.png" data-scroll-spotlight /></a>
                     </div>
                     <h3 class="font-heading font-bold text-xl text-white mb-3 text-center">Compustar</h3>
                     <p
-                        class="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors text-center mb-4">
+                        class="text-gray-400 text-sm leading-relaxed lg:group-hover:text-gray-300 transition-colors text-center mb-4 group-[.in-view]:text-gray-300">
                         Up to 3-mile range with 2-way confirmation. The gold standard for reliability.
                     </p>
                     <div class="pt-4 border-t border-edge">
@@ -129,52 +128,56 @@
                         <p class="text-xs text-gray-500 text-center mt-1">Smartphone control from anywhere</p>
                     </div>
                 </article>
-
                 <!-- Brand 2: Compustar Pro -->
-                <article data-scroll-spotlight
-                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/50 [&.in-view]:border-white/50 transition-all duration-300 hover:-translate-y-2">
+                <article
+                    class="group bg-carbon border border-edge p-8 rounded-xl lg:hover:border-white/50 [&amp;.in-view]:border-white/50 transition-all duration-300 lg:hover:-translate-y-2 [&.in-view]:border-white/50 [&.in-view]:-translate-y-2"
+                    data-scroll-spotlight="">
                     <div class="h-20 mb-6 flex items-center justify-center">
-                        <img src="/assets/brands/compustar.png" alt="Compustar Pro"
-                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                        <a href="https://www.compustar.com" rel="noopener noreferrer" target="_blank"><img
+                                alt="Compustar Pro"
+                                class="h-full object-contain opacity-80 lg:hover:brightness-125 lg:group-hover:opacity-100 transition-opacity [&.in-view]:brightness-125 group-[.in-view]:opacity-100"
+                                src="/assets/brands/compustar.png" data-scroll-spotlight /></a>
                     </div>
                     <h3 class="font-heading font-bold text-xl text-white mb-3 text-center">Compustar Pro</h3>
                     <p
-                        class="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors text-center">
+                        class="text-gray-400 text-sm leading-relaxed lg:group-hover:text-gray-300 transition-colors text-center group-[.in-view]:text-gray-300">
                         Professional-grade systems with advanced security features and extended range.
                     </p>
                 </article>
-
                 <!-- Brand 3: iDatastart -->
-                <article data-scroll-spotlight
-                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-echoBlue/50 [&.in-view]:border-echoBlue/50 transition-all duration-300 hover:-translate-y-2">
+                <article
+                    class="group bg-carbon border border-edge p-8 rounded-xl lg:hover:border-echoBlue/50 [&amp;.in-view]:border-echoBlue/50 transition-all duration-300 lg:hover:-translate-y-2 [&.in-view]:border-echoBlue/50 [&.in-view]:-translate-y-2"
+                    data-scroll-spotlight="">
                     <div class="h-20 mb-6 flex items-center justify-center">
-                        <img src="/assets/brands/logo_idatastart_en.png" alt="iDatastart"
-                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                        <a href="https://www.idatastart.com" rel="noopener noreferrer" target="_blank"><img
+                                alt="iDatastart"
+                                class="h-full object-contain opacity-80 lg:hover:brightness-125 lg:group-hover:opacity-100 transition-opacity [&.in-view]:brightness-125 group-[.in-view]:opacity-100"
+                                src="/assets/brands/logo_idatastart_en.png" data-scroll-spotlight /></a>
                     </div>
                     <h3 class="font-heading font-bold text-xl text-white mb-3 text-center">iDatastart</h3>
                     <p
-                        class="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors text-center">
+                        class="text-gray-400 text-sm leading-relaxed lg:group-hover:text-gray-300 transition-colors text-center group-[.in-view]:text-gray-300">
                         Canadian-engineered precision. Built for extreme climates and harsh winters.
                     </p>
                 </article>
-
                 <!-- Brand 4: NuStart -->
-                <article data-scroll-spotlight
-                    class="group bg-carbon border border-edge p-8 rounded-xl hover:border-white/50 [&.in-view]:border-white/50 transition-all duration-300 hover:-translate-y-2">
+                <article
+                    class="group bg-carbon border border-edge p-8 rounded-xl lg:hover:border-white/50 [&amp;.in-view]:border-white/50 transition-all duration-300 lg:hover:-translate-y-2 [&.in-view]:border-white/50 [&.in-view]:-translate-y-2"
+                    data-scroll-spotlight="">
                     <div class="h-20 mb-6 flex items-center justify-center">
-                        <img src="\assets\brands\logo-nustart.png" alt="nustart"
-                            class="h-full object-contain opacity-80 hover:brightness-125 group-hover:opacity-100 transition-opacity">
+                        <a href="https://www.nustart.ca" rel="noopener noreferrer" target="_blank"><img alt="nustart"
+                                class="h-full object-contain opacity-80 lg:hover:brightness-125 lg:group-hover:opacity-100 transition-opacity [&.in-view]:brightness-125 group-[.in-view]:opacity-100"
+                                src="\assets\brands\logo-nustart.png" data-scroll-spotlight /></a>
                     </div>
                     <h3 class="font-heading font-bold text-xl text-white mb-3 text-center">Value System</h3>
                     <p
-                        class="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors text-center">
+                        class="text-gray-400 text-sm leading-relaxed lg:group-hover:text-gray-300 transition-colors text-center group-[.in-view]:text-gray-300">
                         Proven performance at an accessible price point. Perfect for first-time buyers.
                     </p>
                 </article>
             </div>
         </div>
     </section>
-
     <!-- SECTION 4: RANGE & FEATURES (Icons) -->
     <section class="bg-carbon py-24 px-6 border-b border-edge">
         <div class="max-w-7xl mx-auto">
@@ -182,15 +185,15 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- Feature 1: 3-Mile Range -->
-                <div class="text-center group">
+                <div class="text-center group" data-scroll-spotlight>
                     <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-edge rounded-full mb-6 group-hover:bg-echoRed transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-white">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                            <path d="M2 12h20" />
+                        class="inline-flex items-center justify-center w-20 h-20 bg-edge rounded-full mb-6 lg:group-hover:bg-echoRed transition-colors duration-300 group-[.in-view]:bg-echoRed">
+                        <svg class="text-white" fill="none" height="32" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
                         </svg>
                     </div>
                     <h4 class="text-white font-bold text-xl mb-3">3-Mile Range</h4>
@@ -199,16 +202,15 @@
                         line-of-sight required.
                     </p>
                 </div>
-
                 <!-- Feature 2: 2-Way Confirmation -->
-                <div class="text-center group">
+                <div class="text-center group" data-scroll-spotlight>
                     <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-edge rounded-full mb-6 group-hover:bg-echoRed transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-white">
-                            <polyline points="9 11 12 14 22 4" />
-                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        class="inline-flex items-center justify-center w-20 h-20 bg-edge rounded-full mb-6 lg:group-hover:bg-echoRed transition-colors duration-300 group-[.in-view]:bg-echoRed">
+                        <svg class="text-white" fill="none" height="32" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
                         </svg>
                     </div>
                     <h4 class="text-white font-bold text-xl mb-3">2-Way Confirmation</h4>
@@ -216,16 +218,15 @@
                         Your remote beeps and vibrates to confirm your car actually started. No more guessing.
                     </p>
                 </div>
-
                 <!-- Feature 3: Smartphone Control -->
-                <div class="text-center group">
+                <div class="text-center group" data-scroll-spotlight>
                     <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-edge rounded-full mb-6 group-hover:bg-echoRed transition-colors duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-white">
-                            <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
-                            <path d="M12 18h.01" />
+                        class="inline-flex items-center justify-center w-20 h-20 bg-edge rounded-full mb-6 lg:group-hover:bg-echoRed transition-colors duration-300 group-[.in-view]:bg-echoRed">
+                        <svg class="text-white" fill="none" height="32" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect height="20" rx="2" ry="2" width="14" x="5" y="2"></rect>
+                            <path d="M12 18h.01"></path>
                         </svg>
                     </div>
                     <h4 class="text-white font-bold text-xl mb-3">Smartphone Control</h4>
@@ -237,7 +238,7 @@
         </div>
     </section>
     <!-- CONSULTATION SECTION -->
-    <section id="consultation" class="bg-carbon py-24 px-6 border-t border-edge">
+    <section class="bg-carbon py-24 px-6 border-t border-edge" id="consultation">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col lg:flex-row gap-16 items-start">
                 <!-- LEFT COLUMN: Text Content -->
@@ -272,9 +273,9 @@
                                 </select>
                                 <div
                                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7" />
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -285,38 +286,58 @@
                                 Interested In</label>
                             <div class="grid grid-cols-2 gap-3">
                                 <label
-                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
-                                    <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
-                                    <span class="text-sm text-gray-300 group-hover:text-white">1-Way Remote
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5"
+                                    data-scroll-spotlight>
+                                    <input
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
+                                        type="checkbox" />
+                                    <span
+                                        class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">1-Way
+                                        Remote
                                         Starter</span>
                                 </label>
                                 <label
-                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
-                                    <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
-                                    <span class="text-sm text-gray-300 group-hover:text-white">2-Way Remote Starter
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5"
+                                    data-scroll-spotlight>
+                                    <input
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
+                                        type="checkbox" />
+                                    <span
+                                        class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">2-Way
+                                        Remote Starter
                                         (LED/LCD)</span>
                                 </label>
                                 <label
-                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
-                                    <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
-                                    <span class="text-sm text-gray-300 group-hover:text-white">DroneMobile (Smartphone
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5"
+                                    data-scroll-spotlight>
+                                    <input
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
+                                        type="checkbox" />
+                                    <span
+                                        class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">DroneMobile
+                                        (Smartphone
                                         Control)</span>
                                 </label>
                                 <label
-                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
-                                    <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
-                                    <span class="text-sm text-gray-300 group-hover:text-white">Security / Alarm
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5"
+                                    data-scroll-spotlight>
+                                    <input
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
+                                        type="checkbox" />
+                                    <span
+                                        class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Security
+                                        / Alarm
                                         Combo</span>
                                 </label>
                                 <label
-                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer hover:bg-white/5 transition-colors group">
-                                    <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
-                                    <span class="text-sm text-gray-300 group-hover:text-white">Fleet Installation</span>
+                                    class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5"
+                                    data-scroll-spotlight>
+                                    <input
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
+                                        type="checkbox" />
+                                    <span
+                                        class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Fleet
+                                        Installation</span>
                                 </label>
                             </div>
                         </div>
@@ -325,20 +346,23 @@
                             <div class="md:col-span-2">
                                 <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
-                                <input type="text"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                <input
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
+                                    type="text" />
                             </div>
                             <div>
                                 <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
-                                <input type="email"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                <input
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
+                                    type="email" />
                             </div>
                             <div>
                                 <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
-                                <input type="tel"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                <input
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
+                                    type="tel" />
                             </div>
                         </div>
                         <!-- Preferred Time -->
@@ -355,16 +379,17 @@
                                 </select>
                                 <div
                                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7" />
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"></path>
                                     </svg>
                                 </div>
                             </div>
                         </div>
                         <!-- Submit Button -->
-                        <button type="submit"
-                            class="w-full bg-echoRed hover:bg-red-700 text-white font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4">
+                        <button
+                            class="w-full bg-echoRed lg:hover:bg-red-700 text-white font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4 [&.in-view]:bg-red-700"
+                            type="submit" data-scroll-spotlight>
                             Book Installation
                         </button>
                     </form>
@@ -376,8 +401,9 @@
         <div class="container mx-auto px-6">
             <h2 class="font-heading font-bold text-3xl text-white mb-4">Browse Current Inventory.</h2>
             <p class="font-body text-gray-400 mb-8">View our live selection of products and pricing.</p> <button
+                class="bg-edge text-gray-400 font-bold py-4 px-12 rounded-lg border border-gray-700 cursor-not-allowed lg:hover:bg-edge/80 transition-all [&.in-view]:bg-edge/80"
                 onclick="alert('Online purchasing coming soon. Please visit our showroom for current stock and pricing.')"
-                class="bg-edge text-gray-400 font-bold py-4 px-12 rounded-lg border border-gray-700 cursor-not-allowed hover:bg-edge/80 transition-all">
+                data-scroll-spotlight>
                 Shop Now ?? </button>
             <p class="font-body text-xs text-gray-600 mt-6 uppercase tracking-widest">Online purchasing coming soon.
                 Visit us in-store today.</p>
@@ -385,11 +411,10 @@
     </section>
     <!-- ⭐ FOOTER PLACEHOLDER - DO NOT EDIT ⭐ -->
     <div id="footer-placeholder"></div>
-    </div>
-    </div>
+
 
     <!-- MAIN JS (Global logic + Scroll Effects) -->
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js" type="module"></script>
     <script>
         // Mobile Menu Logic
         document.addEventListener('DOMContentLoaded', () => {
@@ -416,8 +441,7 @@
         });
     </script>
     <!-- ⭐ GLOBAL COMPONENT LOADER - REQUIRED ⭐ -->
-    <script src="global-loader.js"></script>
-
+    <script src="/echo-loader.js"></script>
 </body>
 
 </html>
