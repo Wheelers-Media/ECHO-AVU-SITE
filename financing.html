@@ -44,9 +44,9 @@
                     <div
                         class="absolute top-0 right-0 w-64 h-64 bg-echoRed/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
                     </div>
-                    <div class="text-center mb-10 relative z-10"> <img src="/assets/brands/Flexiti.png" alt="Flexiti"
-                            class="h-12 w-auto mx-auto mb-6">
-                        <h2 class="font-heading font-bold text-3xl text-white mb-2">Flexible Financing with Flexiti</h2>
+                    <div class="text-center mb-1 relative z-10"> <img src="/assets/brands/Flexiti.png" alt="Flexiti"
+                            class="h-40 w-auto mx-auto mb-6">
+                        <h2 class="font-heading font-bold text-3xl text-white mb-1">Flexible Financing with Flexiti</h2>
                         <p class="text-gray-400 text-sm">Get the system you want today. 0% Interest plans available
                             O.A.C.</p>
                     </div>
@@ -231,33 +231,10 @@
                 `;
             }).catch(err => console.error("Form error:", err));
 
-            // 3. Launch Secure Iframe Modal
-            const flexitiUrl = "https://flexiti.com";
-
-            const popupHtml = `
-            <div id="flexiti-modal" class="fixed inset-0 z-[99999] flex items-center justify-center p-4 md:p-10 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300">
-                <div class="bg-void w-full max-w-[1240px] h-full md:h-[95vh] rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(214,0,0,0.15)] relative flex flex-col scale-95 transform transition-transform duration-300 border border-edge" id="flexiti-modal-inner">
-                    <!-- Secure Header -->
-                    <div class="flex justify-between items-center p-4 bg-carbon border-b border-edge">
-                        <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">SECURE PAYMENT PORTAL</span>
-                        </div>
-                        <button onclick="document.getElementById('flexiti-modal').remove()" class="p-2 transition-colors lg:hover:bg-edge rounded-full text-white">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </button>
-                    </div>
-                    <!-- Frame -->
-                    <iframe src="${flexitiUrl}" class="w-full h-full border-0 flex-grow bg-white" allow="payment; secure-payment"></iframe>
-                </div>
-            </div>`;
-
-            document.body.insertAdjacentHTML('beforeend', popupHtml);
-
+            // 3. Redirect to Flexiti
             setTimeout(() => {
-                document.getElementById('flexiti-modal').classList.remove('opacity-0');
-                document.getElementById('flexiti-modal-inner').classList.remove('scale-95');
-            }, 50);
+                window.location.href = "https://flexiti.com";
+            }, 1000); // 1 second delay to allow user to see success message
         });
     </script>
     <!-- ? GLOBAL COMPONENT LOADER - REQUIRED ? -->
