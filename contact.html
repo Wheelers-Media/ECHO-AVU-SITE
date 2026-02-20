@@ -140,19 +140,21 @@
                         <p class="text-gray-500 text-sm mb-8">We read every inquiry personally and respond within 24
                             hours.</p>
 
-                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-5" novalidate>
-    <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
-    <input type="hidden" name="from_name" value="Echo AVU Lead System">
-    <input type="hidden" name="System_Alert" value="New Website Consultation Request">
-    <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-contact.html">
-    <input type="hidden" name="subject" value="New Lead: General Contact Form">
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form"
+                            class="space-y-5" novalidate>
+                            <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+                            <input type="hidden" name="from_name" value="Echo AVU Lead System">
+                            <input type="hidden" name="System Alert" value="New Website Consultation Request">
+                            <input type="hidden" name="subject" value="New Lead: General Contact Form">
+                            <input type="hidden" name="Subject" value="New Lead: General Contact Form">
+                            <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-contact.html">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <!-- Name -->
                             <div>
                                 <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                     for="contact-name">Full Name</label>
                                 <input id="contact-name" type="text" required placeholder="Your full name"
-                                    class="echo-input" name="contact_name">
+                                    class="echo-input" name="Full Name">
                             </div>
 
                             <!-- Email + Phone -->
@@ -162,14 +164,14 @@
                                         class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                         for="contact-email">Email Address</label>
                                     <input id="contact-email" type="email" required placeholder="your@email.com"
-                                        class="echo-input" name="contact_email">
+                                        class="echo-input" name="Email Address">
                                 </div>
                                 <div>
                                     <label
                                         class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                         for="contact-phone">Phone Number</label>
-                                    <input id="contact-phone" type="tel" placeholder="(780) 555-1234"
-                                        class="echo-input" name="contact_phone">
+                                    <input id="contact-phone" type="tel" placeholder="(780) 555-1234" class="echo-input"
+                                        name="Phone Number">
                                 </div>
                             </div>
 
@@ -178,7 +180,8 @@
                                 <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                     for="contact-service">Service Interest</label>
                                 <div class="relative">
-                                    <select id="contact-service" class="echo-input pr-10 cursor-pointer" name="contact_service">
+                                    <select id="contact-service" class="echo-input pr-10 cursor-pointer"
+                                        name="Service Interest">
                                         <option value="">Select a service…</option>
                                         <option>General Inquiry</option>
                                         <option>Car Audio &amp; Installation</option>
@@ -206,12 +209,12 @@
                                     for="contact-message">Your Message</label>
                                 <textarea id="contact-message" rows="5" required
                                     placeholder="Tell us about your project, space, or question…"
-                                    class="echo-input resize-none" name="contact_message"></textarea>
+                                    class="echo-input resize-none" name="Message"></textarea>
                             </div>
 
                             <!-- Submit -->
-                            <button type="submit" id="submit-btn"
-                                data-scroll-spotlight class="btn-submit w-full bg-echoRed text-white font-heading font-bold py-4 rounded-lg uppercase tracking-wider text-sm">
+                            <button type="submit" id="submit-btn" data-scroll-spotlight
+                                class="btn-submit w-full bg-echoRed text-white font-heading font-bold py-4 rounded-lg uppercase tracking-wider text-sm">
                                 Send Message →
                             </button>
 
@@ -275,7 +278,8 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                         <!-- Location -->
-                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                        <div data-scroll-spotlight
+                            class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
                             <div
                                 class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -300,7 +304,8 @@
                         </div>
 
                         <!-- Phone -->
-                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                        <div data-scroll-spotlight
+                            class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
                             <div
                                 class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -319,7 +324,8 @@
                         </div>
 
                         <!-- Email -->
-                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                        <div data-scroll-spotlight
+                            class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
                             <div
                                 class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,7 +345,8 @@
                         </div>
 
                         <!-- Hours -->
-                        <div data-scroll-spotlight class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
+                        <div data-scroll-spotlight
+                            class="info-card bg-carbon border border-edge rounded-xl p-6 flex gap-4 items-start">
                             <div
                                 class="w-10 h-10 bg-echoRed/10 border border-echoRed/30 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg class="w-5 h-5 text-echoRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -438,23 +445,7 @@
             updateShowroomStatus();
             setInterval(updateShowroomStatus, 60000);
 
-            // Form submit handler
-            const form = document.getElementById('contact-form');
-            const successMsg = document.getElementById('form-success');
-            const submitBtn = document.getElementById('submit-btn');
-            if (form) {
-                form.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    submitBtn.disabled = true;
-                    submitBtn.textContent = 'Sending…';
-                    // Simulate submission : wire to backend/Formspree as needed
-                    setTimeout(() => {
-                        form.reset();
-                        submitBtn.style.display = 'none';
-                        successMsg.classList.remove('hidden');
-                    }, 1200);
-                });
-            }
+            // Make sure map initiates OK.
         });
     </script>
 

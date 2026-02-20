@@ -54,35 +54,63 @@
                         class="space-y-6 relative z-10">
                         <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
                         <input type="hidden" name="from_name" value="Echo AVU Lead System">
-                        <input type="hidden" name="System_Alert" value="New Website Consultation Request">
-                        <input type="hidden" name="redirect"
-                            value="https://online.flexiti.fi/?ampDeviceId=7e6b2bb2-2f7b-4ae7-bd83-4f54690ddaf1&ampSessionId=1771554560262&referring_domain=www.google.com#/flexiti-new-website-prd/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiJvbmxpbmUtdW5kZWZpbmVkLTI3NjAxNzIyIiwiaWF0IjoxNzcxNTU0Nzk2LCJleHAiOjE3NzE1NTU5OTYsImlzcyI6IkZsZXhpdGkiLCJzdWIiOiJvbmxpbmUtdW5kZWZpbmVkLTI3NjAxNzIyIn0.aj5EQGx_2G1OPMvrQ6ofnkZAsmq2FEkgGGpWBEecjjU?lang=en&onlineSessionId=764d56ef-5418-80ba-9481-5d224d587f76&TB_iframe=true&width=1190.7&height=1156.5">
+                        <input type="hidden" name="System Alert" value="New Website Consultation Request">
                         <input type="hidden" name="subject" value="New Lead: Flexiti Financing Inquiry">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <input
-                            type="hidden" name="_next" value="https://www.flexiti.com"> <input type="hidden"
-                            name="_subject" value="New Financing Lead: Echo AVU"> <!-- Name: First & Last -->
+                        <input type="hidden" name="Subject" value="New Financing Lead: Echo AVU">
+                        <input type="hidden" name="Forwarded to Link" value="https://www.flexiti.com">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <!-- Name: First & Last -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-2 group" data-scroll-spotlight> <label
                                     class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">First
                                     Name</label> <input type="text" required
                                     class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                    placeholder="John" name="john"> </div>
+                                    placeholder="John" name="First Name"> </div>
                             <div class="space-y-2 group" data-scroll-spotlight> <label
                                     class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Last
                                     Name</label> <input type="text" required
                                     class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                    placeholder="Doe" name="doe"> </div>
+                                    placeholder="Doe" name="Last Name"> </div>
                         </div> <!-- Contact: Email -->
                         <div class="space-y-2 group" data-scroll-spotlight> <label
                                 class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Email
                                 Address</label> <input type="email" required
                                 class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                placeholder="john@example.com" name="johnexamplecom"> </div> <!-- Location: City -->
+                                placeholder="john@example.com" name="Email Address"> </div> <!-- Location: City -->
                         <div class="space-y-2 group" data-scroll-spotlight> <label
                                 class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Which
                                 City Are You Located?</label> <input type="text" required
                                 class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                placeholder="Grande Prairie" name="grande_prairie"> </div>
+                                placeholder="Grande Prairie" name="City"> </div>
+                        <!-- Product / Service Interest -->
+                        <div class="space-y-2 group" data-scroll-spotlight>
+                            <label
+                                class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Project
+                                / Product Interest</label>
+                            <div class="relative">
+                                <select required
+                                    class="w-full bg-edge border border-transparent rounded-lg p-4 text-white appearance-none focus:border-echoRed focus:outline-none focus:ring-0 transition-colors cursor-pointer"
+                                    name="Project Interest">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="Home Theater / Cinema">Home Theater / Cinema</option>
+                                    <option value="Whole-Home Automation">Whole-Home Automation</option>
+                                    <option value="Car Audio / Starters">Car Audio / Starters</option>
+                                    <option value="Marine & Powersports">Marine & Powersports</option>
+                                    <option value="Security & Surveillance">Security & Surveillance</option>
+                                    <option value="Commercial / Retail">Commercial / Retail</option>
+                                    <option value="Other / Unsure">Other / Unsure</option>
+                                </select>
+                                <!-- Custom Arrow -->
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">
+                                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Payment Plan Preference -->
                         <div class="space-y-4"> <label
                                 class="block text-xs uppercase tracking-wider text-gray-500 font-bold">Payment Plan
@@ -90,7 +118,7 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> <label
                                     class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
                                     data-scroll-spotlight>
-                                    <input type="radio" name="plan" value="3_months" class="sr-only" checked>
+                                    <input type="radio" name="Payment Plan" value="3 Months" class="sr-only" checked>
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
                                         <div
@@ -101,7 +129,7 @@
                                 </label> <label
                                     class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
                                     data-scroll-spotlight>
-                                    <input type="radio" name="plan" value="6_months" class="sr-only">
+                                    <input type="radio" name="Payment Plan" value="6 Months" class="sr-only">
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
                                         <div
@@ -112,7 +140,7 @@
                                 </label> <label
                                     class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
                                     data-scroll-spotlight>
-                                    <input type="radio" name="plan" value="12_months" class="sr-only">
+                                    <input type="radio" name="Payment Plan" value="12 Months" class="sr-only">
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
                                         <div
@@ -123,7 +151,7 @@
                                 </label> <label
                                     class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
                                     data-scroll-spotlight>
-                                    <input type="radio" name="plan" value="long_term" class="sr-only">
+                                    <input type="radio" name="Payment Plan" value="36/48/60 Months" class="sr-only">
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
                                         <div
@@ -217,6 +245,9 @@
 
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
                 body: formData
             }).then(() => {
                 // 2. Update form state on success
@@ -226,14 +257,14 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         <h3 class="text-white font-bold text-2xl mb-2 italic">Application Started</h3>
-                        <p class="text-gray-400 font-body">Please complete your secure application within the Flexiti portal popup.</p>
+                        <p class="text-gray-400 font-body">Please complete your official application within the newly opened Flexiti tab.</p>
                     </div>
                 `;
             }).catch(err => console.error("Form error:", err));
 
-            // 3. Redirect to Flexiti
+            // 3. Open Flexiti in a New Tab
             setTimeout(() => {
-                window.location.href = "https://flexiti.com";
+                window.open("https://flexiti.com", "_blank");
             }, 1000); // 1 second delay to allow user to see success message
         });
     </script>

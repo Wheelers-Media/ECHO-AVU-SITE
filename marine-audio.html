@@ -256,9 +256,10 @@
                 <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
                     <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
                     <input type="hidden" name="from_name" value="Echo AVU Lead System">
-                    <input type="hidden" name="System_Alert" value="New Website Consultation Request">
+                    <input type="hidden" name="System Alert" value="New Website Consultation Request">
                     <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-auto.html">
                     <input type="hidden" name="subject" value="New Lead: Marine Audio Consultation">
+                    <input type="hidden" name="Subject" value="New Lead: Marine Audio Consultation">
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <!-- Vehicle Info Row -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Boat /
@@ -266,7 +267,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="relative"> <select
                                     class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                    name="field">
+                                    name="Boat Info">
                                     <option>Wake Boat</option>
                                     <option>Pontoon</option>
                                     <option>Jet Boat</option>
@@ -282,8 +283,7 @@
                                 </div>
                             </div> <input
                                 class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full"
-                                placeholder="Make &amp; Model (e.g. MasterCraft X24)" type="text"
-                                name="make_amp_model_eg_mastercraft_x24">
+                                placeholder="Make &amp; Model (e.g. MasterCraft X24)" type="text" name="Make and Model">
                         </div>
                     </div> <!-- System Goals -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">System
@@ -293,7 +293,7 @@
                                 data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" name="checkbox">
+                                    type="checkbox" name="System Goals[]" value="Marine Audio System">
                                 <span
                                     class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Marine
                                     Audio System
@@ -303,7 +303,7 @@
                                 data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" name="checkbox">
+                                    type="checkbox" name="System Goals[]" value="Wake Tower Speakers">
                                 <span
                                     class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Wake
                                     Tower Speakers</span>
@@ -313,7 +313,7 @@
                                 data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" name="checkbox">
+                                    type="checkbox" name="System Goals[]" value="Powersports Audio">
                                 <span
                                     class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Powersports
                                     / Side-by-Side
@@ -323,7 +323,7 @@
                                 data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" name="checkbox">
+                                    type="checkbox" name="System Goals[]" value="RGB Lighting Kit">
                                 <span
                                     class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">RGB
                                     Lighting Kit</span>
@@ -333,7 +333,7 @@
                                 data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" name="checkbox">
+                                    type="checkbox" name="System Goals[]" value="Marine Subwoofers">
                                 <span
                                     class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Marine
                                     Subwoofers</span>
@@ -343,7 +343,7 @@
                                 data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" name="checkbox">
+                                    type="checkbox" name="System Goals[]" value="Dual Battery Setup">
                                 <span
                                     class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Dual
                                     Battery Setup</span>
@@ -355,27 +355,26 @@
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="text" name="text">
+                                type="text" name="Name" required>
                         </div>
                         <div> <label
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="email" name="email">
+                                type="email" name="Email" required>
                         </div>
                         <div> <label
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="tel" name="tel">
+                                type="tel" name="Phone">
                         </div>
                     </div> <!-- Goals/Notes -->
                     <div> <label
                             class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Notes</label>
                         <textarea
                             class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"
-                            placeholder="Need it done by May long weekend..." rows="3"
-                            name="need_it_done_by_may_long_weekend"></textarea>
+                            placeholder="Need it done by May long weekend..." rows="3" name="Notes"></textarea>
                     </div> <!-- Submit Button --> <button
                         class="w-full bg-white lg:hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4 [&.in-view]:bg-gray-200"
                         type="submit" data-scroll-spotlight>

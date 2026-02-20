@@ -504,29 +504,30 @@
           <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 relative z-10">
             <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
             <input type="hidden" name="from_name" value="Echo AVU Lead System">
-            <input type="hidden" name="System_Alert" value="New Website Consultation Request">
+            <input type="hidden" name="System Alert" value="New Website Consultation Request">
             <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-home.html">
             <input type="hidden" name="subject" value="New Lead: Homepage General Consultation">
+            <input type="hidden" name="Subject" value="New Lead: Homepage General Consultation">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">First
                   Name</label> <input
                   class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                  placeholder="John" type="text" name="john"> </div>
+                  placeholder="John" type="text" name="First Name" required> </div>
               <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">Last
                   Name</label> <input
                   class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                  placeholder="Doe" type="text" name="doe"> </div>
+                  placeholder="Doe" type="text" name="Last Name" required> </div>
             </div>
             <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">Email
                 Address</label> <input
                 class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                placeholder="john@example.com" type="email" name="johnexamplecom"> </div>
+                placeholder="john@example.com" type="email" name="Email Address" required> </div>
             <div class="space-y-2"> <label class="text-xs uppercase tracking-wider text-gray-500 font-bold">Project
                 Interest</label>
               <div class="relative"> <select
                   class="w-full bg-edge border border-transparent rounded-lg p-4 text-white appearance-none focus:border-white focus:outline-none focus:ring-0 transition-colors cursor-pointer"
-                  name="field">
+                  name="Project Interest">
                   <option>Home Theater / Cinema</option>
                   <option>Whole-Home Automation</option>
                   <option>Security &amp; Surveillance</option>
@@ -542,7 +543,7 @@
             <div class="space-y-2"> <label
                 class="text-xs uppercase tracking-wider text-gray-500 font-bold">Message</label> <textarea
                 class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-white focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                placeholder="Tell us about your project..." rows="3" name="tell_us_about_your_project"></textarea>
+                placeholder="Tell us about your project..." rows="3" name="Message"></textarea>
             </div> <button
               class="w-full bg-white lg:hover:bg-gray-200 text-black font-bold py-4 rounded-lg mt-2 uppercase tracking-wide text-sm transition-transform active:scale-95 shadow-lg [&.in-view]:bg-gray-200"
               type="submit" data-scroll-spotlight>

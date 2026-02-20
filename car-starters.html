@@ -259,19 +259,21 @@
                 <!-- RIGHT COLUMN: The Form -->
                 <div class="w-full lg:w-1/2 bg-void p-8 md:p-10 rounded-xl border border-edge shadow-2xl">
                     <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-    <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
-    <input type="hidden" name="from_name" value="Echo AVU Lead System">
-    <input type="hidden" name="System_Alert" value="New Website Consultation Request">
-    <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-auto.html">
-    <input type="hidden" name="subject" value="New Lead: Remote Starter Consultation">
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+                        <input type="hidden" name="from_name" value="Echo AVU Lead System">
+                        <input type="hidden" name="System Alert" value="New Website Consultation Request">
+                        <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-auto.html">
+                        <input type="hidden" name="subject" value="New Lead: Remote Starter Consultation">
+                        <input type="hidden" name="Subject" value="New Lead: Remote Starter Consultation">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <!-- Vehicle Info -->
                         <div>
                             <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Vehicle
                                 Type</label>
                             <div class="relative">
                                 <select
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none" name="field">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none"
+                                    name="Vehicle Type">
                                     <option>Truck / SUV</option>
                                     <option>Car / Sedan</option>
                                     <option>Luxury Vehicle</option>
@@ -296,7 +298,7 @@
                                     data-scroll-spotlight>
                                     <input
                                         class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                        type="checkbox" name="checkbox">
+                                        type="checkbox" name="System Interest[]" value="1-Way Remote Starter">
                                     <span
                                         class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">1-Way
                                         Remote
@@ -307,7 +309,7 @@
                                     data-scroll-spotlight>
                                     <input
                                         class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                        type="checkbox" name="checkbox">
+                                        type="checkbox" name="System Interest[]" value="2-Way Remote Starter">
                                     <span
                                         class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">2-Way
                                         Remote Starter
@@ -318,7 +320,7 @@
                                     data-scroll-spotlight>
                                     <input
                                         class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                        type="checkbox" name="checkbox">
+                                        type="checkbox" name="System Interest[]" value="DroneMobile">
                                     <span
                                         class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">DroneMobile
                                         (Smartphone
@@ -329,7 +331,7 @@
                                     data-scroll-spotlight>
                                     <input
                                         class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                        type="checkbox" name="checkbox">
+                                        type="checkbox" name="System Interest[]" value="Security Combo">
                                     <span
                                         class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Security
                                         / Alarm
@@ -340,7 +342,7 @@
                                     data-scroll-spotlight>
                                     <input
                                         class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                        type="checkbox" name="checkbox">
+                                        type="checkbox" name="System Interest[]" value="Fleet Installation">
                                     <span
                                         class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Fleet
                                         Installation</span>
@@ -354,21 +356,21 @@
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
                                 <input
                                     class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                    type="text" name="text">
+                                    type="text" name="Name" required>
                             </div>
                             <div>
                                 <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
                                 <input
                                     class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                    type="email" name="email">
+                                    type="email" name="Email" required>
                             </div>
                             <div>
                                 <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
                                 <input
                                     class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                    type="tel" name="tel">
+                                    type="tel" name="Phone">
                             </div>
                         </div>
                         <!-- Preferred Time -->
@@ -377,7 +379,8 @@
                                 Install Time</label>
                             <div class="relative">
                                 <select
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none" name="field">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none"
+                                    name="Preferred Install Time">
                                     <option>Weekdays after 5pm</option>
                                     <option>Weekdays 9am - 5pm</option>
                                     <option>Saturday Morning</option>
