@@ -219,6 +219,61 @@
             mobileServicesMenu.classList.toggle('flex');
             mobileServicesToggle.querySelector('svg').classList.toggle('rotate-180');
         });
+
+        // Flexiti Merchant Popup Intercept
+        document.getElementById('financingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+
+            // 1. Background submission to Web3Forms
+            const formData = new FormData(this);
+            btn.innerText = "Connecting Securely...";
+            btn.disabled = true;
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            }).then(() => {
+                // 2. Update form state on success
+                e.target.innerHTML = `
+                    <div class="text-center py-10 bg-echoRed/10 border border-echoRed/30 rounded-xl">
+                        <svg class="w-12 h-12 text-echoRed mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <h3 class="text-white font-bold text-2xl mb-2 italic">Application Started</h3>
+                        <p class="text-gray-400 font-body">Please complete your secure application within the Flexiti portal popup.</p>
+                    </div>
+                `;
+            }).catch(err => console.error("Form error:", err));
+
+            // 3. Launch Secure Iframe Modal
+            const flexitiUrl = "https://online.flexiti.fi/?ampDeviceId=7e6b2bb2-2f7b-4ae7-bd83-4f54690ddaf1&ampSessionId=1771554560262&referring_domain=www.google.com#/flexiti-new-website-prd/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiJvbmxpbmUtdW5kZWZpbmVkLTI3NjAxNzIyIiwiaWF0IjoxNzcxNTU0Nzk2LCJleHAiOjE3NzE1NTU5OTYsImlzcyI6IkZsZXhpdGkiLCJzdWIiOiJvbmxpbmUtdW5kZWZpbmVkLTI3NjAxNzIyIn0.aj5EQGx_2G1OPMvrQ6ofnkZAsmq2FEkgGGpWBEecjjU?lang=en&onlineSessionId=764d56ef-5418-80ba-9481-5d224d587f76&TB_iframe=true&width=1190.7&height=1156.5";
+
+            const popupHtml = `
+            <div id="flexiti-modal" class="fixed inset-0 z-[99999] flex items-center justify-center p-4 md:p-10 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300">
+                <div class="bg-void w-full max-w-[1240px] h-full md:h-[95vh] rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(214,0,0,0.15)] relative flex flex-col scale-95 transform transition-transform duration-300 border border-edge" id="flexiti-modal-inner">
+                    <!-- Secure Header -->
+                    <div class="flex justify-between items-center p-4 bg-carbon border-b border-edge">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">SECURE PAYMENT PORTAL</span>
+                        </div>
+                        <button onclick="document.getElementById('flexiti-modal').remove()" class="p-2 transition-colors lg:hover:bg-edge rounded-full text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+                    <!-- Frame -->
+                    <iframe src="${flexitiUrl}" class="w-full h-full border-0 flex-grow bg-white" allow="payment; secure-payment"></iframe>
+                </div>
+            </div>`;
+
+            document.body.insertAdjacentHTML('beforeend', popupHtml);
+
+            setTimeout(() => {
+                document.getElementById('flexiti-modal').classList.remove('opacity-0');
+                document.getElementById('flexiti-modal-inner').classList.remove('scale-95');
+            }, 50);
+        });
     </script>
     <!-- ? GLOBAL COMPONENT LOADER - REQUIRED ? -->
     <script src="/main.js" type="module"></script>
