@@ -204,21 +204,6 @@
     </div>
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-        const mobileServicesToggle = document.getElementById('mobile-services-toggle');
-        const mobileServicesMenu = document.getElementById('mobile-services-menu');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mobileMenuOverlay.classList.toggle('translate-x-full');
-        });
-
-        mobileServicesToggle.addEventListener('click', () => {
-            mobileServicesMenu.classList.toggle('hidden');
-            mobileServicesMenu.classList.toggle('flex');
-            mobileServicesToggle.querySelector('svg').classList.toggle('rotate-180');
-        });
 
         // Flexiti Merchant Popup Intercept
         document.getElementById('financingForm').addEventListener('submit', function (e) {
