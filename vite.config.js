@@ -34,6 +34,7 @@ export default defineConfig({
                 'thank-you-finance': resolve(__dirname, 'thank-you-finance.html'),
                 'thank-you-home': resolve(__dirname, 'thank-you-home.html'),
                 'thank-you-security': resolve(__dirname, 'thank-you-security.html'),
+                'thank-you-tv': resolve(__dirname, 'thank-you-tv.html'),
             },
         },
     },
