@@ -211,33 +211,37 @@
                     <h2 class="font-heading font-extrabold text-4xl md:text-5xl text-white">Begin Vehicle Estimate.</h2>
                 </div>
                 <div class="bg-carbon border border-edge rounded-xl p-8 md:p-12 shadow-2xl" data-scroll-spotlight>
-                    <form class="space-y-8">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+    <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+    <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-auto.html">
+    <input type="hidden" name="subject" value="New Lead: Car Audio Estimate">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> <!-- Name -->
                             <div> <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
                                 <input type="text"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none" name="text">
                             </div> <!-- Email -->
                             <div> <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
                                 <input type="email"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none" name="email">
                             </div> <!-- Phone -->
                             <div> <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
                                 <input type="tel"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none" name="tel">
                             </div> <!-- Vehicle Year/Make/Model -->
                             <div> <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Vehicle
                                     (Year/Make/Model)</label> <input type="text" placeholder="e.g. 2022 Ford F-150"
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none" name="eg_2022_ford_f150">
                             </div> <!-- Budget Range -->
                             <div class="md:col-span-2"> <label
                                     class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Budget
                                     Range</label>
                                 <div class="relative"> <select
-                                        class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                        class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none" name="field">
                                         <option>Under $1,000</option>
                                         <option>$1,000 - $2,500</option>
                                         <option>$2,500 - $5,000</option>
@@ -259,34 +263,34 @@
                             <div class="grid grid-cols-2 md:grid-cols-3 gap-4"> <label
                                     class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                     <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800" name="checkbox">
                                     <span class="text-xs md:text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Component
                                         Speakers</span> </label> <label
                                     class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                     <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800" name="checkbox">
                                     <span class="text-xs md:text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Subwoofer Bass
                                         Package</span> </label> <label
                                     class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                     <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800" name="checkbox">
                                     <span class="text-xs md:text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Custom
                                         Fabrication
                                         (A-Pillars/Trunk)</span> </label> <label
                                     class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                     <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800" name="checkbox">
                                     <span class="text-xs md:text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">DSP
                                         Tuning</span>
                                 </label> <label
                                     class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                     <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800" name="checkbox">
                                     <span class="text-xs md:text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Sound
                                         Deadening</span> </label> <label
                                     class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                     <input type="checkbox"
-                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800">
+                                        class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800" name="checkbox">
                                     <span class="text-xs md:text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">CarPlay /
                                         Android
                                         Auto Deck</span> </label> </div>
@@ -294,7 +298,7 @@
                         <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Project
                                 Details</label> <textarea rows="4"
                                 placeholder="Tell us about the vehicle and what you're looking for..."
-                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"></textarea>
+                                class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none" name="tell_us_about_the_vehicle_and_what_you"></textarea>
                         </div> <!-- Submit --> <button type="submit"
                             class="w-full bg-white lg:hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm [&.in-view]:bg-gray-200" data-scroll-spotlight>
                             Request Estimate </button>

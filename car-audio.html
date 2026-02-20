@@ -316,18 +316,22 @@
                 </ul>
             </div> <!-- RIGHT COLUMN: The Form -->
             <div class="w-full lg:w-1/2 bg-void p-8 md:p-10 rounded-xl border border-edge shadow-2xl">
-                <form class="space-y-6"> <!-- Vehicle Info Row -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+    <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+    <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-auto.html">
+    <input type="hidden" name="subject" value="New Lead: Car Audio Consultation">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <!-- Vehicle Info Row -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Vehicle
                             Information</label>
                         <div class="grid grid-cols-3 gap-4"> <input
                                 class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full appearance-none"
-                                placeholder="Year" type="text" />
+                                placeholder="Year" type="text" name="year">
                             <input
                                 class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full appearance-none"
-                                placeholder="Make" type="text" />
+                                placeholder="Make" type="text" name="make">
                             <input
                                 class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full appearance-none"
-                                placeholder="Model" type="text" />
+                                placeholder="Model" type="text" name="model">
                         </div>
                     </div> <!-- System Interest -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">System
@@ -336,42 +340,42 @@
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Component Speakers</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Subwoofer Bass Package</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Custom Fabrication
                                     (A-Pillars/Trunk)</span>
                             </label> <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">DSP Tuning</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Sound Deadening</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">CarPlay / Android Auto
                                     Deck</span>
                             </label>
@@ -382,19 +386,19 @@
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="text" />
+                                type="text" name="text">
                         </div>
                         <div> <label
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="email" />
+                                type="email" name="email">
                         </div>
                     </div> <!-- Goals/Notes -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Build Goals
                             / Notes</label> <textarea
                             class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"
-                            placeholder="I'm looking for..." rows="3"></textarea>
+                            placeholder="I'm looking for..." rows="3" name="i"></textarea>
                     </div> <!-- Submit Button --> <button
                         class="w-full bg-white lg:hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4 [&.in-view]:bg-gray-200"
                         type="submit" data-scroll-spotlight>

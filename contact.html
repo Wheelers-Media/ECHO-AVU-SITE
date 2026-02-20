@@ -140,13 +140,17 @@
                         <p class="text-gray-500 text-sm mb-8">We read every inquiry personally and respond within 24
                             hours.</p>
 
-                        <form id="contact-form" class="space-y-5" novalidate>
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-5" novalidate>
+    <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+    <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-contact.html">
+    <input type="hidden" name="subject" value="New Lead: General Contact Form">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <!-- Name -->
                             <div>
                                 <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                     for="contact-name">Full Name</label>
                                 <input id="contact-name" type="text" required placeholder="Your full name"
-                                    class="echo-input">
+                                    class="echo-input" name="contact_name">
                             </div>
 
                             <!-- Email + Phone -->
@@ -156,14 +160,14 @@
                                         class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                         for="contact-email">Email Address</label>
                                     <input id="contact-email" type="email" required placeholder="your@email.com"
-                                        class="echo-input">
+                                        class="echo-input" name="contact_email">
                                 </div>
                                 <div>
                                     <label
                                         class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                         for="contact-phone">Phone Number</label>
                                     <input id="contact-phone" type="tel" placeholder="(780) 555-1234"
-                                        class="echo-input">
+                                        class="echo-input" name="contact_phone">
                                 </div>
                             </div>
 
@@ -172,7 +176,7 @@
                                 <label class="block text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2"
                                     for="contact-service">Service Interest</label>
                                 <div class="relative">
-                                    <select id="contact-service" class="echo-input pr-10 cursor-pointer">
+                                    <select id="contact-service" class="echo-input pr-10 cursor-pointer" name="contact_service">
                                         <option value="">Select a service…</option>
                                         <option>General Inquiry</option>
                                         <option>Car Audio &amp; Installation</option>
@@ -200,7 +204,7 @@
                                     for="contact-message">Your Message</label>
                                 <textarea id="contact-message" rows="5" required
                                     placeholder="Tell us about your project, space, or question…"
-                                    class="echo-input resize-none"></textarea>
+                                    class="echo-input resize-none" name="contact_message"></textarea>
                             </div>
 
                             <!-- Submit -->

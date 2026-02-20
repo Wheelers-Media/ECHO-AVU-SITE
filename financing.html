@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financing & Payment Plans | Echo AVU Grande Prairie</title>
     <meta property="og:title" content="Financing & Payment Plans | Echo AVU Grande Prairie" />
-    <meta property="og:description" content="Explore flexible financing options for your next home theater or custom integration project in the Peace Region. Build your dream space with Echo AVU." />
+    <meta property="og:description"
+        content="Explore flexible financing options for your next home theater or custom integration project in the Peace Region. Build your dream space with Echo AVU." />
     <meta property="og:type" content="website" />
-    <meta name="description" content="Explore flexible financing options for your next home theater or custom integration project in the Peace Region. Build your dream space with Echo AVU." />
+    <meta name="description"
+        content="Explore flexible financing options for your next home theater or custom integration project in the Peace Region. Build your dream space with Echo AVU." />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>        tailwind.config = { theme: { extend: { colors: { void: '#000000', carbon: '#0A0A0A', edge: '#1F1F1F', echoRed: '#D60000', echoBlue: '#2563EB', textMain: '#FFFFFF', textBody: '#CCCCCC', }, fontFamily: { heading: ['Manrope', 'sans-serif'], body: ['Inter', 'sans-serif'], } } } }    </script>
     <!-- Google Fonts -->
@@ -22,9 +24,9 @@
 
 <body class="bg-void text-textBody font-body antialiased selection:bg-echoRed selection:text-white"
     style="background-color: #000000;">
-    <div id="app">     <!-- ? HEADER PLACEHOLDER - DO NOT EDIT ? -->
-    <div id="header-placeholder"></div>
-<!-- SECTION 1: HERO (The Hook) -->
+    <div id="app"> <!-- ? HEADER PLACEHOLDER - DO NOT EDIT ? -->
+        <div id="header-placeholder"></div>
+        <!-- SECTION 1: HERO (The Hook) -->
         <section class="relative pt-40 pb-20 flex items-center justify-center overflow-hidden bg-void">
             <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
                 <h1 class="font-heading font-extrabold text-5xl md:text-7xl text-white mb-6 uppercase tracking-tight">
@@ -48,36 +50,43 @@
                         <p class="text-gray-400 text-sm">Get the system you want today. 0% Interest plans available
                             O.A.C.</p>
                     </div>
-                    <form id="financingForm" class="space-y-6 relative z-10"> <input type="hidden" name="_next"
-                            value="https://www.flexiti.com"> <input type="hidden" name="_subject"
-                            value="New Financing Lead: Echo AVU"> <!-- Name: First & Last -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="financingForm"
+                        class="space-y-6 relative z-10">
+                        <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+                        <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-finance.html">
+                        <input type="hidden" name="subject" value="New Lead: Flexiti Financing Inquiry">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <input
+                            type="hidden" name="_next" value="https://www.flexiti.com"> <input type="hidden"
+                            name="_subject" value="New Financing Lead: Echo AVU"> <!-- Name: First & Last -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="space-y-2 group" data-scroll-spotlight> <label
                                     class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">First
                                     Name</label> <input type="text" required
                                     class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                    placeholder="John"> </div>
+                                    placeholder="John" name="john"> </div>
                             <div class="space-y-2 group" data-scroll-spotlight> <label
                                     class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Last
                                     Name</label> <input type="text" required
                                     class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                    placeholder="Doe"> </div>
+                                    placeholder="Doe" name="doe"> </div>
                         </div> <!-- Contact: Email -->
                         <div class="space-y-2 group" data-scroll-spotlight> <label
                                 class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Email
                                 Address</label> <input type="email" required
                                 class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                placeholder="john@example.com"> </div> <!-- Location: City -->
+                                placeholder="john@example.com" name="johnexamplecom"> </div> <!-- Location: City -->
                         <div class="space-y-2 group" data-scroll-spotlight> <label
                                 class="block text-xs uppercase tracking-wider text-gray-500 font-bold transition-colors group-focus-within:text-echoRed">Which
                                 City Are You Located?</label> <input type="text" required
                                 class="w-full bg-edge border border-transparent rounded-lg p-4 text-white focus:border-echoRed focus:outline-none focus:ring-0 transition-colors placeholder-gray-600"
-                                placeholder="Grande Prairie"> </div> <!-- Payment Plan Preference -->
+                                placeholder="Grande Prairie" name="grande_prairie"> </div>
+                        <!-- Payment Plan Preference -->
                         <div class="space-y-4"> <label
                                 class="block text-xs uppercase tracking-wider text-gray-500 font-bold">Payment Plan
                                 Preference</label>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> <label
-                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed" data-scroll-spotlight>
+                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
+                                    data-scroll-spotlight>
                                     <input type="radio" name="plan" value="3_months" class="sr-only" checked>
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
@@ -87,7 +96,8 @@
                                     </div> <span class="ml-3 text-sm text-gray-300 group-has-[:checked]:text-white">3
                                         Months (No Interest)</span>
                                 </label> <label
-                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed" data-scroll-spotlight>
+                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
+                                    data-scroll-spotlight>
                                     <input type="radio" name="plan" value="6_months" class="sr-only">
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
@@ -97,7 +107,8 @@
                                     </div> <span class="ml-3 text-sm text-gray-300 group-has-[:checked]:text-white">6
                                         Months</span>
                                 </label> <label
-                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed" data-scroll-spotlight>
+                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
+                                    data-scroll-spotlight>
                                     <input type="radio" name="plan" value="12_months" class="sr-only">
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
@@ -107,7 +118,8 @@
                                     </div> <span class="ml-3 text-sm text-gray-300 group-has-[:checked]:text-white">12
                                         Months</span>
                                 </label> <label
-                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed" data-scroll-spotlight>
+                                    class="relative flex items-center p-4 bg-edge rounded-lg border border-transparent cursor-pointer lg:hover:border-echoRed transition-all group has-[:checked]:border-echoRed has-[:checked]:bg-echoRed/5 [&.in-view]:border-echoRed"
+                                    data-scroll-spotlight>
                                     <input type="radio" name="plan" value="long_term" class="sr-only">
                                     <div
                                         class="w-5 h-5 border-2 border-gray-600 rounded-full flex items-center justify-center transition-colors lg:group-hover:border-echoRed group-has-[:checked]:border-echoRed group-[.in-view]:border-echoRed">
@@ -122,7 +134,8 @@
                         <p class="text-xs text-gray-500 leading-relaxed text-center"> By proceeding, you agree to be
                             redirected to the secure Flexiti Financial portal. Your information will be processed
                             securely. </p> <!-- Submit Button --> <button type="submit"
-                            class="w-full bg-echoRed lg:hover:bg-red-700 text-white font-bold py-5 rounded-lg uppercase tracking-widest text-sm transition-all active:scale-[0.98] shadow-lg shadow-echoRed/20 [&.in-view]:bg-red-700" data-scroll-spotlight>
+                            class="w-full bg-echoRed lg:hover:bg-red-700 text-white font-bold py-5 rounded-lg uppercase tracking-widest text-sm transition-all active:scale-[0.98] shadow-lg shadow-echoRed/20 [&.in-view]:bg-red-700"
+                            data-scroll-spotlight>
                             Proceed to Application </button>
                     </form>
                 </div>
@@ -180,12 +193,11 @@
                     </div>
                 </div>
             </div>
-        </section>     <!-- ? FOOTER PLACEHOLDER - DO NOT EDIT ? -->
-    <div id="footer-placeholder"></div>
-</div>
-    <script>        document.getElementById('financingForm').addEventListener('submit', function (e) {            // 1. If you aren't using Formspree yet, we prevent default to simulate the redirect            e.preventDefault();            const btn = e.target.querySelector('button');            const originalText = btn.innerText;            // 2. Change Button State            btn.innerText = "Redirecting to Secure Portal...";            btn.disabled = true;            btn.classList.add('opacity-75', 'cursor-not-allowed');            // 3. The Redirect Logic            // In a real scenario, Formspree handles the email, then redirects via the '_next' input.            // For this demo, we will force the redirect after a short delay if Formspree isn't set.            setTimeout(() => {                window.location.href = "https://www.flexiti.com";            }, 1500);        });    </script>
-</nav>
-        </div>
+        </section> <!-- ? FOOTER PLACEHOLDER - DO NOT EDIT ? -->
+        <div id="footer-placeholder"></div>
+    </div>
+    </nav>
+    </div>
     </div>
 
     <script>
@@ -210,5 +222,5 @@
     <script type="module" src="/echo-loader.js"></script>
 
 </body>
-</html>
 
+</html>

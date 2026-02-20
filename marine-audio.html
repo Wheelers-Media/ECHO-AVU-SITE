@@ -248,12 +248,16 @@
                 </div>
             </div> <!-- RIGHT COLUMN: The Form -->
             <div class="w-full lg:w-1/2 bg-void p-8 md:p-10 rounded-xl border border-edge shadow-2xl">
-                <form class="space-y-6"> <!-- Vehicle Info Row -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+    <input type="hidden" name="access_key" value="406fd432-5017-4119-8ed0-3bed3ab84800">
+    <input type="hidden" name="redirect" value="https://echoavu.ca/thank-you-auto.html">
+    <input type="hidden" name="subject" value="New Lead: Marine Audio Consultation">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <!-- Vehicle Info Row -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Boat /
                             Vehicle Info</label>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="relative"> <select
-                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none">
+                                    class="w-full bg-edge border-none rounded px-4 py-3 text-white appearance-none focus:ring-1 focus:ring-echoRed focus:outline-none" name="field">
                                     <option>Wake Boat</option>
                                     <option>Pontoon</option>
                                     <option>Jet Boat</option>
@@ -269,7 +273,7 @@
                                 </div>
                             </div> <input
                                 class="bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none w-full"
-                                placeholder="Make &amp; Model (e.g. MasterCraft X24)" type="text" />
+                                placeholder="Make &amp; Model (e.g. MasterCraft X24)" type="text" name="make_amp_model_eg_mastercraft_x24">
                         </div>
                     </div> <!-- System Goals -->
                     <div> <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">System
@@ -278,42 +282,42 @@
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Marine Audio System
                                     (Boat)</span>
                             </label> <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Wake Tower Speakers</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Powersports / Side-by-Side
                                     Audio</span> </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">RGB Lighting Kit</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Marine Subwoofers</span>
                             </label>
                             <label
                                 class="flex items-center gap-3 bg-edge rounded px-4 py-3 cursor-pointer lg:hover:bg-white/5 transition-colors group [&.in-view]:bg-white/5" data-scroll-spotlight>
                                 <input
                                     class="w-4 h-4 rounded border-gray-600 text-echoRed focus:ring-echoRed bg-gray-800"
-                                    type="checkbox" />
+                                    type="checkbox" name="checkbox">
                                 <span class="text-sm text-gray-300 lg:group-hover:text-white group-[.in-view]:text-white">Dual Battery Setup</span>
                             </label>
                         </div>
@@ -323,26 +327,26 @@
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="text" />
+                                type="text" name="text">
                         </div>
                         <div> <label
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="email" />
+                                type="email" name="email">
                         </div>
                         <div> <label
                                 class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Phone</label>
                             <input
                                 class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none"
-                                type="tel" />
+                                type="tel" name="tel">
                         </div>
                     </div> <!-- Goals/Notes -->
                     <div> <label
                             class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Notes</label>
                         <textarea
                             class="w-full bg-edge border-none rounded px-4 py-3 text-white placeholder-gray-600 focus:ring-1 focus:ring-echoRed focus:outline-none resize-none"
-                            placeholder="Need it done by May long weekend..." rows="3"></textarea>
+                            placeholder="Need it done by May long weekend..." rows="3" name="need_it_done_by_may_long_weekend"></textarea>
                     </div> <!-- Submit Button --> <button
                         class="w-full bg-white lg:hover:bg-gray-200 text-black font-bold py-4 rounded transition-transform active:scale-95 uppercase tracking-wide text-sm mt-4 [&.in-view]:bg-gray-200"
                         type="submit" data-scroll-spotlight>
