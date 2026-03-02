@@ -1,0 +1,1119 @@
+{
+  "files": {
+    "about.html": {
+      "title": "About Our Showroom & History | Echo AVU Grande Prairie",
+      "description": "Discover the premier technology integrator in the Peace Region. Echo AVU in Grande Prairie offers bespoke installation for homes and businesses.",
+      "h1": "Four Decades of  Audio\n                        Excellence.",
+      "images": [
+        {
+          "src": "/assets/about/DSC01747.jpg",
+          "alt": "The Echo AVU Team"
+        },
+        {
+          "src": "/assets/about/showroom-theater.jpg",
+          "alt": "Home Theater Showroom"
+        },
+        {
+          "src": "/assets/about/showroom-floor.jpg",
+          "alt": "Showroom Floor"
+        },
+        {
+          "src": "/assets/about/showroom-car.jpg",
+          "alt": "Custom Car Audio Bay"
+        },
+        {
+          "src": "/assets/about/showroom-hifi.jpg",
+          "alt": "High-Fidelity Audio Wall"
+        },
+        {
+          "src": "/assets/about/DSC03712.jpg",
+          "alt": "Security Systems Display"
+        }
+      ]
+    },
+    "brands.html": {
+      "title": "Premium Technology Brands & Dealer | Echo AVU Grande Prairie",
+      "description": "Shop our authorized brands including Samsung, Klipsch, Compustar, and JL Audio at Echo AVU in Grande Prairie. Explore premium AV integration today.",
+      "h1": "Curated Excellence.",
+      "images": [
+        {
+          "src": "/assets/brands/samsung.png",
+          "alt": "Samsung"
+        },
+        {
+          "src": "/assets/brands/JLAudio.png",
+          "alt": "JL Audio"
+        },
+        {
+          "src": "/assets/brands/control4.png",
+          "alt": "Control4"
+        },
+        {
+          "src": "/assets/brands/samsung.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/jvc-e1678825470808.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/epson.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/sanus_logo_bg.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/lg-oled-tv-logo.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/kanto.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/yamaha.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/onkyo.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/denon.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/pioneer.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/sennheiser.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/project.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/klipsch.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/sonos-1.png",
+          "alt": "Sonos"
+        },
+        {
+          "src": "/assets/brands/wiim.png",
+          "alt": "WiiM"
+        },
+        {
+          "src": "/assets/brands/Polk_Audio_logo.png",
+          "alt": "Polk Audio"
+        },
+        {
+          "src": "/assets/brands/svs.png",
+          "alt": "SVS"
+        },
+        {
+          "src": "/assets/brands/ikarao.png",
+          "alt": "Ikarao"
+        },
+        {
+          "src": "/assets/brands/alpine.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/kenwood.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/Kicker-Logo-Vector.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/compustar.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/Wet-Sounds-Marine-1.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/FUSION-Car-Audio-Logo-Vector.svg-.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/JLAudio.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/Memphis-Logo.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/pioneer.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/Wavetech.png",
+          "alt": "Wavtech"
+        },
+        {
+          "src": "/assets/brands/Helix_Logo.png",
+          "alt": "Helix"
+        },
+        {
+          "src": "/assets/brands/Blam.png",
+          "alt": "Blam"
+        },
+        {
+          "src": "/assets/brands/Arc audio.png",
+          "alt": "Arc Audio"
+        },
+        {
+          "src": "/assets/brands/Boss.png",
+          "alt": "Elite"
+        },
+        {
+          "src": "/assets/brands/Dynamat.png",
+          "alt": "Dynamat"
+        },
+        {
+          "src": "/assets/brands/Ground zero.png",
+          "alt": "Ground Zero"
+        },
+        {
+          "src": "/assets/brands/MTI.png",
+          "alt": "MTI"
+        },
+        {
+          "src": "/assets/brands/pac audio.png",
+          "alt": "PAC Audio"
+        },
+        {
+          "src": "/assets/brands/Thinkware.png",
+          "alt": "Thinkware"
+        },
+        {
+          "src": "/assets/brands/Uniden.png",
+          "alt": "Uniden"
+        },
+        {
+          "src": "/assets/brands/escort.png",
+          "alt": "Escort"
+        },
+        {
+          "src": "/assets/brands/Radenso_Logo.png",
+          "alt": "Radenso"
+        },
+        {
+          "src": "/assets/brands/sonos-1.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/control4.png",
+          "alt": ""
+        },
+        {
+          "src": "/assets/brands/wiim.png",
+          "alt": "WiiM"
+        },
+        {
+          "src": "/assets/brands/Luma-All-White-Logo.png",
+          "alt": "Luma"
+        },
+        {
+          "src": "/assets/brands/ring.png",
+          "alt": "Ring"
+        },
+        {
+          "src": "/assets/brands/Purpose AV.png",
+          "alt": "Purpose A/V"
+        }
+      ]
+    },
+    "car-audio.html": {
+      "title": "Car Audio & Custom Fabrication | Echo AVU Grande Prairie",
+      "description": "Experience reference-level car audio installation and custom fabrication in Grande Prairie. Authorized JL Audio dealer. Elevate your ride with Echo AVU.",
+      "h1": "The ConnectedCockpit.",
+      "images": [
+        {
+          "src": "/assets/car-audio/factory-safe-integration.jpg",
+          "alt": "Factory-Safe Car Audio Integration"
+        },
+        {
+          "src": "/assets/brands/JLAudio.png",
+          "alt": "JL Audio"
+        },
+        {
+          "src": "/assets/brands/alpine.png",
+          "alt": "Alpine"
+        },
+        {
+          "src": "/assets/brands/kenwood.png",
+          "alt": "Kenwood"
+        },
+        {
+          "src": "/assets/brands/pioneer.png",
+          "alt": "Pioneer"
+        },
+        {
+          "src": "/assets/brands/Kicker-Logo-Vector.png",
+          "alt": "Kicker"
+        },
+        {
+          "src": "/assets/brands/Helix_Logo.png",
+          "alt": "Helix"
+        },
+        {
+          "src": "/assets/brands/Blam.png",
+          "alt": "Blam"
+        },
+        {
+          "src": "/assets/brands/Arc audio.png",
+          "alt": "Arc Audio"
+        },
+        {
+          "src": "/assets/brands/Boss.png",
+          "alt": "Elite"
+        },
+        {
+          "src": "/assets/brands/Dynamat.png",
+          "alt": "Dynamat"
+        },
+        {
+          "src": "/assets/brands/Ground zero.png",
+          "alt": "Ground Zero"
+        },
+        {
+          "src": "/assets/brands/Memphis-Logo.png",
+          "alt": "Memphis"
+        },
+        {
+          "src": "/assets/brands/MTI.png",
+          "alt": "MTI"
+        },
+        {
+          "src": "/assets/brands/pac audio.png",
+          "alt": "PAC Audio"
+        },
+        {
+          "src": "/assets/brands/Thinkware.png",
+          "alt": "Thinkware"
+        },
+        {
+          "src": "/assets/brands/Uniden.png",
+          "alt": "Uniden"
+        },
+        {
+          "src": "/assets/brands/Wavetech.png",
+          "alt": "Wavtech"
+        },
+        {
+          "src": "/assets/brands/escort.png",
+          "alt": "Escort"
+        },
+        {
+          "src": "/assets/brands/Radenso_Logo.png",
+          "alt": "Radenso"
+        },
+        {
+          "src": "/assets/car-audio/f-250-custom.jpg",
+          "alt": "1974 Ford F-250 Custom Audio Build"
+        },
+        {
+          "src": "/assets/car-audio/f-250-custom2.jpg",
+          "alt": "1974 Ford F-250 Custom Audio Build"
+        },
+        {
+          "src": "/assets/car-audio/f-250-custom3.jpg",
+          "alt": "1974 Ford F-250 Custom Audio Build"
+        },
+        {
+          "src": "/assets/car-audio/f-250-custom4.jpg",
+          "alt": "1974 Ford F-250 Custom Audio Build"
+        },
+        {
+          "src": "/assets/car-audio/f-150.jpg",
+          "alt": "2018 Ford F-150 Audio Build"
+        },
+        {
+          "src": "/assets/car-audio/f150-2.jpg",
+          "alt": "2018 Ford F-150 Audio Build"
+        }
+      ]
+    },
+    "car-starters.html": {
+      "title": "Remote Car Starters | Echo AVU",
+      "description": "https://echoavu.ca/DSC03918.jpg\" />\n\t<meta name=\"twitter:image\" content=\"https://echoavu.ca/DSC03918.jpg\" />\n\n    <meta charset=\"utf-8\" />\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\" />\n    <title>Remote Car Starters | Echo AVU</title>\n    <meta\n        content=",
+      "h1": "Defeat the Cold.",
+      "images": [
+        {
+          "src": "/assets/remote start/remote-start-hero.jpg",
+          "alt": "Remote Car Starter"
+        },
+        {
+          "src": "/assets/brands/compustar.png",
+          "alt": "Compustar"
+        },
+        {
+          "src": "/assets/brands/compustar.png",
+          "alt": "Compustar Pro"
+        },
+        {
+          "src": "/assets/brands/logo_idatastart_en.png",
+          "alt": "iDatastart"
+        },
+        {
+          "src": "/assets/brands/logo-nustart.png",
+          "alt": "nustart"
+        }
+      ]
+    },
+    "contact.html": {
+      "title": "Contact Us | Echo AVU | Grande Prairie",
+      "description": "Get in touch with Echo AVU in Grande Prairie. Send us a message, call us, or visit our showroom. Expert audio, video, and smart home integration.",
+      "h1": "LET'SCONNECT.",
+      "images": [
+        {
+          "src": "/Echo Avu-black.png",
+          "alt": "Echo AVU"
+        }
+      ]
+    },
+    "dream-home.html": {
+      "title": "Rotary Dream Home Partner | Echo AVU Grande Prairie",
+      "description": "Echo AVU is the exclusive technology partner for the Rotary Dream Home Lottery in Grande Prairie. Proudly supporting the Peace Region community.",
+      "h1": "Building Dreams Since 2006.",
+      "images": [
+        {
+          "src": "/assets/tv-video/dream home.jpg",
+          "alt": "Living Showroom"
+        }
+      ]
+    },
+    "financing.html": {
+      "title": "Financing & Payment Plans | Echo AVU Grande Prairie",
+      "description": "Explore flexible financing options for your next home theater or custom integration project in the Peace Region. Build your dream space with Echo AVU.",
+      "h1": "Dream Big. Pay Later.",
+      "images": [
+        {
+          "src": "/assets/brands/Flexiti.png",
+          "alt": "Flexiti"
+        }
+      ]
+    },
+    "home-audio.html": {
+      "title": "Whole-Home Audio & Hi-Fi Systems | Echo AVU Grande Prairie",
+      "description": "Immerse yourself with custom whole-home audio and Hi-Fi systems in Grande Prairie. Authorized Klipsch heritage dealer. Schedule your consultation.",
+      "h1": "The Audiophile'sSanctuary.",
+      "images": [
+        {
+          "src": "/assets/home-audio/calibration-tech.jpg",
+          "alt": "Audio Calibration in Progress"
+        },
+        {
+          "src": "/assets/home-audio/calibration-tech2.jpg",
+          "alt": "Audio Calibration Process"
+        },
+        {
+          "src": "/assets/brands/klipsch.png",
+          "alt": "Klipsch"
+        },
+        {
+          "src": "/assets/brands/denon.png",
+          "alt": "Denon"
+        },
+        {
+          "src": "/assets/brands/yamaha.png",
+          "alt": "Yamaha"
+        },
+        {
+          "src": "/assets/brands/sonos-1.png",
+          "alt": "Sonos"
+        },
+        {
+          "src": "/assets/brands/onkyo.png",
+          "alt": "Onkyo"
+        },
+        {
+          "src": "/assets/brands/wiim.png",
+          "alt": "Wiim"
+        },
+        {
+          "src": "/assets/brands/Polk_Audio_logo.png",
+          "alt": "Polk Audio"
+        },
+        {
+          "src": "/assets/brands/svs.png",
+          "alt": "SVS"
+        },
+        {
+          "src": "/assets/brands/kanto.png",
+          "alt": "Kanto"
+        },
+        {
+          "src": "/assets/brands/sennheiser.png",
+          "alt": "Sennheiser"
+        },
+        {
+          "src": "/assets/brands/project.png",
+          "alt": "Pro-Ject"
+        },
+        {
+          "src": "/assets/brands/ikarao.png",
+          "alt": "Ikarao"
+        }
+      ]
+    },
+    "index.html": {
+      "title": "Echo AVU | Car Audio, Remote Starters & Home Theater | Grande Prairie",
+      "description": "https://echoavu.ca/DSC03918.jpg\" />\n  <meta name=\"twitter:image\" content=\"https://echoavu.ca/DSC03918.jpg\" />\n\n  <meta charset=\"utf-8\" />\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\" />\n  <title>Echo AVU | Car Audio, Remote Starters & Home Theater | Grande Prairie</title>\n  <meta\n    content=",
+      "h1": null,
+      "images": [
+        {
+          "src": "/assets/White_maple_leaf_symbol.png",
+          "alt": "Proudly Canadian"
+        },
+        {
+          "src": "/assets/brands/samsung.png",
+          "alt": "Samsung Authorized Dealer"
+        },
+        {
+          "src": "/assets/brands/JLAudio.png",
+          "alt": "JL Audio Signature Dealer"
+        },
+        {
+          "src": "/assets/brands/compustar.png",
+          "alt": "Compustar Pro Dealer"
+        },
+        {
+          "src": "/assets/brands/Memphis-Logo.png",
+          "alt": "Memphis Audio Marine"
+        },
+        {
+          "src": "/assets/brands/klipsch.png",
+          "alt": "Klipsch Heritage Dealer"
+        },
+        {
+          "src": "/assets/dream-home-logo.png",
+          "alt": "Rotary Dream Home Lottery"
+        },
+        {
+          "src": "/assets/brands/Flexiti.png",
+          "alt": "Flexiti Financing Provider"
+        }
+      ]
+    },
+    "marine-audio.html": {
+      "title": "Marine Audio & Boat Stereo Install | Echo AVU Grande Prairie",
+      "description": "Take the party to the water with marine audio and boat stereo installation in the Peace Region. Waterproof speakers from Memphis Audio. Get a quote.",
+      "h1": "Audio That CutsThrough The Wake.",
+      "images": [
+        {
+          "src": "/assets/marine-audio/marine-audio-image1 - Copy.jpg",
+          "alt": "Marine Audio Installation"
+        },
+        {
+          "src": "/assets/brands/JLAudio.png",
+          "alt": "JL Audio Marine"
+        },
+        {
+          "src": "/assets/brands/Wet-Sounds-Marine-1.png",
+          "alt": "Wet Sounds"
+        },
+        {
+          "src": "/assets/brands/FUSION-Car-Audio-Logo-Vector.svg-.png",
+          "alt": "Fusion"
+        },
+        {
+          "src": "/assets/brands/Kicker-Logo-Vector.png",
+          "alt": "Kicker Marine"
+        },
+        {
+          "src": "/assets/brands/Arc audio.png",
+          "alt": "Arc Audio"
+        },
+        {
+          "src": "/assets/brands/Memphis-Logo.png",
+          "alt": "Memphis"
+        },
+        {
+          "src": "/assets/marine-audio/2024-bratt-jett - Copy.jpg",
+          "alt": "2024 Bratt Jett Audio Build"
+        },
+        {
+          "src": "/assets/marine-audio/2024-bratt-jett (2).jpg",
+          "alt": "2024 Bratt Jett Audio Build"
+        },
+        {
+          "src": "/assets/marine-audio/can-am-x3.jpg",
+          "alt": "Can-Am Maverick X3 Audio Build"
+        },
+        {
+          "src": "/assets/marine-audio/can-am-x3-2.jpg",
+          "alt": "Can-Am Maverick X3 Audio Build"
+        }
+      ]
+    },
+    "privacy-statement.html": {
+      "title": "Privacy Policy | Echo AVU Grande Prairie",
+      "description": "Read the Echo AVU privacy statement. We value your privacy and trust in the Peace Region.",
+      "h1": "Privacy Statement.",
+      "images": []
+    },
+    "protection-plan.html": {
+      "title": "Extended Warranty & Protection | Echo AVU Grande Prairie",
+      "description": "Keep your technology safe with Echo AVU protection plans in Grande Prairie. Extend your warranty on our custom integration and AV equipment.",
+      "h1": "5 YRS GUARANTEED RELIABILITY",
+      "images": []
+    },
+    "return-policy.html": {
+      "title": "Return Policy & Guarantees | Echo AVU Grande Prairie",
+      "description": "Read the Echo AVU return policy and our unbeatable price matching guarantees in Grande Prairie and the Peace Region.",
+      "h1": "Return Policy & Terms.",
+      "images": []
+    },
+    "services-car-audio.html": {
+      "title": "Car Audio Installation Services | Echo AVU Grande Prairie",
+      "description": "Transform your vehicle with professional car audio installation and DSP tuning in Grande Prairie. Authorized JL Audio dealer. Book your install.",
+      "h1": "AutomotiveServices.",
+      "images": [
+        {
+          "src": "/assets/car-audio/complete-system-upgrades.jpg",
+          "alt": "Custom Car Audio Fabrication"
+        },
+        {
+          "src": "/assets/car-audio/head-units.jpg",
+          "alt": "Head Units"
+        },
+        {
+          "src": "/assets/car-audio/subwoofers1.jpg",
+          "alt": "Subwoofer"
+        },
+        {
+          "src": "/assets/car-audio/subwoofers2.jpg",
+          "alt": "Subwoofer"
+        },
+        {
+          "src": "/assets/car-audio/complete-system-upgrades.jpg",
+          "alt": "Complete System Upgrades"
+        },
+        {
+          "src": "/assets/car-audio/custom-car-audio-fabrication.jpg",
+          "alt": "Custom Fabrication"
+        },
+        {
+          "src": "/assets/car-audio/commercial-fleet-vehicles - Copy.jpg",
+          "alt": "Commercial Fleet Vehicles"
+        },
+        {
+          "src": "/assets/car-audio/unnamed.jpg",
+          "alt": "Fleet Installation"
+        },
+        {
+          "src": "/assets/car-audio/unnamed (1).jpg",
+          "alt": "Fleet Installation"
+        }
+      ]
+    },
+    "services-car-starters.html": {
+      "title": "Remote Car Starter Installation | Echo AVU Grande Prairie",
+      "description": "Professional, warranty-safe remote car starter installation in Grande Prairie. Stay warm with Compustar Pro and DroneMobile smartphone control.",
+      "h1": "Remote CarStarters.",
+      "images": [
+        {
+          "src": "/assets/remote start/remote-start-hero.jpg",
+          "alt": "Remote Car Starter"
+        },
+        {
+          "src": "/assets/remote-start-service/dronemobile-app.webp",
+          "alt": "Smartphone remote start app"
+        },
+        {
+          "src": "/assets/remote-start-service/diesel-truck-winter.webp",
+          "alt": "Diesel truck in winter"
+        }
+      ]
+    },
+    "services-marine.html": {
+      "title": "Powersports & Marine Audio Install | Echo AVU Grande Prairie",
+      "description": "Expert marine and powersports audio installation in Grande Prairie. Built for extreme conditions. Elevate your SxS or boat stereo system today.",
+      "h1": "MARINE & POWERSPORTSINTEGRATION.",
+      "images": [
+        {
+          "src": "/assets/marine-audio/2024-bratt-jett - Copy.jpg",
+          "alt": "Marine audio installation"
+        },
+        {
+          "src": "/assets/marine-audio/can-am-x3.jpg",
+          "alt": "Side-by-side audio installation"
+        },
+        {
+          "src": "/assets/car-audio/complete-system-upgrades.jpg",
+          "alt": "Marine RGB lighting"
+        }
+      ]
+    },
+    "services-office.html": {
+      "title": "Commercial AV & Boardroom Integration | Echo AVU Grande Prairie",
+      "description": "Upgrade your boardroom with commercial AV and smart integration in Grande Prairie. Reliable digital signage and systems for the Peace Region.",
+      "h1": "OFFICE & BOARDROOMINTEGRATION.",
+      "images": [
+        {
+          "src": "/assets/office-boardroom-installations/office-boardroom.jpg",
+          "alt": "Modern boardroom with video conferencing"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/smart-office-automation.jpg",
+          "alt": "Automated office control panel"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/multi-channel-vs-multizone-audio.webp",
+          "alt": "Multi zone audio diagram"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/networking.jpg",
+          "alt": "Enterprise networking rack"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/distributed-audio-office.jpg",
+          "alt": "Distributed Audio System"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/multi-channel-vs-multizone-audio.webp",
+          "alt": "Multi zone audio diagram"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/office-distributed-video.jpg",
+          "alt": "Office distributed video setup"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/cctv-camera.jpg",
+          "alt": "Security camera monitoring"
+        }
+      ]
+    },
+    "services-residential.html": {
+      "title": "Residential Integration | Echo AVU",
+      "description": "Transform your home entertainment experience. Expert installation for every scale.",
+      "h1": "ResidentialIntegration.",
+      "images": [
+        {
+          "src": "/assets/Residential Services/small-scale-projects.jpg",
+          "alt": "Turntable and soundbar setup"
+        },
+        {
+          "src": "/assets/Residential Services/home-theatre.jpg",
+          "alt": "Home cinema with projector screen"
+        },
+        {
+          "src": "/assets/Residential Services/home-automation.jpg",
+          "alt": "Tablet controlling lights and shades"
+        },
+        {
+          "src": "/assets/Residential Services/distributed-audio.jpg",
+          "alt": "In-ceiling speaker and wall controller"
+        },
+        {
+          "src": "/assets/Residential Services/distributed-video-1.jpg",
+          "alt": "TV mounted flush to wall with no wires"
+        },
+        {
+          "src": "/assets/Residential Services/home-networking.jpg",
+          "alt": "Enterprise grade wifi access point"
+        },
+        {
+          "src": "/assets/Residential Services/home-security.jpg",
+          "alt": "Security camera view on phone"
+        }
+      ]
+    },
+    "services-retail.html": {
+      "title": "Retail AV & Digital Signage | Echo AVU Grande Prairie",
+      "description": "Enhance your retail operations with digital signage and distributed business audio in Grande Prairie. Professional commercial integration from Echo AVU.",
+      "h1": "Retail & RestaurantInstallations.",
+      "images": [
+        {
+          "src": "/assets/retail-restaurant-installations/distributed-audio.jpg",
+          "alt": "Distributed Audio"
+        },
+        {
+          "src": "/assets/retail-restaurant-installations/distributed-video.jpg",
+          "alt": "Distributed Video"
+        },
+        {
+          "src": "/assets/retail-restaurant-installations/smart-business-automation.jpg",
+          "alt": "Smart Business Automation"
+        },
+        {
+          "src": "/assets/retail-restaurant-installations/cctv-camera.jpg",
+          "alt": "Security Camera"
+        }
+      ]
+    },
+    "services-surveillance.html": {
+      "title": "CCTV & Surveillance Installation | Echo AVU Grande Prairie",
+      "description": "Protect your property with professional CCTV and commercial surveillance systems in Grande Prairie. Authorized Luma security dealer. Get your quote.",
+      "h1": "SURVEILLANCE &SECURITY.",
+      "images": [
+        {
+          "src": "/assets/Residential Services/download.jpg",
+          "alt": "Surveillance & Security"
+        },
+        {
+          "src": "/assets/Residential Services/home-security.jpg",
+          "alt": "Residential Security Cameras"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/cctv-camera.jpg",
+          "alt": "Commercial Security System"
+        },
+        {
+          "src": "/assets/Residential Services/Guide-pour-Mettre-en-Place-un-Systeme-Domotique.jpg",
+          "alt": "Access Control System"
+        }
+      ]
+    },
+    "services.html": {
+      "title": "Custom Integration Services | Echo AVU Grande Prairie",
+      "description": "From car audio to home automation, explore our bespoke technology integration services in Grande Prairie. Request a private consultation.",
+      "h1": "Audio, Video, &\n                Installation Services.",
+      "images": [
+        {
+          "src": "/assets/Residential Services/home-theatre.jpg",
+          "alt": "Residential Integration"
+        },
+        {
+          "src": "/assets/office-boardroom-installations/office-boardroom.jpg",
+          "alt": "Office & Boardroom"
+        },
+        {
+          "src": "/assets/retail-restaurant-installations/distributed-video.jpg",
+          "alt": "Retail & Restaurants"
+        },
+        {
+          "src": "/assets/car-audio/factory-safe-integration.jpg",
+          "alt": "Car Audio & Custom Fabrication"
+        },
+        {
+          "src": "/assets/marine-audio/marine-audio-hero.jpg",
+          "alt": "Marine & Powersports"
+        },
+        {
+          "src": "/assets/remote start/remote-start-hero.jpg",
+          "alt": "Remote Car Starters"
+        },
+        {
+          "src": "/assets/Residential Services/home-security.jpg",
+          "alt": "Surveillance & Security"
+        }
+      ]
+    },
+    "surveillance.html": {
+      "title": "Surveillance | Echo AVU",
+      "description": "https://echoavu.ca/DSC03918.jpg\" />\n\t<meta name=\"twitter:image\" content=\"https://echoavu.ca/DSC03918.jpg\" />\n\n    <meta charset=\"utf-8\" />\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\" />\n    <title>Surveillance | Echo AVU</title>\n    <meta\n        content=",
+      "h1": "Always Home.Even When You're Not.",
+      "images": [
+        {
+          "src": "/assets/brands/Luma-All-White-Logo.png",
+          "alt": "Luma Surveillance"
+        },
+        {
+          "src": "/assets/brands/ring.png",
+          "alt": "Ring"
+        },
+        {
+          "src": "/assets/brands/Purpose AV.png",
+          "alt": "Purpose A/V"
+        },
+        {
+          "src": "/assets/retail-restaurant-installations/cctv-camera.jpg",
+          "alt": "Smart Security Camera"
+        }
+      ]
+    },
+    "team.html": {
+      "title": "Meet Our Expert Technicians | Echo AVU Grande Prairie",
+      "description": "Get to know the factory-trained technicians and AV experts at Echo AVU in Grande Prairie. The most trusted integration team in the Peace Region.",
+      "h1": "The Minds Behind the\n                Magic.",
+      "images": [
+        {
+          "src": "/assets/team/jeff-yawney.jpg",
+          "alt": "Jeff Yawney - Owner & General Manager"
+        },
+        {
+          "src": "/assets/team/david-little.jpg",
+          "alt": "David Little - Owner & Lead System Designer"
+        },
+        {
+          "src": "/assets/team/desmond-bilan.jpg",
+          "alt": "Desmond Bilan - Lead Installer"
+        },
+        {
+          "src": "/assets/team/corbin-may.jpg",
+          "alt": "Corbin - Sales & Audiophile"
+        },
+        {
+          "src": "/assets/team/bryce-macPherson.jpg",
+          "alt": "Bryce - Home Installer"
+        },
+        {
+          "src": "/assets/team/jonah.jpg",
+          "alt": "Jonah - Car Audio Installer"
+        },
+        {
+          "src": "/assets/team/mason-stirrett.jpg",
+          "alt": "Mason Stirrett - Specialist"
+        }
+      ]
+    },
+    "thank-you-car-audio.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. UPGRADE YOUR RIDE.",
+      "images": []
+    },
+    "thank-you-car-starters.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. PREPARE FOR WINTER.",
+      "images": []
+    },
+    "thank-you-contact-general.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. WE'LL BE IN TOUCH.",
+      "images": []
+    },
+    "thank-you-finance.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "FINANCING INQUIRY RECEIVED.",
+      "images": []
+    },
+    "thank-you-home-audio.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. WELCOME TO PREMIUM SOUND.",
+      "images": []
+    },
+    "thank-you-index.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. LET'S BUILD IT.",
+      "images": []
+    },
+    "thank-you-marine.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. HIT THE WATER.",
+      "images": []
+    },
+    "thank-you-office.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. ELEVATE YOUR BOARDROOM.",
+      "images": []
+    },
+    "thank-you-residential.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. WELCOME TO AUTOMATION.",
+      "images": []
+    },
+    "thank-you-retail.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. ENHANCE YOUR SPACE.",
+      "images": []
+    },
+    "thank-you-services-car-audio.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. UPGRADE YOUR FLEET.",
+      "images": []
+    },
+    "thank-you-services-car-starters.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. FLEET CLIMATE CONTROL.",
+      "images": []
+    },
+    "thank-you-services-marine.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. COMMERCIAL MARINE SOLUTIONS.",
+      "images": []
+    },
+    "thank-you-services-surveillance.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. PROTECT YOUR BUSINESS.",
+      "images": []
+    },
+    "thank-you-surveillance.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. SECURE YOUR HOME.",
+      "images": []
+    },
+    "thank-you-tv.html": {
+      "title": "Message Received | Echo AVU",
+      "description": null,
+      "h1": "MESSAGE RECEIVED. THE BIG SCREEN AWAITS.",
+      "images": []
+    },
+    "tv-video.html": {
+      "title": "Custom TV Mounting & Bespoke Cinema | Echo AVU Grande Prairie",
+      "description": "Create the ultimate viewing experience with custom TV mounting and bespoke cinema in Grande Prairie. Authorized Samsung dealer. Transform your room.",
+      "h1": "Cinema at Home.",
+      "images": [
+        {
+          "src": "/assets/tv-video/tv-video-image.jpg",
+          "alt": "Premium TV Display"
+        },
+        {
+          "src": "/assets/brands/jvc-e1678825470808.png",
+          "alt": "JVC"
+        },
+        {
+          "src": "/assets/brands/samsung.png",
+          "alt": "Samsung"
+        },
+        {
+          "src": "/assets/brands/lg-oled-tv-logo.png",
+          "alt": "LG OLED"
+        },
+        {
+          "src": "/assets/brands/epson.png",
+          "alt": "Epson"
+        },
+        {
+          "src": "/assets/brands/sanus_logo_bg.png",
+          "alt": "Sanus"
+        },
+        {
+          "src": "/assets/tv-video/dream home.jpg",
+          "alt": "120 inch Private Cinema"
+        },
+        {
+          "src": "/assets/tv-video/tv-mount.jpg",
+          "alt": "Stone Feature Wall Display"
+        }
+      ]
+    }
+  },
+  "unique_local_images": [
+    "Guide-pour-Mettre-en-Place-un-Systeme-Domotique.jpg",
+    "Radenso_Logo.png",
+    "samsung.png",
+    "Wet-Sounds-Marine-1.png",
+    "networking.jpg",
+    "denon.png",
+    "dream home.jpg",
+    "kanto.png",
+    "Helix_Logo.png",
+    "svs.png",
+    "corbin-may.jpg",
+    "onkyo.png",
+    "Flexiti.png",
+    "Thinkware.png",
+    "FUSION-Car-Audio-Logo-Vector.svg-.png",
+    "unnamed.jpg",
+    "f-250-custom2.jpg",
+    "f-250-custom4.jpg",
+    "office-boardroom.jpg",
+    "Purpose AV.png",
+    "Polk_Audio_logo.png",
+    "Luma-All-White-Logo.png",
+    "klipsch.png",
+    "custom-car-audio-fabrication.jpg",
+    "f150-2.jpg",
+    "ring.png",
+    "can-am-x3-2.jpg",
+    "marine-audio-image1 - Copy.jpg",
+    "showroom-floor.jpg",
+    "wiim.png",
+    "home-networking.jpg",
+    "david-little.jpg",
+    "diesel-truck-winter.webp",
+    "dronemobile-app.webp",
+    "pioneer.png",
+    "f-250-custom3.jpg",
+    "subwoofers2.jpg",
+    "dream-home-logo.png",
+    "control4.png",
+    "download.jpg",
+    "Ground zero.png",
+    "calibration-tech.jpg",
+    "2024-bratt-jett (2).jpg",
+    "bryce-macPherson.jpg",
+    "logo-nustart.png",
+    "sonos-1.png",
+    "factory-safe-integration.jpg",
+    "Blam.png",
+    "jonah.jpg",
+    "home-security.jpg",
+    "head-units.jpg",
+    "sanus_logo_bg.png",
+    "can-am-x3.jpg",
+    "smart-office-automation.jpg",
+    "f-250-custom.jpg",
+    "office-distributed-video.jpg",
+    "pac audio.png",
+    "distributed-video.jpg",
+    "f-150.jpg",
+    "home-theatre.jpg",
+    "compustar.png",
+    "MTI.png",
+    "Boss.png",
+    "commercial-fleet-vehicles - Copy.jpg",
+    "escort.png",
+    "project.png",
+    "lg-oled-tv-logo.png",
+    "multi-channel-vs-multizone-audio.webp",
+    "distributed-audio-office.jpg",
+    "sennheiser.png",
+    "DSC01747.jpg",
+    "jvc-e1678825470808.png",
+    "JLAudio.png",
+    "mason-stirrett.jpg",
+    "distributed-video-1.jpg",
+    "Memphis-Logo.png",
+    "subwoofers1.jpg",
+    "kenwood.png",
+    "unnamed (1).jpg",
+    "Dynamat.png",
+    "tv-video-image.jpg",
+    "Kicker-Logo-Vector.png",
+    "small-scale-projects.jpg",
+    "showroom-hifi.jpg",
+    "marine-audio-hero.jpg",
+    "jeff-yawney.jpg",
+    "epson.png",
+    "alpine.png",
+    "distributed-audio.jpg",
+    "Wavetech.png",
+    "DSC03712.jpg",
+    "home-automation.jpg",
+    "cctv-camera.jpg",
+    "yamaha.png",
+    "desmond-bilan.jpg",
+    "Arc audio.png",
+    "ikarao.png",
+    "showroom-car.jpg",
+    "complete-system-upgrades.jpg",
+    "White_maple_leaf_symbol.png",
+    "calibration-tech2.jpg",
+    "tv-mount.jpg",
+    "2024-bratt-jett - Copy.jpg",
+    "logo_idatastart_en.png",
+    "remote-start-hero.jpg",
+    "Uniden.png",
+    "showroom-theater.jpg",
+    "smart-business-automation.jpg"
+  ]
+}
