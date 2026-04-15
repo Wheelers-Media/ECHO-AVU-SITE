@@ -59,6 +59,8 @@ function loadHeader() {
                   class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">Remote Car Starters</a>
                 <a href="/services-marine.html"
                   class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">Marine &amp; Powersports</a>
+                <a href="/services-golf-simulators.html"
+                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">Golf Simulators</a>
               </div>
             </div>
           </div>
@@ -133,6 +135,7 @@ function loadHeader() {
                   <a href="/services-car-audio.html" class="block text-gray-400 hover:text-white transition-colors py-1">Vehicle Installations</a>
                   <a href="/services-car-starters.html" class="block text-gray-400 hover:text-white transition-colors py-1">Remote Car Starters</a>
                   <a href="/services-marine.html" class="block text-gray-400 hover:text-white transition-colors py-1">Marine &amp; Powersports</a>
+                  <a href="/services-golf-simulators.html" class="block text-gray-400 hover:text-white transition-colors py-1">Golf Simulators</a>
                 </div>
               </details>
 
@@ -279,6 +282,7 @@ function loadFooter() {
               <li><a href="/services-car-audio.html" style="color:#9CA3AF;text-decoration:none;">Vehicle Installations</a></li>
               <li><a href="/services-car-starters.html" style="color:#9CA3AF;text-decoration:none;">Remote Car Starters</a></li>
               <li><a href="/services-marine.html" style="color:#9CA3AF;text-decoration:none;">Marine &amp; Powersports</a></li>
+              <li><a href="/services-golf-simulators.html" style="color:#9CA3AF;text-decoration:none;">Golf Simulators</a></li>
             </ul>
           </div>
 
