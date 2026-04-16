@@ -18,6 +18,8 @@ function loadHeader() {
             class="h-10 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity">
         </a>
         <div class="hidden lg:flex items-center gap-8">
+          <a href="/services-golf-simulators.html"
+            class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-300">Golf Simulators</a>
           <a href="/car-audio.html"
             class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-300">Car Audio</a>
           <a href="/car-starters.html"
@@ -59,8 +61,6 @@ function loadHeader() {
                   class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">Remote Car Starters</a>
                 <a href="/services-marine.html"
                   class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">Marine &amp; Powersports</a>
-                <a href="/services-golf-simulators.html"
-                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors">Golf Simulators</a>
               </div>
             </div>
           </div>
@@ -108,6 +108,7 @@ function loadHeader() {
                   </svg>
                 </summary>
                 <div class="mt-4 space-y-3 pl-4 border-l border-white/10 ml-1">
+                  <a href="/services-golf-simulators.html" class="block text-gray-400 hover:text-white transition-colors py-1">Golf Simulators</a>
                   <a href="/car-audio.html" class="block text-gray-400 hover:text-white transition-colors py-1">Car Audio</a>
                   <a href="/car-starters.html" class="block text-gray-400 hover:text-white transition-colors py-1">Remote Car Starters</a>
                   <a href="/marine-audio.html" class="block text-gray-400 hover:text-white transition-colors py-1">Marine &amp; Powersports</a>
@@ -135,7 +136,6 @@ function loadHeader() {
                   <a href="/services-car-audio.html" class="block text-gray-400 hover:text-white transition-colors py-1">Vehicle Installations</a>
                   <a href="/services-car-starters.html" class="block text-gray-400 hover:text-white transition-colors py-1">Remote Car Starters</a>
                   <a href="/services-marine.html" class="block text-gray-400 hover:text-white transition-colors py-1">Marine &amp; Powersports</a>
-                  <a href="/services-golf-simulators.html" class="block text-gray-400 hover:text-white transition-colors py-1">Golf Simulators</a>
                 </div>
               </details>
 
